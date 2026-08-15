@@ -1,0 +1,27 @@
+%YAML 1.2
+---
+replayer:
+  frame_rate: 0
+  repeat: true
+  realtime: true
+  count: 0
+
+camera:
+
+format_converter:
+
+rmm_allocator:
+  device_memory_initial_size: "64 MB"
+  device_memory_max_size: "64 MB"
+  host_memory_initial_size: "64 MB"
+  host_memory_max_size: "64 MB"
+  dev_id: 0
+
+holoviz:
+  width: 854
+  height: 480
+  tensors:
+    - name: ""
+      type: color
+      opacity: 1.0
+      priority: 0

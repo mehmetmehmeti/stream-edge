@@ -1,0 +1,19 @@
+node_modules/
+
+# Local environment and runtime output.
+.env
+streaming-service/.env
+recordings/
+streaming-service/recordings/
+*.log
+
+# CMake/build output.
+build/
+cmake-build-*/
+streaming-service/build/
+streaming-service/.tools/
+compile_commands.json
+
+# Python/GStreamer experiments and local caches.
+__pycache__/
+*.py[cod]
