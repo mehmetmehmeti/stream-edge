@@ -69,6 +69,7 @@ cd streaming-service
 cp .env.example .env
 ./install-project-cmake.sh
 STREAM_EDGE_EXTRA_PREFIX_PATH="/home/mehmet-work/wp-edge-core/build/vcpkg_installed/x64-linux:$HOME/.local:/opt/nvidia/holoscan" ./build-local.sh
+./start-local-postgres.sh
 ./run-local.sh
 ```
 
@@ -79,6 +80,10 @@ pipeline requirements.
 `STREAM_EDGE_EXTRA_PREFIX_PATH` is a convenience wrapper around
 `CMAKE_PREFIX_PATH`; it lets the diploma repo reuse the already-built
 internship/vcpkg native dependencies without committing those binaries here.
+
+`start-local-postgres.sh` creates and starts a user-owned PostgreSQL instance
+on port `55432`, which avoids depending on system Postgres or Docker. Copy the
+DB values it prints into `streaming-service/.env`.
 
 ## Source Configuration
 
