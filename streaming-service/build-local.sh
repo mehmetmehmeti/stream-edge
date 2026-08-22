@@ -36,5 +36,26 @@ if command -v ninja >/dev/null 2>&1; then
   GENERATOR_ARGS=(-G Ninja)
 fi
 
-"${PROJECT_CMAKE}" -S "${SCRIPT_DIR}" -B "${SCRIPT_DIR}/build" "${GENERATOR_ARGS[@]}"
+PREFIX_PATH="${CMAKE_PREFIX_PATH:-}"
+if [[ -n "${STREAM_EDGE_EXTRA_PREFIX_PATH:-}" ]]; then
+  if [[ -n "$PREFIX_PATH" ]]; then
+    PREFIX_PATH="${STREAM_EDGE_EXTRA_PREFIX_PATH}:${PREFIX_PATH}"
+  else
+    PREFIX_PATH="${STREAM_EDGE_EXTRA_PREFIX_PATH}"
+  fi
+fi
+PREFIX_PATH="${PREFIX_PATH//:/$';'}"
+
+CMAKE_ARGS=()
+if [[ -n "$PREFIX_PATH" ]]; then
+  CMAKE_ARGS+=("-DCMAKE_PREFIX_PATH=${PREFIX_PATH}")
+fi
+if [[ -z "${CMAKE_BUILD_TYPE:-}" ]]; then
+  CMAKE_ARGS+=("-DCMAKE_BUILD_TYPE=Release")
+else
+  CMAKE_ARGS+=("-DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}")
+fi
+
+"${PROJECT_CMAKE}" -S "${SCRIPT_DIR}" -B "${SCRIPT_DIR}/build" \
+  "${GENERATOR_ARGS[@]}" "${CMAKE_ARGS[@]}"
 "${PROJECT_CMAKE}" --build "${SCRIPT_DIR}/build" -j"${BUILD_JOBS:-$(nproc)}"

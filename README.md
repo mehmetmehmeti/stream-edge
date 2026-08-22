@@ -68,13 +68,17 @@ The project intentionally does not use Docker for the diploma version.
 cd streaming-service
 cp .env.example .env
 ./install-project-cmake.sh
-./build-local.sh
+STREAM_EDGE_EXTRA_PREFIX_PATH="/home/mehmet-work/wp-edge-core/build/vcpkg_installed/x64-linux:$HOME/.local:/opt/nvidia/holoscan" ./build-local.sh
 ./run-local.sh
 ```
 
 The service expects Holoscan, CUDA, Drogon, TinyORM, Qt runtime pieces, and
 GStreamer development packages to be installed locally, matching the internship
 pipeline requirements.
+
+`STREAM_EDGE_EXTRA_PREFIX_PATH` is a convenience wrapper around
+`CMAKE_PREFIX_PATH`; it lets the diploma repo reuse the already-built
+internship/vcpkg native dependencies without committing those binaries here.
 
 ## Source Configuration
 

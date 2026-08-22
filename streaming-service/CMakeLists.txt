@@ -135,8 +135,8 @@ if(STREAMING_SERVICE_BUILD_RUNTIME)
         gstreamer-app-1.0
         gstreamer-video-1.0
     )
-    find_package(Drogon CONFIG REQUIRED)
     find_package(TinyOrm CONFIG REQUIRED)
+    find_package(Drogon CONFIG REQUIRED)
 
     add_library(streaming_service_runtime STATIC
         src/services/CloudPublisher.cc
@@ -148,12 +148,32 @@ if(STREAMING_SERVICE_BUILD_RUNTIME)
 
     target_include_directories(streaming_service_runtime PUBLIC include)
 
+    target_compile_definitions(streaming_service_runtime PUBLIC
+        TINYORM_USING_QTSQLDRIVERS
+    )
+
     target_link_libraries(streaming_service_runtime PUBLIC
         streaming_embedded_pipeline
         Drogon::Drogon
         TinyOrm::TinyOrm
         PkgConfig::GSTREAMER_APP
     )
+
+    find_library(PGCOMMON_LIBRARY pgcommon)
+    find_library(PGPORT_LIBRARY pgport)
+    find_library(BSD_LIBRARY bsd)
+    if(NOT BSD_LIBRARY AND EXISTS "/usr/lib/x86_64-linux-gnu/libbsd.so.0")
+        set(BSD_LIBRARY "/usr/lib/x86_64-linux-gnu/libbsd.so.0")
+    endif()
+    if(PGCOMMON_LIBRARY)
+        target_link_libraries(streaming_service_runtime PUBLIC ${PGCOMMON_LIBRARY})
+    endif()
+    if(PGPORT_LIBRARY)
+        target_link_libraries(streaming_service_runtime PUBLIC ${PGPORT_LIBRARY})
+    endif()
+    if(BSD_LIBRARY)
+        target_link_libraries(streaming_service_runtime PUBLIC ${BSD_LIBRARY})
+    endif()
 
     set_target_properties(streaming_service_runtime PROPERTIES
         BUILD_RPATH "$ENV{HOME}/.local/lib;/opt/nvidia/holoscan/lib"
