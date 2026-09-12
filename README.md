@@ -123,6 +123,7 @@ Enable publishing in `streaming-service/.env`:
 CLOUD_PUBLISH_ENABLED=1
 CLOUD_PUBLISH_REQUIRED=1
 MEDIA_PUBLISH_WHIP_URL=http://127.0.0.1:3010/whip
+MEDIA_PUBLISH_TOKEN=local-publisher-token
 MEDIA_PUBLISH_VIEW_URL=http://127.0.0.1:5173
 ```
 
