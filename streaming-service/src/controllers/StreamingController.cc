@@ -39,20 +39,21 @@ void StreamingController::startStream(
     json["service"] = "streaming-service";
     const auto caseId = optionalCaseIdFromRequest(req);
 
-    if (!streamingService.isHoloscanConfigured())
-    {
-        json["status"] = "error";
-        json["message"] = "Holoscan pipeline config is missing";
-        callback(jsonResponse(json, drogon::k500InternalServerError));
-        return;
-    }
-
     std::string sourceError;
     if (!streamingService.isStreamingSourceConfigured(&sourceError))
     {
         json["status"] = "error";
         json["message"] = sourceError;
         callback(jsonResponse(json, drogon::k400BadRequest));
+        return;
+    }
+
+    if (streamingService.isHoloscanRequiredForCurrentSource() &&
+        !streamingService.isHoloscanConfigured())
+    {
+        json["status"] = "error";
+        json["message"] = "Holoscan pipeline config is missing";
+        callback(jsonResponse(json, drogon::k500InternalServerError));
         return;
     }
 
@@ -68,7 +69,7 @@ void StreamingController::startStream(
     }
 
     std::string message;
-    const auto started = streamingService.startStream(&message);
+    const auto started = streamingService.startStream(caseId, &message);
     if (!started)
     {
         json["status"] = "error";

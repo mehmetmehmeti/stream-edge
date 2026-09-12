@@ -219,6 +219,21 @@ bool StreamingService::isHoloscanConfigured() const
     return HoloscanVideoPipeline::isConfigAvailable(HoloscanVideoPipeline::defaultConfigPath());
 }
 
+bool StreamingService::isHoloscanRequiredForCurrentSource(std::string* errorMessage) const
+{
+    try
+    {
+        const auto sourceConfig = loadStreamingSourceConfig();
+        return sourceConfig.type != StreamingSourceType::Mp4File;
+    }
+    catch (const std::exception& e)
+    {
+        if (errorMessage)
+            *errorMessage = e.what();
+        return true;
+    }
+}
+
 bool StreamingService::isStreamingSourceConfigured(std::string *errorMessage) const
 {
     try
@@ -240,6 +255,12 @@ bool StreamingService::hasStreamingSourceSignal(std::string* errorMessage) const
 }
 
 bool StreamingService::startStream(std::string* message)
+{
+    return startStream({}, message);
+}
+
+bool StreamingService::startStream(const std::string& streamNameOverride,
+                                   std::string* message)
 {
     std::thread staleThread;
     {
@@ -282,6 +303,35 @@ bool StreamingService::startStream(std::string* message)
         if (message)
             *message = lastError_;
         return false;
+    }
+
+    if (sourceConfig.type == StreamingSourceType::Mp4File)
+    {
+        {
+            std::lock_guard<std::mutex> lock(mutex_);
+            lastSourceConfig_ = sourceConfig;
+            running_ = true;
+            lastError_.clear();
+        }
+
+        std::string publisherMessage;
+        if (!CloudPublisher::instance().startFilePublisher(
+                sourceConfig.mp4.path, streamNameOverride, &publisherMessage))
+        {
+            std::lock_guard<std::mutex> lock(mutex_);
+            running_ = false;
+            lastError_ = publisherMessage.empty() ? "MP4 WHIP publisher failed to start"
+                                                  : publisherMessage;
+            if (message)
+                *message = lastError_;
+            return false;
+        }
+
+        if (message)
+            *message = publisherMessage.empty()
+                           ? "MP4 video stream started"
+                           : "MP4 video stream started; " + publisherMessage;
+        return true;
     }
 
     const auto configPath = HoloscanVideoPipeline::defaultConfigPath();

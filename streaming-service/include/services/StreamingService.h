@@ -18,9 +18,12 @@ public:
     ~StreamingService();
 
     bool isHoloscanConfigured() const;
+    bool isHoloscanRequiredForCurrentSource(std::string* errorMessage = nullptr) const;
     bool isStreamingSourceConfigured(std::string* errorMessage = nullptr) const;
     bool hasStreamingSourceSignal(std::string* errorMessage = nullptr) const;
     bool startStream(std::string* message = nullptr);
+    bool startStream(const std::string& streamNameOverride,
+                     std::string* message);
     bool stopStream(std::string* message = nullptr);
     bool startRecording(const std::string& caseId = {}, std::string* message = nullptr);
     bool stopRecording(std::string* message = nullptr,

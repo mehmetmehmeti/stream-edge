@@ -7,7 +7,8 @@
 enum class StreamingSourceType
 {
     File,
-    Camera
+    Camera,
+    Mp4File
 };
 
 struct FileVideoSourceConfig
@@ -27,9 +28,15 @@ struct CameraVideoSourceConfig
     std::optional<unsigned int> gain;
 };
 
+struct Mp4FileVideoSourceConfig
+{
+    std::filesystem::path path;
+};
+
 struct StreamingSourceConfig
 {
     StreamingSourceType type = StreamingSourceType::File;
     FileVideoSourceConfig file;
     CameraVideoSourceConfig camera;
+    Mp4FileVideoSourceConfig mp4;
 };

@@ -9,6 +9,7 @@
 #include <holoscan/operators/v4l2_video_capture/v4l2_video_capture.hpp>
 #include <holoscan/operators/video_stream_replayer/video_stream_replayer.hpp>
 #include <memory>
+#include <stdexcept>
 #include <string>
 #include <utility>
 
@@ -120,6 +121,8 @@ void HoloscanVideoApplication::compose()
     case StreamingSourceType::Camera:
         composeCameraSource();
         break;
+    case StreamingSourceType::Mp4File:
+        throw std::runtime_error("MP4 files are published directly through WHIP, not Holoscan");
     }
 }
 

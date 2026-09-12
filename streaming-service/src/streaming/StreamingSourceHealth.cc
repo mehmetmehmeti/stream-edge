@@ -76,6 +76,42 @@ bool checkCameraSource(const CameraVideoSourceConfig& config, std::string* error
     ::close(fd);
     return true;
 }
+
+bool checkMp4FileSource(const Mp4FileVideoSourceConfig& config, std::string* errorMessage)
+{
+    if (config.path.empty())
+    {
+        if (errorMessage)
+            *errorMessage = "MP4 source file path is empty";
+        return false;
+    }
+
+    if (!fs::exists(config.path))
+    {
+        if (errorMessage)
+            *errorMessage = "MP4 source file not found: " + config.path.string();
+        return false;
+    }
+
+    if (!fs::is_regular_file(config.path))
+    {
+        if (errorMessage)
+            *errorMessage = "MP4 source path is not a file: " + config.path.string();
+        return false;
+    }
+
+    const int fd = ::open(config.path.c_str(), O_RDONLY | O_NONBLOCK);
+    if (fd < 0)
+    {
+        if (errorMessage)
+            *errorMessage = "MP4 source file is not readable: " + config.path.string() + " (" +
+                            std::strerror(errno) + ")";
+        return false;
+    }
+
+    ::close(fd);
+    return true;
+}
 } // namespace
 
 namespace streaming
@@ -104,6 +140,8 @@ bool isStreamingSourceSignalAvailable(std::string* errorMessage)
         return checkFileSource(config.file, errorMessage);
     case StreamingSourceType::Camera:
         return checkCameraSource(config.camera, errorMessage);
+    case StreamingSourceType::Mp4File:
+        return checkMp4FileSource(config.mp4, errorMessage);
     }
 
     if (errorMessage)

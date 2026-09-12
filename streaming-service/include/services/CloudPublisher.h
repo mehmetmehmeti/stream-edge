@@ -3,6 +3,7 @@
 #include <json/json.h>
 
 #include <cstdint>
+#include <filesystem>
 #include <memory>
 #include <mutex>
 #include <optional>
@@ -23,6 +24,9 @@ public:
     ~CloudPublisher();
 
     bool start(std::string *message = nullptr);
+    bool startFilePublisher(const std::filesystem::path& inputFile,
+                            const std::string& streamNameOverride = {},
+                            std::string *message = nullptr);
     bool stop(std::string *message = nullptr);
     bool isEnabled() const;
     Json::Value statusJson() const;
@@ -52,6 +56,10 @@ private:
         std::string directViewUrl;
         std::string directStreamName;
         std::string directSessionId;
+        std::string streamNameOverride;
+        std::filesystem::path directInputFile;
+        std::filesystem::path whipClientPath;
+        bool loopDirectInputFile = true;
         bool logCommandOutput = false;
         int pollIntervalMs = 100;
         std::string shmSocketPath;
@@ -66,6 +74,7 @@ private:
     CloudPublisher &operator=(const CloudPublisher &) = delete;
 
     RuntimeConfig loadRuntimeConfig() const;
+    bool startWithConfig(RuntimeConfig config, std::string *message);
     bool fetchSessionConfig(const RuntimeConfig &config,
                             SessionConfig &session,
                             std::string &error) const;

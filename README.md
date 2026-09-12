@@ -124,13 +124,26 @@ CLOUD_PUBLISH_ENABLED=1
 CLOUD_PUBLISH_REQUIRED=1
 MEDIA_PUBLISH_WHIP_URL=http://127.0.0.1:3010/whip
 MEDIA_PUBLISH_VIEW_URL=http://127.0.0.1:5173
-MEDIA_PUBLISH_COMMAND_TEMPLATE='... external WHIP publisher command ...'
 ```
 
 The copied internship publisher exports Holoscan frames through shared memory
 and launches the configured external WHIP command. For the diploma project the
 template is generic `MEDIA_PUBLISH_COMMAND_TEMPLATE`, with the old service
 provider removed from the documentation and runtime naming.
+
+For a simple MP4 demo stream, use the repo-local libsoup3 WHIP client from
+`diploma-media-server` and point stream-edge at a sample file:
+
+```env
+STREAMING_SOURCE_TYPE=mp4
+STREAMING_SOURCE_FILE=/home/mehmet-work/Desktop/diploma/diploma-2026-stream-edge/videos/sample.mp4
+MEDIA_PUBLISH_WHIP_CLIENT=/home/mehmet-work/Desktop/diploma/diploma-media-server/.tools/bin/whip-client
+MEDIA_PUBLISH_LOOP_FILE=1
+```
+
+In MP4 mode stream-edge appends the command/case ID to the WHIP base URL, so a
+cloud command for `case_id=demo` publishes to `/whip/demo` and the cloud viewer
+opens stream `demo`.
 
 ## Recording
 

@@ -36,8 +36,12 @@ StreamingSourceType loadStreamingSourceType()
     if (sourceType == "camera")
         return StreamingSourceType::Camera;
 
+    if (sourceType == "mp4" || sourceType == "mp4-file" || sourceType == "mp4_file")
+        return StreamingSourceType::Mp4File;
+
     throw std::runtime_error(
-        "Unsupported STREAMING_SOURCE_TYPE: " + sourceType + " (expected file or camera)");
+        "Unsupported STREAMING_SOURCE_TYPE: " + sourceType +
+        " (expected file, camera, or mp4)");
 }
 
 std::optional<unsigned int> loadOptionalUnsignedEnv(const char* name)
@@ -150,6 +154,24 @@ CameraVideoSourceConfig loadCameraVideoSourceConfig()
 
     return config;
 }
+
+Mp4FileVideoSourceConfig loadMp4FileVideoSourceConfig()
+{
+    const auto* sourceFile = std::getenv("STREAMING_SOURCE_FILE");
+    if (sourceFile == nullptr || *sourceFile == '\0')
+        throw std::runtime_error("Set STREAMING_SOURCE_FILE before starting an MP4 stream");
+
+    Mp4FileVideoSourceConfig config;
+    config.path = fs::path(sourceFile);
+
+    if (!fs::exists(config.path))
+        throw std::runtime_error("MP4 source file not found: " + config.path.string());
+
+    if (!fs::is_regular_file(config.path))
+        throw std::runtime_error("MP4 source path is not a file: " + config.path.string());
+
+    return config;
+}
 } // namespace
 
 StreamingSourceConfig loadStreamingSourceConfig()
@@ -164,6 +186,9 @@ StreamingSourceConfig loadStreamingSourceConfig()
         break;
     case StreamingSourceType::Camera:
         config.camera = loadCameraVideoSourceConfig();
+        break;
+    case StreamingSourceType::Mp4File:
+        config.mp4 = loadMp4FileVideoSourceConfig();
         break;
     }
 

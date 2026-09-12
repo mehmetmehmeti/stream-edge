@@ -7,6 +7,7 @@
 
 #include <cstdio>
 #include <cstdlib>
+#include <cctype>
 #include <cstring>
 #include <fcntl.h>
 #include <spawn.h>
@@ -19,10 +20,12 @@
 #include <chrono>
 #include <cmath>
 #include <filesystem>
+#include <iomanip>
 #include <limits>
 #include <sstream>
 #include <stdexcept>
 #include <thread>
+#include <utility>
 
 extern char **environ;
 
@@ -142,6 +145,93 @@ bool runShellCommandWithOutput(const std::string &command,
     return true;
 }
 
+std::string sanitizeStreamName(const std::string& value)
+{
+    std::string result;
+    result.reserve(value.size());
+    for (const auto ch : value)
+    {
+        if (std::isalnum(static_cast<unsigned char>(ch)) || ch == '-' || ch == '_' || ch == '.')
+            result += ch;
+        else
+            result += '-';
+    }
+    return trim(result);
+}
+
+std::string appendStreamNameToWhipUrl(const std::string& baseUrl, const std::string& streamName)
+{
+    if (baseUrl.find("{stream_name}") != std::string::npos)
+        return replaceAll(baseUrl, "{stream_name}", streamName);
+    if (baseUrl.find("{{STREAM_NAME}}") != std::string::npos)
+        return replaceAll(baseUrl, "{{STREAM_NAME}}", streamName);
+
+    const auto suffix = "/" + streamName;
+    if (baseUrl.size() >= suffix.size() &&
+        baseUrl.compare(baseUrl.size() - suffix.size(), suffix.size(), suffix) == 0)
+        return baseUrl;
+
+    if (!baseUrl.empty() && baseUrl.back() == '/')
+        return baseUrl + streamName;
+
+    return baseUrl + "/" + streamName;
+}
+
+std::filesystem::path defaultWhipClientPath()
+{
+    const auto configured = trim(getEnvOrDefault("MEDIA_PUBLISH_WHIP_CLIENT", ""));
+    if (!configured.empty())
+        return std::filesystem::path(configured);
+
+    const auto current = std::filesystem::current_path();
+    const auto sibling =
+        current / ".." / ".." / "diploma-media-server" / ".tools" / "bin" / "whip-client";
+    if (std::filesystem::exists(sibling))
+        return std::filesystem::weakly_canonical(sibling);
+
+    return {};
+}
+
+bool isExecutableFile(const std::filesystem::path& path)
+{
+    if (path.empty() || !std::filesystem::exists(path) || !std::filesystem::is_regular_file(path))
+        return false;
+    return ::access(path.c_str(), X_OK) == 0;
+}
+
+std::string buildMp4GStreamerPipeline(const std::filesystem::path& inputFile)
+{
+    std::ostringstream pipeline;
+    pipeline << "filesrc location=" << inputFile.string()
+             << " ! qtdemux"
+             << " ! h264parse config-interval=1"
+             << " ! rtph264pay pt=96 ssrc=2 config-interval=1 aggregate-mode=zero-latency"
+             << " ! application/x-rtp,media=video,encoding-name=H264,payload=96,clock-rate=90000";
+    return pipeline.str();
+}
+
+std::string buildDefaultMp4WhipCommand(const std::filesystem::path& whipClientPath,
+                                       const std::filesystem::path& inputFile,
+                                       const std::string& whipUrl,
+                                       const std::string& publishToken,
+                                       bool loop)
+{
+    std::ostringstream oneShot;
+    oneShot << shellQuote(whipClientPath.string())
+            << " -u " << shellQuote(whipUrl)
+            << " -n";
+    if (!publishToken.empty())
+        oneShot << " -t " << shellQuote(publishToken);
+    oneShot << " -V " << shellQuote(buildMp4GStreamerPipeline(inputFile));
+
+    if (!loop)
+        return oneShot.str();
+
+    std::ostringstream command;
+    command << "while true; do " << oneShot.str() << "; sleep 1; done";
+    return command.str();
+}
+
 std::uint64_t steadyNowNs()
 {
     return static_cast<std::uint64_t>(std::chrono::duration_cast<std::chrono::nanoseconds>(
@@ -182,6 +272,8 @@ CloudPublisher::RuntimeConfig CloudPublisher::loadRuntimeConfig() const
     config.directViewUrl = trim(getEnvOrDefault("MEDIA_PUBLISH_VIEW_URL", ""));
     config.directStreamName = trim(getEnvOrDefault("MEDIA_PUBLISH_STREAM_NAME", ""));
     config.directSessionId = trim(getEnvOrDefault("MEDIA_PUBLISH_SESSION_ID", ""));
+    config.whipClientPath = defaultWhipClientPath();
+    config.loopDirectInputFile = getEnvAsBool("MEDIA_PUBLISH_LOOP_FILE", true);
     config.logCommandOutput = getEnvAsBool("CLOUD_PUBLISH_LOG_COMMAND_OUTPUT", false);
     config.pollIntervalMs = getEnvAsInt("CLOUD_PUBLISH_POLL_INTERVAL_MS", 100);
     config.shmSocketPath = trim(getEnvOrDefault("CLOUD_PUBLISH_SHM_SOCKET_PATH",
@@ -208,13 +300,18 @@ bool CloudPublisher::fetchSessionConfig(const RuntimeConfig &config,
 {
     if (!config.directWhipUrl.empty())
     {
-        const auto streamName = config.directStreamName.empty()
-                                    ? config.deviceId + "-stream"
-                                    : config.directStreamName;
-        session.sessionId = config.directSessionId.empty() ? streamName : config.directSessionId;
+        auto streamName = config.streamNameOverride.empty()
+                              ? config.directStreamName
+                              : config.streamNameOverride;
+        if (streamName.empty())
+            streamName = config.deviceId + "-stream";
+        streamName = sanitizeStreamName(streamName);
+        session.sessionId = !config.streamNameOverride.empty() || config.directSessionId.empty()
+                                ? streamName
+                                : config.directSessionId;
         session.deviceId = config.deviceId;
         session.streamName = streamName;
-        session.whipUrl = config.directWhipUrl;
+        session.whipUrl = appendStreamNameToWhipUrl(config.directWhipUrl, streamName);
         session.publishToken = config.directPublishToken;
         session.viewUrl = config.directViewUrl;
         session.reused = false;
@@ -363,13 +460,37 @@ bool CloudPublisher::launchExternalPublisher(const RuntimeConfig &config,
                                              std::string &error)
 {
     childPid = -1;
-    if (trim(config.commandTemplate).empty())
+    auto commandTemplate = config.commandTemplate;
+    if (trim(commandTemplate).empty() && !config.directInputFile.empty())
+    {
+        if (!isExecutableFile(config.whipClientPath))
+        {
+            error = "WHIP client not found or not executable. Build it with "
+                    "../diploma-media-server/scripts/build-whip-client.sh or set "
+                    "MEDIA_PUBLISH_WHIP_CLIENT";
+            return false;
+        }
+        commandTemplate = buildDefaultMp4WhipCommand(config.whipClientPath,
+                                                     config.directInputFile,
+                                                     session.whipUrl,
+                                                     session.publishToken,
+                                                     config.loopDirectInputFile);
+    }
+
+    if (trim(commandTemplate).empty())
     {
         error = "No MEDIA_PUBLISH_COMMAND_TEMPLATE configured";
         return false;
     }
 
-    const auto command = "exec " + buildExternalCommand(config.commandTemplate, session, bridgeJson);
+    auto command = buildExternalCommand(commandTemplate, session, bridgeJson);
+    if (!config.directInputFile.empty())
+    {
+        command = replaceAll(command, "{input_file}", config.directInputFile.string());
+        command = replaceAll(command, "{{INPUT_FILE}}", config.directInputFile.string());
+    }
+    if (command.rfind("while ", 0) != 0)
+        command = "exec " + command;
 
     posix_spawnattr_t attributes;
     if (posix_spawnattr_init(&attributes) != 0)
@@ -427,8 +548,21 @@ bool CloudPublisher::launchExternalPublisher(const RuntimeConfig &config,
 
 bool CloudPublisher::start(std::string *message)
 {
-    const auto config = loadRuntimeConfig();
+    return startWithConfig(loadRuntimeConfig(), message);
+}
 
+bool CloudPublisher::startFilePublisher(const std::filesystem::path& inputFile,
+                                        const std::string& streamNameOverride,
+                                        std::string *message)
+{
+    auto config = loadRuntimeConfig();
+    config.directInputFile = inputFile;
+    config.streamNameOverride = streamNameOverride;
+    return startWithConfig(std::move(config), message);
+}
+
+bool CloudPublisher::startWithConfig(RuntimeConfig config, std::string *message)
+{
     {
         std::lock_guard lock(mutex_);
         if (running_)
@@ -468,6 +602,33 @@ bool CloudPublisher::start(std::string *message)
         if (message)
             *message = error;
         return false;
+    }
+
+    if (!config.directInputFile.empty())
+    {
+        if (!std::filesystem::exists(config.directInputFile) ||
+            !std::filesystem::is_regular_file(config.directInputFile))
+        {
+            const auto error = "Direct MP4 publish file is not readable: " +
+                               config.directInputFile.string();
+            std::lock_guard lock(mutex_);
+            state_ = "failed";
+            lastError_ = error;
+            if (message)
+                *message = error;
+            return false;
+        }
+
+        if (config.directWhipUrl.empty())
+        {
+            const auto error = "Direct MP4 publishing requires MEDIA_PUBLISH_WHIP_URL";
+            std::lock_guard lock(mutex_);
+            state_ = "failed";
+            lastError_ = error;
+            if (message)
+                *message = error;
+            return false;
+        }
     }
 
     if (config.directWhipUrl.empty() &&
@@ -511,6 +672,35 @@ bool CloudPublisher::start(std::string *message)
         if (message)
             *message = error;
         return false;
+    }
+
+    if (!config.directInputFile.empty())
+    {
+        int launchedPid = -1;
+        std::string launchError;
+        if (!launchExternalPublisher(config, session, Json::Value(Json::objectValue), launchedPid, launchError))
+        {
+            std::lock_guard lock(mutex_);
+            state_ = "failed";
+            lastError_ = launchError.empty() ? "Failed to launch MP4 WHIP publisher"
+                                             : launchError;
+            if (message)
+                *message = lastError_;
+            return false;
+        }
+
+        {
+            std::lock_guard lock(mutex_);
+            session_ = session;
+            childPid_ = launchedPid;
+            running_ = true;
+            state_ = "running";
+            lastMessage_ = "MP4 WHIP publisher launched";
+            monitorThread_ = std::thread([this]() { monitorLoop(); });
+            if (message)
+                *message = lastMessage_;
+        }
+        return true;
     }
 
     if (!framePublisher_)
@@ -579,6 +769,15 @@ bool CloudPublisher::stop(std::string *message)
 
     {
         std::lock_guard lock(mutex_);
+        if (!running_ && !monitorThread_.joinable() && childPid_ <= 0)
+        {
+            state_ = runtimeConfig_.enabled ? "stopped" : "disabled";
+            lastMessage_ = "Cloud publisher stopped";
+            if (message)
+                *message = lastMessage_;
+            return true;
+        }
+
         config = runtimeConfig_;
         session = session_;
         stopRequested_ = true;
@@ -680,6 +879,12 @@ void CloudPublisher::monitorLoop()
                 failAndStop(reason);
                 break;
             }
+        }
+
+        if (!config.directInputFile.empty())
+        {
+            std::this_thread::sleep_for(std::chrono::milliseconds(config.pollIntervalMs));
+            continue;
         }
 
         streaming::VideoFrameHandle frame;
@@ -795,9 +1000,12 @@ Json::Value CloudPublisher::statusJson() const
     json["running"] = running_;
     json["device_id"] = visibleConfig.deviceId;
     json["backend_base_url"] = visibleConfig.backendBaseUrl;
-    json["has_command_template"] = !trim(visibleConfig.commandTemplate).empty();
+    json["has_command_template"] = !trim(visibleConfig.commandTemplate).empty() ||
+                                    !visibleConfig.directInputFile.empty();
     json["shm_socket_path"] = visibleConfig.shmSocketPath;
     json["frame_stall_timeout_ms"] = visibleConfig.frameStallTimeoutMs;
+    if (!visibleConfig.directInputFile.empty())
+        json["input_file_path"] = visibleConfig.directInputFile.string();
     json["consumed_frame_count"] = Json::UInt64(consumedFrameCount_);
     json["last_frame_number"] = Json::UInt64(lastFrameNumber_);
     json["last_frame_timestamp_ns"] = Json::UInt64(lastFrameTimestampNs_);
@@ -808,10 +1016,13 @@ Json::Value CloudPublisher::statusJson() const
                                 : std::numeric_limits<std::uint64_t>::max();
     if (lastFrameTimestampNs_ > 0)
         json["last_frame_age_ms"] = Json::UInt64(frameAgeMs);
-    json["frames_progressing"] = running_ && consumedFrameCount_ > 0 && state_ != "failed" &&
-                                  (visibleConfig.frameStallTimeoutMs <= 0 ||
-                                   frameAgeMs < static_cast<std::uint64_t>(
-                                       visibleConfig.frameStallTimeoutMs));
+    json["frames_progressing"] =
+        !visibleConfig.directInputFile.empty()
+            ? running_ && state_ == "running" && childPid_ > 0
+            : running_ && consumedFrameCount_ > 0 && state_ != "failed" &&
+                  (visibleConfig.frameStallTimeoutMs <= 0 ||
+                   frameAgeMs < static_cast<std::uint64_t>(
+                       visibleConfig.frameStallTimeoutMs));
 
     if (!lastMessage_.empty())
         json["message"] = lastMessage_;

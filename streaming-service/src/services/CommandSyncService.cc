@@ -890,7 +890,7 @@ void CommandSyncService::workerLoop()
                     auto& streamingService = StreamingService::instance();
                     if (action == "stream" && commandName == "start")
                     {
-                        success = streamingService.startStream(&resultMessage);
+                        success = streamingService.startStream(caseId, &resultMessage);
                         sessionStatus = success ? "live" : "error";
                     }
                     else if (action == "stream" && commandName == "stop")
