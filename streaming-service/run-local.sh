@@ -27,10 +27,15 @@ EOF
   exit 1
 fi
 
-set -a
-# shellcheck disable=SC1090
-source "$ENV_FILE"
-set +a
+while IFS= read -r line || [[ -n "$line" ]]; do
+  [[ -z "${line//[[:space:]]/}" || "$line" =~ ^[[:space:]]*# ]] && continue
+  if [[ "$line" =~ ^[[:space:]]*([A-Za-z_][A-Za-z0-9_]*)=(.*)$ ]]; then
+    key="${BASH_REMATCH[1]}"
+    if [[ -z "${!key+x}" ]]; then
+      export "$line"
+    fi
+  fi
+done < "$ENV_FILE"
 
 : "${DB_PORT:=5432}"
 
