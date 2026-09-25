@@ -41,6 +41,14 @@ std::string trim(const std::string &value)
     return value.substr(begin, end - begin + 1);
 }
 
+std::string lowerAscii(std::string value)
+{
+    std::transform(value.begin(), value.end(), value.begin(), [](unsigned char character) {
+        return static_cast<char>(std::tolower(character));
+    });
+    return value;
+}
+
 std::string getEnvOrDefault(const char *name, const std::string &defaultValue)
 {
     const auto *value = std::getenv(name);
@@ -201,10 +209,23 @@ bool isExecutableFile(const std::filesystem::path& path)
 
 std::string buildMp4GStreamerPipeline(const std::filesystem::path& inputFile)
 {
+    const auto codec = lowerAscii(trim(getEnvOrDefault("MEDIA_PUBLISH_VIDEO_CODEC", "h264")));
     std::ostringstream pipeline;
-    pipeline << "filesrc location=" << inputFile.string()
-             << " ! qtdemux"
-             << " ! h264parse config-interval=1"
+    pipeline << "filesrc location=" << inputFile.string() << " ! qtdemux";
+
+    if (codec == "vp8")
+    {
+        pipeline << " ! h264parse"
+                 << " ! avdec_h264"
+                 << " ! videoconvert"
+                 << " ! queue max-size-buffers=2 max-size-bytes=0 max-size-time=0 leaky=downstream"
+                 << " ! vp8enc deadline=1 cpu-used=8 target-bitrate=2500000 keyframe-max-dist=30"
+                 << " ! rtpvp8pay pt=96 ssrc=2"
+                 << " ! application/x-rtp,media=video,encoding-name=VP8,payload=96,clock-rate=90000";
+        return pipeline.str();
+    }
+
+    pipeline << " ! h264parse config-interval=1"
              << " ! rtph264pay pt=96 ssrc=2 config-interval=1 aggregate-mode=zero-latency"
              << " ! application/x-rtp,media=video,encoding-name=H264,payload=96,clock-rate=90000";
     return pipeline.str();
