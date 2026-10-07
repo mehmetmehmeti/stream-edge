@@ -202,6 +202,8 @@ endif()
 
 if(STREAMING_SERVICE_BUILD_TESTS)
     enable_testing()
+    # These standalone tests use assert; keep assertions active in Release builds.
+    add_compile_options(-UNDEBUG)
 
     add_executable(frame_bridge_tests
         tests/FrameBridgeTest.cc

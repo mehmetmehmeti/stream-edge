@@ -129,6 +129,7 @@ void testAcquireFrameAfterUsesIndependentCursor()
     bridge.publishFrame(makeFrame(13));
     assert(bridge.acquireFrameAfter(12, acquired));
     assert(acquired.frameNumber == 13);
+    assert(bridge.droppedFrameCount() == 0);
 }
 
 void testWaitOnlyReturnsFreshFrames()
@@ -148,6 +149,7 @@ void testWaitOnlyReturnsFreshFrames()
     assert(bridge.waitForNewFrame(acquired, 10ms));
     assert(acquired.frameNumber == 10);
     assert(bridge.acquiredFrameCount() == 2);
+    assert(bridge.droppedFrameCount() == 0);
 }
 
 void testWaitWakesWhenFrameIsPublished()

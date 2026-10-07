@@ -32,6 +32,7 @@ private:
     mutable std::mutex mutex_;
     std::condition_variable frameAvailable_;
     std::optional<VideoFrameHandle> latestFrame_;
+    bool latestFrameAcquired_{false};
     uint64_t lastLegacyAcquiredFrameNumber_{0};
     uint64_t lastLegacyWaitFrameNumber_{0};
     uint64_t publishedFrameCount_{0};

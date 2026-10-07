@@ -382,7 +382,7 @@ bool StreamingService::startStream(const std::string& streamNameOverride,
     }
 
     std::string publisherMessage;
-    if (!CloudPublisher::instance().start(&publisherMessage))
+    if (!CloudPublisher::instance().start(&publisherMessage, streamNameOverride))
     {
         (void)stopStream();
         std::lock_guard<std::mutex> lock(mutex_);

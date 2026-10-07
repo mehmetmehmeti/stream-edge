@@ -10,11 +10,12 @@ void FrameBridge::publishFrame(const VideoFrameHandle& frame)
     {
         std::lock_guard lock(mutex_);
 
-        if (latestFrame_ && latestFrame_->frameNumber != lastLegacyAcquiredFrameNumber_)
+        if (latestFrame_ && !latestFrameAcquired_)
             ++droppedFrameCount_;
 
         previousFrame.swap(latestFrame_);
         latestFrame_ = frame;
+        latestFrameAcquired_ = false;
         ++publishedFrameCount_;
     }
 
@@ -29,6 +30,7 @@ bool FrameBridge::acquireLatestFrame(VideoFrameHandle& out)
         return false;
 
     out = *latestFrame_;
+    latestFrameAcquired_ = true;
     lastLegacyAcquiredFrameNumber_ = out.frameNumber;
     ++acquiredFrameCount_;
 
@@ -43,6 +45,7 @@ bool FrameBridge::acquireFrameAfter(uint64_t lastFrameNumber, VideoFrameHandle& 
         return false;
 
     out = *latestFrame_;
+    latestFrameAcquired_ = true;
     ++acquiredFrameCount_;
     return true;
 }
@@ -59,6 +62,7 @@ bool FrameBridge::waitForNewFrame(VideoFrameHandle& out, std::chrono::millisecon
     }
 
     out = *latestFrame_;
+    latestFrameAcquired_ = true;
     lastLegacyWaitFrameNumber_ = out.frameNumber;
     ++acquiredFrameCount_;
     return true;
@@ -77,6 +81,7 @@ bool FrameBridge::waitForFrameAfter(uint64_t lastFrameNumber,
     }
 
     out = *latestFrame_;
+    latestFrameAcquired_ = true;
     ++acquiredFrameCount_;
     return true;
 }

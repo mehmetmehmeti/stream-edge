@@ -500,8 +500,29 @@ bool CloudPublisher::launchExternalPublisher(const RuntimeConfig &config,
 
     if (trim(commandTemplate).empty())
     {
-        error = "No MEDIA_PUBLISH_COMMAND_TEMPLATE configured";
-        return false;
+        if (!isExecutableFile(config.whipClientPath))
+        {
+            error = "MEDIA_PUBLISH_WHIP_CLIENT must point to an executable WHIP client";
+            return false;
+        }
+        const auto codec = lowerAscii(trim(getEnvOrDefault("MEDIA_PUBLISH_VIDEO_CODEC", "vp8")));
+        std::string pipeline =
+            "shmsrc socket-path={{SHM_SOCKET_PATH}} is-live=true do-timestamp=true ! "
+            "video/x-raw,format={{GST_VIDEO_FORMAT}},width={{FRAME_WIDTH}},height={{FRAME_HEIGHT}},"
+            "framerate={{FRAME_RATE_NUM}}/{{FRAME_RATE_DEN}} ! "
+            "queue max-size-buffers=2 max-size-bytes=0 max-size-time=0 leaky=downstream ! "
+            "videoconvert ! video/x-raw,format=I420 ! ";
+        if (codec == "vp8")
+            pipeline += "vp8enc deadline=1 cpu-used=8 target-bitrate=2500000 keyframe-max-dist={{KEYFRAME_INTERVAL}} ! "
+                        "rtpvp8pay pt=96 ssrc=2 mtu=1200 ! application/x-rtp,media=video,encoding-name=VP8,payload=96,clock-rate=90000";
+        else
+            pipeline += "x264enc tune=zerolatency speed-preset=ultrafast bitrate=2500 key-int-max={{KEYFRAME_INTERVAL}} ! "
+                        "video/x-h264,profile=constrained-baseline ! h264parse config-interval=1 ! "
+                        "rtph264pay pt=96 ssrc=2 mtu=1200 config-interval=1 aggregate-mode=zero-latency ! "
+                        "application/x-rtp,media=video,encoding-name=H264,payload=96,clock-rate=90000";
+        commandTemplate = shellQuote(config.whipClientPath.string()) + " -n -u " +
+                          shellQuote(session.whipUrl) + " -t " + shellQuote(session.publishToken) +
+                          " -V " + shellQuote(pipeline);
     }
 
     auto command = buildExternalCommand(commandTemplate, session, bridgeJson);
@@ -567,9 +588,11 @@ bool CloudPublisher::launchExternalPublisher(const RuntimeConfig &config,
     return true;
 }
 
-bool CloudPublisher::start(std::string *message)
+bool CloudPublisher::start(std::string *message, const std::string& streamNameOverride)
 {
-    return startWithConfig(loadRuntimeConfig(), message);
+    auto config = loadRuntimeConfig();
+    config.streamNameOverride = streamNameOverride;
+    return startWithConfig(std::move(config), message);
 }
 
 bool CloudPublisher::startFilePublisher(const std::filesystem::path& inputFile,
@@ -951,7 +974,7 @@ void CloudPublisher::monitorLoop()
             {
                 const auto bridgeStatus = framePublisher_ ? framePublisher_->statusJson()
                                                           : Json::Value(Json::objectValue);
-                if (!trim(config.commandTemplate).empty())
+                if (!trim(config.commandTemplate).empty() || !config.directWhipUrl.empty())
                 {
                     int launchedPid = -1;
                     std::string launchError;

@@ -23,7 +23,7 @@ public:
     static CloudPublisher &instance();
     ~CloudPublisher();
 
-    bool start(std::string *message = nullptr);
+    bool start(std::string *message = nullptr, const std::string& streamNameOverride = {});
     bool startFilePublisher(const std::filesystem::path& inputFile,
                             const std::string& streamNameOverride = {},
                             std::string *message = nullptr);
