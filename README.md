@@ -2,6 +2,9 @@
 
 Edge media execution layer for the diploma project.
 
+For the tested laptop-camera setup, restart commands, verification scripts and
+remaining thesis work, see [Camera Runbook](docs/CAMERA-RUNBOOK.md).
+
 This repository now carries the streaming pipeline copied from the internship
 stream-edge repository and adapted for the diploma architecture. The Node edge
 backend owns users, streams, videos, commands, and sync metadata; this C++
@@ -103,9 +106,10 @@ For camera input:
 ```env
 STREAMING_SOURCE_TYPE=camera
 STREAMING_CAMERA_DEVICE=/dev/video0
-STREAMING_CAMERA_WIDTH=1280
-STREAMING_CAMERA_HEIGHT=720
+STREAMING_CAMERA_WIDTH=640
+STREAMING_CAMERA_HEIGHT=480
 STREAMING_CAMERA_FRAME_RATE=30
+STREAMING_CAMERA_PIXEL_FORMAT=YUYV
 ```
 
 ## Mediasoup Publishing
@@ -124,13 +128,13 @@ CLOUD_PUBLISH_ENABLED=1
 CLOUD_PUBLISH_REQUIRED=1
 MEDIA_PUBLISH_WHIP_URL=http://127.0.0.1:3010/whip
 MEDIA_PUBLISH_TOKEN=local-publisher-token
-MEDIA_PUBLISH_VIEW_URL=http://127.0.0.1:5173
+MEDIA_PUBLISH_VIEW_URL=http://localhost:3001
 ```
 
 The copied internship publisher exports Holoscan frames through shared memory
-and launches the configured external WHIP command. For the diploma project the
-template is generic `MEDIA_PUBLISH_COMMAND_TEMPLATE`, with the old service
-provider removed from the documentation and runtime naming.
+and launches the repo-local libsoup3 WHIP client. Camera publishing now builds
+the default shared-memory pipeline automatically; an explicit
+`MEDIA_PUBLISH_COMMAND_TEMPLATE` remains an optional override.
 
 For a simple MP4 demo stream, use the repo-local libsoup3 WHIP client from
 `diploma-media-server` and point stream-edge at a sample file:
@@ -152,3 +156,7 @@ Recording is controlled through `/record/start` and `/record/stop`. Files are
 written locally as MP4 and the response includes `recordingStatus`, which the
 edge backend stores on the matching `videos.edge_local_path` record before
 syncing that metadata to the cloud database.
+
+The edge uploader then copies finalized files to the cloud backend with SHA-256
+verification and retries. Cloud completion metadata synchronizes back to edge;
+the cloud UI plays the uploaded MP4 using an owner-scoped playback ticket.
