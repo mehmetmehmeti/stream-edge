@@ -26,6 +26,7 @@ struct CameraVideoSourceConfig
     std::optional<std::string> pixelFormat;
     std::optional<unsigned int> exposureTime;
     std::optional<unsigned int> gain;
+    std::optional<bool> dynamicFrameRate;
 };
 
 struct Mp4FileVideoSourceConfig

@@ -3,18 +3,85 @@
 #include "streaming/RecordingOp.h"
 
 #include <cstdint>
+#include <cerrno>
+#include <cstring>
 #include <cstdlib>
+#include <fcntl.h>
 #include <holoscan/operators/format_converter/format_converter.hpp>
 #include <holoscan/operators/holoviz/holoviz.hpp>
 #include <holoscan/operators/v4l2_video_capture/v4l2_video_capture.hpp>
 #include <holoscan/operators/video_stream_replayer/video_stream_replayer.hpp>
 #include <memory>
+#include <linux/videodev2.h>
 #include <stdexcept>
 #include <string>
 #include <utility>
+#include <sys/ioctl.h>
+#include <unistd.h>
 
 namespace
 {
+void applyCameraFrameRatePolicy(const CameraVideoSourceConfig& config)
+{
+    if (!config.dynamicFrameRate.has_value())
+        return;
+
+    const int fd = ::open(config.device.c_str(), O_RDWR | O_CLOEXEC);
+    if (fd < 0)
+        throw std::runtime_error("Cannot open camera controls: " + std::string(std::strerror(errno)));
+    struct Handle
+    {
+        int fd;
+        ~Handle() { ::close(fd); }
+    } handle{fd};
+
+    v4l2_queryctrl query{};
+    query.id = V4L2_CID_EXPOSURE_AUTO_PRIORITY;
+    if (::ioctl(fd, VIDIOC_QUERYCTRL, &query) < 0)
+    {
+        if (errno != EINVAL && errno != ENOTTY)
+            throw std::runtime_error("Cannot query camera frame-rate control: " + std::string(std::strerror(errno)));
+        HOLOSCAN_LOG_INFO("Camera {} does not expose dynamic frame rate; requested policy {} is unsupported",
+                          config.device.string(), *config.dynamicFrameRate ? 1 : 0);
+        return;
+    }
+    if (query.flags & V4L2_CTRL_FLAG_DISABLED)
+    {
+        HOLOSCAN_LOG_INFO("Camera {} dynamic-frame-rate control is unavailable",
+                          config.device.string());
+        return;
+    }
+    v4l2_control control{};
+    control.id = V4L2_CID_EXPOSURE_AUTO_PRIORITY;
+    control.value = *config.dynamicFrameRate ? 1 : 0;
+    const int requested = control.value;
+    if (::ioctl(fd, VIDIOC_S_CTRL, &control) < 0 || ::ioctl(fd, VIDIOC_G_CTRL, &control) < 0)
+        throw std::runtime_error("Cannot apply/verify camera frame-rate control: " + std::string(std::strerror(errno)));
+    if (control.value != requested)
+        throw std::runtime_error("Camera dynamic-frame-rate control did not retain the requested value");
+    HOLOSCAN_LOG_INFO("Camera {} dynamic frame rate verified: {}", config.device.string(), control.value);
+}
+
+class ConfiguredCameraOp : public holoscan::ops::V4L2VideoCaptureOp
+{
+public:
+    HOLOSCAN_OPERATOR_FORWARD_ARGS_SUPER(ConfiguredCameraOp, holoscan::ops::V4L2VideoCaptureOp)
+    ConfiguredCameraOp() = default;
+
+    void configureFrameRatePolicy(const CameraVideoSourceConfig& config) { config_ = config; }
+
+    void start() override
+    {
+        holoscan::ops::V4L2VideoCaptureOp::start();
+        // SDK startup may reset exposure controls, so enforce the policy afterward.
+        try { applyCameraFrameRatePolicy(config_); }
+        catch (...) { holoscan::ops::V4L2VideoCaptureOp::stop(); throw; }
+    }
+
+private:
+    CameraVideoSourceConfig config_;
+};
+
 bool previewEnabled()
 {
     const char* raw = std::getenv("STREAMING_ENABLE_PREVIEW");
@@ -161,8 +228,9 @@ void HoloscanVideoApplication::composeCameraSource()
     ArgList cameraArgs;
     addCameraArgs(cameraArgs);
 
-    auto camera = make_operator<ops::V4L2VideoCaptureOp>(
+    auto camera = make_operator<ConfiguredCameraOp>(
         "camera", Arg("pass_through", true), from_config("camera"), cameraArgs);
+    camera->configureFrameRatePolicy(sourceConfig_.camera);
 
     auto pool = make_resource<RMMAllocator>("rmm_allocator", from_config("rmm_allocator"));
     auto yuyvToRgbConverter = make_operator<ops::FormatConverterOp>(

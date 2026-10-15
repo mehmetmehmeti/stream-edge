@@ -3,6 +3,8 @@
 #include <cassert>
 #include <memory>
 #include <string>
+#include <chrono>
+#include <thread>
 
 namespace
 {
@@ -24,6 +26,7 @@ public:
 
     bool stop(std::string*) override
     {
+        std::this_thread::sleep_for(std::chrono::milliseconds(2));
         stopped = true;
         return true;
     }
@@ -108,8 +111,16 @@ void testStartSubmitStopWritesAndFinalizes()
     assert(diagnostics.writtenFrames == 2);
     assert(diagnostics.droppedFrames == 0);
     assert(diagnostics.finalized);
+    assert(diagnostics.finalizationDurationNs >= diagnostics.writerStopDurationNs);
+    assert(diagnostics.writerStopDurationNs >= 1000000);
     assert(writerPtr->stopped);
     assert(writerPtr->writtenFrames == 2);
+    engine.stop();
+    assert(engine.diagnostics().finalizationDurationNs == diagnostics.finalizationDurationNs);
+    assert(engine.start(makeConfig()));
+    assert(engine.diagnostics().finalizationDurationNs == 0);
+    assert(engine.diagnostics().writerStopDurationNs == 0);
+    engine.stop();
 }
 
 } // namespace

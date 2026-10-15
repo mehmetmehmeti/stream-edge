@@ -193,7 +193,7 @@ std::filesystem::path defaultWhipClientPath()
 
     const auto current = std::filesystem::current_path();
     const auto sibling =
-        current / ".." / ".." / "diploma-media-server" / ".tools" / "bin" / "whip-client";
+        current / ".." / ".." / "media-server" / ".tools" / "bin" / "whip-client";
     if (std::filesystem::exists(sibling))
         return std::filesystem::weakly_canonical(sibling);
 
@@ -487,7 +487,7 @@ bool CloudPublisher::launchExternalPublisher(const RuntimeConfig &config,
         if (!isExecutableFile(config.whipClientPath))
         {
             error = "WHIP client not found or not executable. Build it with "
-                    "../diploma-media-server/scripts/build-whip-client.sh or set "
+                    "../media-server/scripts/build-whip-client.sh or set "
                     "MEDIA_PUBLISH_WHIP_CLIENT";
             return false;
         }

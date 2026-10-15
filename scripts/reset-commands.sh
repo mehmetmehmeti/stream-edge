@@ -6,15 +6,15 @@ if [[ "${1:-}" != --yes ]]; then
   echo "Usage: bash $0 --yes"
   exit 1
 fi
-bash "$ROOT/diploma-2026-stream-edge/scripts/stack.sh" stop
-bash "$ROOT/diploma-2026-stream-edge/streaming-service/start-local-postgres.sh"
+bash "$ROOT/stream-edge/scripts/stack.sh" stop
+bash "$ROOT/stream-edge/streaming-service/start-local-postgres.sh"
 export PGPASSWORD="${PGPASSWORD:-change_me}"
 PG=( -h 127.0.0.1 -p 55432 -U streaming_service )
 STAMP="$(date +%Y%m%d-%H%M%S)"
-for database in diploma_edge diploma_cloud streaming_service; do
+for database in diploma_edge diploma_web streaming_service; do
   /usr/lib/postgresql/16/bin/pg_dump "${PG[@]}" -Fc -f "$ROOT/.runtime/$database-$STAMP.dump" "$database"
 done
-for database in diploma_edge diploma_cloud; do
+for database in diploma_edge diploma_web; do
   psql "${PG[@]}" -v ON_ERROR_STOP=1 -d "$database" <<'SQL'
 BEGIN;
 DELETE FROM sync_outbox WHERE entity_type = 'command';

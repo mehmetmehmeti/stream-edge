@@ -21,7 +21,7 @@ async function until(check, timeout = 30000) {
 function stop(name) { process.kill(Number(fs.readFileSync(path.join(root, `.runtime/${name}.pid`), 'utf8')), 'SIGTERM'); }
 function start(name) {
   const fd = fs.openSync(path.join(root, `.runtime/${name}.log`), 'a');
-  const repo = path.join(root, `diploma-2026-backend-${name}`);
+  const repo = path.join(root, name === 'cloud' ? 'backend-web' : 'backend-edge');
   const config = require(path.join(repo, 'node_modules/dotenv')).parse(fs.readFileSync(path.join(repo, '.env')));
   const child = spawn(process.execPath, ['dist/src/main.js'], { cwd: repo, env: { ...process.env, ...config },
     detached: true, stdio: ['ignore', fd, fd] }); child.unref(); fs.closeSync(fd);
@@ -46,7 +46,7 @@ async function completed(id) {
   assert.equal((await api(8081, '/stream/status')).streaming, false);
   results.push('Cloud Stop stayed pending while edge backend was offline and completed after reconnect');
 
-  const edgeRepo = path.join(root, 'diploma-2026-backend-edge');
+  const edgeRepo = path.join(root, 'backend-edge');
   const env = require(path.join(edgeRepo, 'node_modules/dotenv')).parse(fs.readFileSync(path.join(edgeRepo, '.env')));
   const previousDatabaseUrl = process.env.DATABASE_URL;
   process.env.DATABASE_URL = env.DATABASE_URL;

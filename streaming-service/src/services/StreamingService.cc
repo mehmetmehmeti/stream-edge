@@ -663,6 +663,8 @@ Json::Value StreamingService::recordingStatus() const
     json["written_frames"] = Json::UInt64(diagnostics.writtenFrames);
     json["dropped_frames"] = Json::UInt64(diagnostics.droppedFrames);
     json["finalized"] = diagnostics.finalized;
+    json["finalization_duration_ms"] = static_cast<double>(diagnostics.finalizationDurationNs) / 1000000.0;
+    json["writer_stop_duration_ms"] = static_cast<double>(diagnostics.writerStopDurationNs) / 1000000.0;
     switch (diagnostics.selectedPath)
     {
     case streaming::RecordingPath::Gpu:

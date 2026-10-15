@@ -141,6 +141,13 @@ CameraVideoSourceConfig loadCameraVideoSourceConfig()
     config.frameRate = loadOptionalPositiveFloatEnv("STREAMING_CAMERA_FRAME_RATE");
     config.exposureTime = loadOptionalUnsignedEnv("STREAMING_CAMERA_EXPOSURE_TIME");
     config.gain = loadOptionalUnsignedEnv("STREAMING_CAMERA_GAIN");
+    const auto dynamicFrameRate = loadOptionalUnsignedEnv("STREAMING_CAMERA_DYNAMIC_FRAME_RATE");
+    if (dynamicFrameRate)
+    {
+        if (*dynamicFrameRate > 1)
+            throw std::runtime_error("STREAMING_CAMERA_DYNAMIC_FRAME_RATE must be 0 or 1");
+        config.dynamicFrameRate = *dynamicFrameRate != 0;
+    }
 
     const auto* pixelFormat = std::getenv("STREAMING_CAMERA_PIXEL_FORMAT");
     if (pixelFormat != nullptr && *pixelFormat != '\0')

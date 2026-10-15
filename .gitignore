@@ -2,6 +2,9 @@ node_modules/
 
 # Local environment and runtime output.
 .env
+.env.*
+!.env.example
+!.env.*.example
 streaming-service/.env
 recordings/
 streaming-service/recordings/

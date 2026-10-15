@@ -1,6 +1,7 @@
 #include "streaming/RecordingEngine.h"
 
 #include <utility>
+#include <chrono>
 
 namespace streaming
 {
@@ -64,6 +65,7 @@ bool RecordingEngine::start(const RecordingConfig& config)
 
 void RecordingEngine::stop()
 {
+    const auto started = std::chrono::steady_clock::now();
     {
         std::lock_guard lock(mutex_);
         if (!diagnostics_.active && !writerThread_.joinable())
@@ -77,6 +79,10 @@ void RecordingEngine::stop()
 
     if (writerThread_.joinable())
         writerThread_.join();
+    std::lock_guard lock(mutex_);
+    diagnostics_.finalizationDurationNs = static_cast<uint64_t>(
+        std::chrono::duration_cast<std::chrono::nanoseconds>(
+            std::chrono::steady_clock::now() - started).count());
 }
 
 bool RecordingEngine::trySubmit(RecordingFrame frame)
@@ -147,10 +153,14 @@ void RecordingEngine::writerLoop()
     }
 
     std::string errorMessage;
+    const auto stopStarted = std::chrono::steady_clock::now();
     const bool stopped = writer_->stop(&errorMessage);
 
     std::lock_guard lock(mutex_);
     diagnostics_.finalized = stopped;
+    diagnostics_.writerStopDurationNs = static_cast<uint64_t>(
+        std::chrono::duration_cast<std::chrono::nanoseconds>(
+            std::chrono::steady_clock::now() - stopStarted).count());
     if (!stopped)
         diagnostics_.lastError =
             errorMessage.empty() ? "Failed to finalize recording writer" : errorMessage;

@@ -213,6 +213,10 @@ if(STREAMING_SERVICE_BUILD_TESTS)
 
     add_test(NAME frame_bridge_tests COMMAND frame_bridge_tests)
 
+    add_executable(streaming_source_config_tests tests/StreamingSourceConfigTest.cc)
+    target_link_libraries(streaming_source_config_tests PRIVATE streaming_source_config)
+    add_test(NAME streaming_source_config_tests COMMAND streaming_source_config_tests)
+
     add_executable(recording_config_tests
         tests/RecordingConfigTest.cc
     )

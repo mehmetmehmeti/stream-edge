@@ -9,7 +9,7 @@ deployment, not yet a validated remote production deployment.
 From the existing configured checkout:
 
 ```bash
-cd /home/mehmet-work/Desktop/diploma/diploma-2026-stream-edge
+cd /home/mehmet-work/Desktop/diploma/stream-edge
 bash scripts/stack.sh stop
 bash scripts/stack.sh start
 ```
@@ -52,7 +52,7 @@ media.log, stream.log, cloud.log, edge.log, web.log and qt.log.
 | backend-cloud | Cloud auth, replica, command creation, recording storage/playback | 3000 |
 | frontend-cloud | Embedded live WebRTC and recorded MP4 viewers | 3001 |
 
-PostgreSQL listens on 55432. diploma_edge and diploma_cloud are separate
+PostgreSQL listens on 55432. diploma_edge and diploma_web are separate
 databases with matching application schemas, not two names for one database.
 The legacy streaming_service database remains for the C++ service's internal
 tables. Users, streams and videos are the business entities; devices,
@@ -217,6 +217,25 @@ and [libnice NiceAgent properties](https://libnice.freedesktop.org/libnice/NiceA
   services for supervised startup. Keep secrets out of Git; rotate any credentials
   previously shared in chat. Do not expose the local demo service tokens publicly.
 
-Five C++ tests pass with assertions enabled in Release builds. Backend builds and
+Six C++ tests pass with assertions enabled in Release builds. Backend builds and
 cloud frontend type checking pass. Static Qt still emits an unrelated ComboBox
 image-plugin warning; it does not prevent live OpenGL preview.
+## Earlier Intel F450 Preparation (Superseded)
+
+The earlier F450 configuration used `/dev/v4l/by-id/usb-Intel_Intel_F450_00.00.01-video-index0`. Its `video-index1` node is metadata-only. That preparation used native 640 x 352 YUYV, nominal 30 FPS mode. The F450 does not advertise 640 x 480. Higher-resolution modes have different advertised rates; do not silently reuse the 30 FPS claim for them. The camera was replaced before its full evaluation started.
+
+`STREAMING_CAMERA_DYNAMIC_FRAME_RATE=0` requests fixed-rate capture. The streaming service applies and verifies this control after Holoscan startup when the camera exposes it. The F450 does not expose the control, so startup explicitly reports unsupported rather than pretending a value was set. Actual FPS must be measured. An unset policy preserves existing SDK behavior.
+
+`thesis-documentation/evaluation/run-evaluation.sh --camera` saves camera capabilities, active controls, actual dimensions, timed frame counters, resource use and recordings. Screenshots in each evidence directory show the actual application feed. Earlier integrated-camera evidence remains unchanged and is not an identical-hardware baseline for F450 results.
+
+## RealSense D435 Capture Investigation (15 October 2026)
+
+The RealSense D435 RGB interface advertised native 640 x 480 YUYV at nominal 30 FPS, but direct capture on this laptop returned incomplete buffers. No complete application benchmark was obtained from that camera. It is not the active source. Its RGB path at the time was `/dev/v4l/by-path/pci-0000:00:14.0-usb-0:4:1.3-video-index0`, then `/dev/video6`. An off dynamic-frame-rate policy was configured but must not be described as verified through successful application capture.
+
+The RealSense depth (`/dev/video2`), infrared (`/dev/video4`) and metadata interfaces are not the color feed. Its current by-id links collide across interfaces, so the configured path identifies the RGB USB interface instead. It is stable for this USB port, not across port changes. Recheck devices and update configuration when moving or replacing the camera.
+
+## Active Intel F450 Evaluation Configuration (15 October 2026)
+
+The final evaluation used the F450 at native 1280 x 704 YUYV, nominal 15 FPS. Capture, recording and publisher rates are all 15 FPS in the example configuration. The active capture path was `/dev/v4l/by-path/pci-0000:00:14.0-usb-0:4:1.0-video-index0`, then `/dev/video2`. Its dynamic-frame-rate control is unsupported, not verified disabled.
+
+The full run `.runtime/evaluation/20261015T173020Z` passed six short intervals and a long recording. Browser FPS was 15.000-15.034 in the short intervals and 15.017 in the long interval. The long MP4 contained 9,255 decoded frames and lasted 616.180 s. All four recordings passed edge/server hashes and replica metadata checks. The long browser interval had one playback-dropped frame (0.01110%); RTP packet loss and recorder queue drops were zero. Raw camera imagery and private runtime settings stay local; the evaluation report is maintained in the sibling `thesis-documentation/evaluation` directory. Timer-photo latency readings are separate from this automated benchmark.

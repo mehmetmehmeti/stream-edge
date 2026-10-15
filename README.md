@@ -1,4 +1,4 @@
-# diploma-2026-stream-edge
+# stream-edge
 
 Edge media execution layer for the diploma project.
 
@@ -117,7 +117,7 @@ STREAMING_CAMERA_PIXEL_FORMAT=YUYV
 Run the diploma media server separately:
 
 ```bash
-cd ../diploma-media-server
+cd ../media-server
 HTTP_PORT=3010 ANNOUNCED_ADDRESS=127.0.0.1 npm run server
 ```
 
@@ -137,12 +137,12 @@ the default shared-memory pipeline automatically; an explicit
 `MEDIA_PUBLISH_COMMAND_TEMPLATE` remains an optional override.
 
 For a simple MP4 demo stream, use the repo-local libsoup3 WHIP client from
-`diploma-media-server` and point stream-edge at a sample file:
+`media-server` and point stream-edge at a sample file:
 
 ```env
 STREAMING_SOURCE_TYPE=mp4
-STREAMING_SOURCE_FILE=/home/mehmet-work/Desktop/diploma/diploma-2026-stream-edge/videos/sample.mp4
-MEDIA_PUBLISH_WHIP_CLIENT=/home/mehmet-work/Desktop/diploma/diploma-media-server/.tools/bin/whip-client
+STREAMING_SOURCE_FILE=/home/mehmet-work/Desktop/diploma/stream-edge/videos/sample.mp4
+MEDIA_PUBLISH_WHIP_CLIENT=/home/mehmet-work/Desktop/diploma/media-server/.tools/bin/whip-client
 MEDIA_PUBLISH_LOOP_FILE=1
 ```
 
