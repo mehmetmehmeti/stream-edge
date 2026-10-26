@@ -1,0 +1,27 @@
+{
+  "results": [
+    "Same cloud account authenticates on edge",
+    "Cloud Start completed on both databases; WHIP stream ID matches",
+    "Duplicate Start rejected without creating another camera session",
+    "Edge recording -> cloud stop -> checksum-verified upload -> synchronized COMPLETED -> authenticated range playback",
+    "Stop Stream finalizes the active recording before releasing the camera; both replicas receive the uploaded file metadata",
+    "Edge Stop completed in cloud and released the camera and media session",
+    "A second stream starts successfully with a new synchronized stream ID"
+  ],
+  "streamId": "3d1048e6-0d53-4981-88c3-3b782f3a4b94",
+  "videoId": "df0a7696-ac58-4182-849d-670758092ae0",
+  "probe": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 640,
+        "height": 480,
+        "nb_frames": "183"
+      }
+    ],
+    "format": {
+      "duration": "6.020667"
+    }
+  }
+}

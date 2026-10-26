@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "publication_preparation_date": "2026-10-26",
+  "purpose": "Historical functional-verification reports requested by thesis comment 43",
+  "reports": [
+    {
+      "path": "workflow-result.json",
+      "size_bytes": 955,
+      "sha256": "5bca60c03b828013fac1b10806071fff4844abfe17529469e3c3fd0847569efd",
+      "original_bytes_preserved": true,
+      "redactions": 0
+    },
+    {
+      "path": "recovery-result.json",
+      "size_bytes": 312,
+      "sha256": "ccab37e8d5a76a160e0b25d7690b7b602c2e182dd8ebfab806cf2c33287ca5f7",
+      "original_bytes_preserved": true,
+      "redactions": 0
+    },
+    {
+      "path": "cloud-camera-result.json",
+      "size_bytes": 286,
+      "sha256": "17a0a91246918e3cd4acfe4a0c9cf18d66483a41a536aece97ba49bbad5d9dc0",
+      "original_bytes_preserved": true,
+      "redactions": 0
+    },
+    {
+      "path": "qt-camera.json",
+      "size_bytes": 48,
+      "sha256": "5183e003a0158f128a22ffdfeb3b8a6625e9acca4f13a20919159b340c4ea999",
+      "original_bytes_preserved": true,
+      "redactions": 0
+    }
+  ],
+  "privacy_review": {
+    "method": "Explicit four-file allowlist; structural and string-pattern review plus manual inspection",
+    "report_content_redacted": false,
+    "excluded": [
+      "authentication files",
+      "environment files",
+      "database dumps",
+      "operational logs",
+      "screenshots",
+      "recording files",
+      "all other runtime files"
+    ]
+  },
+  "source_references": {
+    "stream-edge": "843e99f9c93726ec99ba6c0b54ff430b992d814b",
+    "frontend-edge": "e73de0eb6fb9b4cc674be4e0006b10ebdc389ff0"
+  },
+  "provenance_limit": "Producer source references are pinned audited implementations, not embedded historical execution fingerprints."
+}

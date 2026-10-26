@@ -1,0 +1,7 @@
+{
+  "results": [
+    "Cloud Stop stayed pending while edge backend was offline and completed after reconnect",
+    "A delayed PENDING event and its duplicate cannot replay a completed command",
+    "Recording survived cloud outage; upload retried; file metadata and frame counts converged on both replicas"
+  ]
+}

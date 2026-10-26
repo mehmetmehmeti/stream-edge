@@ -1,0 +1,20 @@
+{
+  "first": {
+    "width": 640,
+    "height": 480,
+    "time": 1.03,
+    "frames": 11
+  },
+  "last": {
+    "width": 640,
+    "height": 480,
+    "frames": 611,
+    "pixelRange": 30
+  },
+  "recording": {
+    "width": 640,
+    "height": 480,
+    "duration": 3.936333
+  },
+  "errors": []
+}
