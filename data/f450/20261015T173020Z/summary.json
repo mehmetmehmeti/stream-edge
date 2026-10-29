@@ -1,0 +1,1847 @@
+{
+  "status": "passed",
+  "run_id": "2026-10-15T17-30-22-214Z",
+  "conditions": [
+    {
+      "name": "live-only-1",
+      "recording": false,
+      "interval_s": 60.001399999999904,
+      "presented_frames": 900,
+      "presented_fps": 14.9996500081665,
+      "decoded_frames": 901,
+      "decoded_fps": 15.016316285953351,
+      "received_frames": 901,
+      "playback_total_frames": 901,
+      "playback_dropped_frames": 0,
+      "playback_drop_percent": 0,
+      "received_rtp_mbps": 2.559765205478543,
+      "packets_lost_delta": 0,
+      "rtp_counter_continuity": true,
+      "utc_start_ms": 1792085447397,
+      "utc_end_ms": 1792085507398,
+      "sample_count": 62,
+      "pixel_range_min": 205,
+      "pixel_range_threshold": 5,
+      "nonuniform_image_check_passed": true,
+      "qt": {
+        "status": "measured",
+        "interval_s": 58.999131793,
+        "rendered_frames": 889,
+        "fps": 15.068018341677973,
+        "bridge_dropped_frames": 0,
+        "invalid_frames": 0,
+        "interop_failures": 0
+      },
+      "resources": {
+        "backend-edge": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 0.7456883523795004,
+            "p50": 0.9998289702562094,
+            "p95": 1.9998634073297592,
+            "min": 0.0,
+            "max": 3.9995595405065996
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 242.84898040254237,
+            "p50": 242.70703125,
+            "p95": 245.20703125,
+            "min": 240.45703125,
+            "max": 245.20703125
+          }
+        },
+        "backend-web": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 0.5592625363907666,
+            "p50": 0.0,
+            "p95": 1.9998721281760878,
+            "min": 0.0,
+            "max": 2.9998061435287373
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 220.31375794491527,
+            "p50": 220.22265625,
+            "p95": 222.09765625,
+            "min": 218.34765625,
+            "max": 222.59765625
+          }
+        },
+        "browser": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 16.998283786490777,
+            "p50": 15.99890727463572,
+            "p95": 22.994738229029466,
+            "min": 12.997957890833879,
+            "max": 25.997469796244353
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 1185.5024496822034,
+            "p50": 1185.28515625,
+            "p95": 1191.60546875,
+            "min": 1176.0546875,
+            "max": 1191.91796875
+          }
+        },
+        "frontend-edge": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 11.99880542997498,
+            "p50": 11.999017892386947,
+            "p95": 14.99885582728225,
+            "min": 8.999288264286623,
+            "max": 15.998869663859583
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 156.85414459745763,
+            "p50": 156.87109375,
+            "p95": 156.87109375,
+            "min": 156.62109375,
+            "max": 156.87109375
+          }
+        },
+        "frontend-web": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 0.01694708201567491,
+            "p50": 0.0,
+            "p95": 0.0,
+            "min": 0.0,
+            "max": 0.9998778389248197
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 419.05859375,
+            "p50": 419.05859375,
+            "p95": 419.05859375,
+            "min": 419.05859375,
+            "max": 419.05859375
+          }
+        },
+        "media-server": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 1.2371592098612039,
+            "p50": 0.9999286720879831,
+            "p95": 1.9998639352576533,
+            "min": 0.0,
+            "max": 2.999503447201615
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 87.54396186440678,
+            "p50": 87.65625,
+            "p95": 88.03125,
+            "min": 86.53125,
+            "max": 88.03125
+          }
+        },
+        "stream-edge": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 28.200556609905828,
+            "p50": 27.998190672934882,
+            "p95": 33.99761581519603,
+            "min": 21.998459623864225,
+            "max": 36.993875848819926
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 331.265625,
+            "p50": 331.265625,
+            "p95": 331.265625,
+            "min": 331.265625,
+            "max": 331.265625
+          }
+        }
+      },
+      "total_cpu_percent": {
+        "n": 59,
+        "mean": 59.75670300701873,
+        "p50": 59.9932985685895,
+        "p95": 68.99477164520836,
+        "min": 46.99628315794126,
+        "max": 76.98725514484147
+      },
+      "total_rss_mib": {
+        "n": 59,
+        "mean": 2643.3875132415255,
+        "p50": 2644.6484375,
+        "p95": 2648.7578125,
+        "min": 2630.2109375,
+        "max": 2649.72265625
+      },
+      "system_gpu_percent": {
+        "n": 59,
+        "mean": 1.4915254237288136,
+        "p50": 1.0,
+        "p95": 2.0,
+        "min": 1.0,
+        "max": 2.0
+      },
+      "system_gpu_memory_mib": {
+        "n": 59,
+        "mean": 165.0,
+        "p50": 165.0,
+        "p95": 165.0,
+        "min": 165.0,
+        "max": 165.0
+      },
+      "recording_start": {
+        "active": false,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "none",
+        "received_frames": 0,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 0
+      },
+      "recording_end": {
+        "active": false,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "none",
+        "received_frames": 0,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 0
+      }
+    },
+    {
+      "name": "live-record-1",
+      "recording": true,
+      "interval_s": 59.99780000000028,
+      "presented_frames": 901,
+      "presented_fps": 15.017217297967521,
+      "decoded_frames": 901,
+      "decoded_fps": 15.017217297967521,
+      "received_frames": 902,
+      "playback_total_frames": 901,
+      "playback_dropped_frames": 0,
+      "playback_drop_percent": 0,
+      "received_rtp_mbps": 2.512097043558252,
+      "packets_lost_delta": 0,
+      "rtp_counter_continuity": true,
+      "utc_start_ms": 1792085524249,
+      "utc_end_ms": 1792085584247,
+      "sample_count": 61,
+      "pixel_range_min": 245,
+      "pixel_range_threshold": 5,
+      "nonuniform_image_check_passed": true,
+      "qt": {
+        "status": "measured",
+        "interval_s": 59.00062553,
+        "rendered_frames": 887,
+        "fps": 15.033738914327067,
+        "bridge_dropped_frames": 0,
+        "invalid_frames": 0,
+        "interop_failures": 0
+      },
+      "resources": {
+        "backend-edge": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 0.7796017187009722,
+            "p50": 0.9999249376346669,
+            "p95": 1.9998576201364426,
+            "min": 0.0,
+            "max": 2.9997716783783117
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 247.52906514830508,
+            "p50": 247.58203125,
+            "p95": 247.70703125,
+            "min": 247.33203125,
+            "max": 247.70703125
+          }
+        },
+        "backend-web": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 0.5762272021426058,
+            "p50": 0.0,
+            "p95": 1.9998614555980085,
+            "min": 0.0,
+            "max": 2.9997948470294205
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 231.7925715042373,
+            "p50": 231.72265625,
+            "p95": 232.22265625,
+            "min": 231.72265625,
+            "max": 232.22265625
+          }
+        },
+        "browser": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 18.049461208568413,
+            "p50": 17.99863007026987,
+            "p95": 22.998430909048963,
+            "min": 13.998975834930313,
+            "max": 23.998203758443122
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 1184.2580111228813,
+            "p50": 1183.63671875,
+            "p95": 1186.53125,
+            "min": 1182.53515625,
+            "max": 1188.3359375
+          }
+        },
+        "frontend-edge": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 13.541329901657319,
+            "p50": 13.998814370420904,
+            "p95": 15.99883653261106,
+            "min": 10.999138052543618,
+            "max": 15.998860865106224
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 156.87109375,
+            "p50": 156.87109375,
+            "p95": 156.87109375,
+            "min": 156.87109375,
+            "max": 156.87109375
+          }
+        },
+        "frontend-web": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 0.0,
+            "p50": 0.0,
+            "p95": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 419.6136784957627,
+            "p50": 419.93359375,
+            "p95": 419.93359375,
+            "min": 419.05859375,
+            "max": 419.93359375
+          }
+        },
+        "media-server": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 1.152456719756822,
+            "p50": 0.999928804069139,
+            "p95": 1.9998673507989597,
+            "min": 0.0,
+            "max": 1.9998694925163034
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 88.75794491525424,
+            "p50": 88.90625,
+            "p95": 88.90625,
+            "min": 88.40625,
+            "max": 89.03125
+          }
+        },
+        "stream-edge": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 157.88617668830935,
+            "p50": 159.98762079781108,
+            "p95": 173.9865052586591,
+            "min": 137.9903772410259,
+            "max": 189.9857381505867
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 701.3413665254237,
+            "p50": 702.171875,
+            "p95": 702.171875,
+            "min": 698.546875,
+            "max": 702.171875
+          }
+        }
+      },
+      "total_cpu_percent": {
+        "n": 59,
+        "mean": 191.98525343913548,
+        "p50": 193.98542024987566,
+        "p95": 214.98332546328567,
+        "min": 170.98821344047514,
+        "max": 229.98273565597339
+      },
+      "total_rss_mib": {
+        "n": 59,
+        "mean": 3030.1637314618642,
+        "p50": 3030.39453125,
+        "p95": 3031.6640625,
+        "min": 3025.9140625,
+        "max": 3032.55859375
+      },
+      "system_gpu_percent": {
+        "n": 59,
+        "mean": 2.288135593220339,
+        "p50": 3.0,
+        "p95": 3.0,
+        "min": 1.0,
+        "max": 3.0
+      },
+      "system_gpu_memory_mib": {
+        "n": 59,
+        "mean": 169.0,
+        "p50": 169.0,
+        "p95": 169.0,
+        "min": 169.0,
+        "max": 169.0
+      },
+      "recording_start": {
+        "active": true,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "cpu",
+        "received_frames": 233,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 233
+      },
+      "recording_end": {
+        "active": true,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "cpu",
+        "received_frames": 1134,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 1134
+      }
+    },
+    {
+      "name": "live-record-2",
+      "recording": true,
+      "interval_s": 59.99739999999991,
+      "presented_frames": 902,
+      "presented_fps": 15.033984806008284,
+      "decoded_frames": 901,
+      "decoded_fps": 15.017317417088098,
+      "received_frames": 901,
+      "playback_total_frames": 901,
+      "playback_dropped_frames": 0,
+      "playback_drop_percent": 0,
+      "received_rtp_mbps": 2.4238841016444086,
+      "packets_lost_delta": 0,
+      "rtp_counter_continuity": true,
+      "utc_start_ms": 1792085610852,
+      "utc_end_ms": 1792085670850,
+      "sample_count": 61,
+      "pixel_range_min": 188,
+      "pixel_range_threshold": 5,
+      "nonuniform_image_check_passed": true,
+      "qt": {
+        "status": "measured",
+        "interval_s": 58.99977913,
+        "rendered_frames": 886,
+        "fps": 15.017005369592813,
+        "bridge_dropped_frames": 0,
+        "invalid_frames": 0,
+        "interop_failures": 0
+      },
+      "resources": {
+        "backend-edge": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 0.7118043227075005,
+            "p50": 0.9998965896948483,
+            "p95": 1.9998552044843316,
+            "min": 0.0,
+            "max": 1.9998890781520295
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 327.60546875,
+            "p50": 327.60546875,
+            "p95": 327.60546875,
+            "min": 327.60546875,
+            "max": 327.60546875
+          }
+        },
+        "backend-web": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 0.49148320727005274,
+            "p50": 0.0,
+            "p95": 1.9998629993844286,
+            "min": 0.0,
+            "max": 2.9997934072272736
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 199.453125,
+            "p50": 199.453125,
+            "p95": 199.453125,
+            "min": 199.453125,
+            "max": 199.453125
+          }
+        },
+        "browser": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 19.201571986589112,
+            "p50": 18.996630928502974,
+            "p95": 24.998255046806463,
+            "min": 12.998654509272821,
+            "max": 44.993429654460684
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 1188.1513506355932,
+            "p50": 1187.1171875,
+            "p95": 1191.1171875,
+            "min": 1185.96875,
+            "max": 1191.40625
+          }
+        },
+        "frontend-edge": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 14.879950295834524,
+            "p50": 14.99845443926993,
+            "p95": 16.998817579252897,
+            "min": 10.99819024779323,
+            "max": 35.99474372356855
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 160.24609375,
+            "p50": 160.24609375,
+            "p95": 160.24609375,
+            "min": 160.24609375,
+            "max": 160.24609375
+          }
+        },
+        "frontend-web": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 0.05084067780180703,
+            "p50": 0.0,
+            "p95": 0.0,
+            "min": 0.0,
+            "max": 1.999707984642697
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 419.9357123940678,
+            "p50": 419.93359375,
+            "p95": 419.93359375,
+            "min": 419.93359375,
+            "max": 420.05859375
+          }
+        },
+        "media-server": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 1.254116888226133,
+            "p50": 0.9999284111253148,
+            "p95": 1.9998668688626506,
+            "min": 0.0,
+            "max": 2.9997798701529392
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 89.26218220338983,
+            "p50": 89.28125,
+            "p95": 89.40625,
+            "min": 89.15625,
+            "max": 89.40625
+          }
+        },
+        "stream-edge": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 177.6780587791969,
+            "p50": 171.98737922210188,
+            "p95": 227.98401102533447,
+            "min": 143.9761106198497,
+            "max": 476.93035433728323
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 760.2723781779661,
+            "p50": 759.5859375,
+            "p95": 764.3359375,
+            "min": 754.3359375,
+            "max": 764.3359375
+          }
+        }
+      },
+      "total_cpu_percent": {
+        "n": 59,
+        "mean": 214.26782615762602,
+        "p50": 206.97981532839802,
+        "p95": 264.9814163233054,
+        "min": 174.97096776717845,
+        "max": 562.9177976769192
+      },
+      "total_rss_mib": {
+        "n": 59,
+        "mean": 3144.926310911017,
+        "p50": 3143.19921875,
+        "p95": 3152.2109375,
+        "min": 3137.07421875,
+        "max": 3152.38671875
+      },
+      "system_gpu_percent": {
+        "n": 59,
+        "mean": 2.76271186440678,
+        "p50": 3.0,
+        "p95": 3.0,
+        "min": 1.0,
+        "max": 3.0
+      },
+      "system_gpu_memory_mib": {
+        "n": 59,
+        "mean": 169.0,
+        "p50": 169.0,
+        "p95": 169.0,
+        "min": 169.0,
+        "max": 169.0
+      },
+      "recording_start": {
+        "active": true,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "cpu",
+        "received_frames": 256,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 256
+      },
+      "recording_end": {
+        "active": true,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "cpu",
+        "received_frames": 1158,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 1158
+      }
+    },
+    {
+      "name": "live-only-2",
+      "recording": false,
+      "interval_s": 60.00379999999981,
+      "presented_frames": 901,
+      "presented_fps": 15.015715671340862,
+      "decoded_frames": 901,
+      "decoded_fps": 15.015715671340862,
+      "received_frames": 901,
+      "playback_total_frames": 901,
+      "playback_dropped_frames": 0,
+      "playback_drop_percent": 0,
+      "received_rtp_mbps": 2.4962431046033826,
+      "packets_lost_delta": 0,
+      "rtp_counter_continuity": true,
+      "utc_start_ms": 1792085692809,
+      "utc_end_ms": 1792085752812,
+      "sample_count": 62,
+      "pixel_range_min": 235,
+      "pixel_range_threshold": 5,
+      "nonuniform_image_check_passed": true,
+      "qt": {
+        "status": "measured",
+        "interval_s": 58.999315994,
+        "rendered_frames": 883,
+        "fps": 14.96627520376334,
+        "bridge_dropped_frames": 0,
+        "invalid_frames": 0,
+        "interop_failures": 0
+      },
+      "resources": {
+        "backend-edge": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 0.5423150137404199,
+            "p50": 0.0,
+            "p95": 0.999935111210884,
+            "min": 0.0,
+            "max": 2.999675450114858
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 331.0221133474576,
+            "p50": 330.9140625,
+            "p95": 331.2890625,
+            "min": 330.9140625,
+            "max": 331.2890625
+          }
+        },
+        "backend-web": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 0.45758323143202034,
+            "p50": 0.0,
+            "p95": 1.999808792281519,
+            "min": 0.0,
+            "max": 1.9998677267488174
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 200.8302436440678,
+            "p50": 200.828125,
+            "p95": 200.828125,
+            "min": 200.828125,
+            "max": 200.953125
+          }
+        },
+        "browser": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 16.472863514203958,
+            "p50": 15.9985551704768,
+            "p95": 19.998677267488173,
+            "min": 12.997026007514055,
+            "max": 20.99784263965459
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 1192.7553628177966,
+            "p50": 1193.1328125,
+            "p95": 1194.6171875,
+            "min": 1189.828125,
+            "max": 1195.2109375
+          }
+        },
+        "frontend-edge": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 11.81233280404073,
+            "p50": 11.99769517077442,
+            "p95": 13.99897628286641,
+            "min": 8.999139565266836,
+            "max": 13.999014945316906
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 160.24609375,
+            "p50": 160.24609375,
+            "p95": 160.24609375,
+            "min": 160.24609375,
+            "max": 160.24609375
+          }
+        },
+        "frontend-web": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 0.0,
+            "p50": 0.0,
+            "p95": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 420.18359375,
+            "p50": 420.18359375,
+            "p95": 420.18359375,
+            "min": 420.18359375,
+            "max": 420.18359375
+          }
+        },
+        "media-server": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 1.2202092798983109,
+            "p50": 0.9999279841866,
+            "p95": 1.9998580300783644,
+            "min": 0.0,
+            "max": 1.9998624254638422
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 89.77416578389831,
+            "p50": 89.78125,
+            "p95": 89.78515625,
+            "min": 89.65625,
+            "max": 90.90625
+          }
+        },
+        "stream-edge": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 27.793712660092893,
+            "p50": 27.99713524912453,
+            "p95": 29.99805333632652,
+            "min": 22.998327078686124,
+            "max": 33.995363916232826
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 403.1015625,
+            "p50": 403.1015625,
+            "p95": 403.1015625,
+            "min": 403.1015625,
+            "max": 403.1015625
+          }
+        }
+      },
+      "total_cpu_percent": {
+        "n": 59,
+        "mean": 58.29901650340834,
+        "p50": 57.9958230828228,
+        "p95": 64.99278157671057,
+        "min": 48.99498119908265,
+        "max": 66.99301859052396
+      },
+      "total_rss_mib": {
+        "n": 59,
+        "mean": 2797.9131355932204,
+        "p50": 2798.25390625,
+        "p95": 2799.92578125,
+        "min": 2794.7578125,
+        "max": 2800.76953125
+      },
+      "system_gpu_percent": {
+        "n": 59,
+        "mean": 1.5593220338983051,
+        "p50": 2.0,
+        "p95": 2.0,
+        "min": 1.0,
+        "max": 2.0
+      },
+      "system_gpu_memory_mib": {
+        "n": 59,
+        "mean": 169.0,
+        "p50": 169.0,
+        "p95": 169.0,
+        "min": 169.0,
+        "max": 169.0
+      },
+      "recording_start": {
+        "active": false,
+        "dropped_frames": 0,
+        "duration": 78,
+        "finalization_duration_ms": 328.071649,
+        "finalized": true,
+        "path": "cpu",
+        "received_frames": 1172,
+        "writer_stop_duration_ms": 327.917958,
+        "written_frames": 1172
+      },
+      "recording_end": {
+        "active": false,
+        "dropped_frames": 0,
+        "duration": 78,
+        "finalization_duration_ms": 328.071649,
+        "finalized": true,
+        "path": "cpu",
+        "received_frames": 1172,
+        "writer_stop_duration_ms": 327.917958,
+        "written_frames": 1172
+      }
+    },
+    {
+      "name": "live-only-3",
+      "recording": false,
+      "interval_s": 60.00520000000019,
+      "presented_frames": 901,
+      "presented_fps": 15.015365335004253,
+      "decoded_frames": 901,
+      "decoded_fps": 15.015365335004253,
+      "received_frames": 901,
+      "playback_total_frames": 901,
+      "playback_dropped_frames": 0,
+      "playback_drop_percent": 0,
+      "received_rtp_mbps": 2.521722517381819,
+      "packets_lost_delta": 0,
+      "rtp_counter_continuity": true,
+      "utc_start_ms": 1792085767826,
+      "utc_end_ms": 1792085827831,
+      "sample_count": 62,
+      "pixel_range_min": 244,
+      "pixel_range_threshold": 5,
+      "nonuniform_image_check_passed": true,
+      "qt": {
+        "status": "measured",
+        "interval_s": 59.000113211,
+        "rendered_frames": 888,
+        "fps": 15.050818577657255,
+        "bridge_dropped_frames": 0,
+        "invalid_frames": 0,
+        "interop_failures": 0
+      },
+      "resources": {
+        "backend-edge": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 0.5592728537500327,
+            "p50": 0.0,
+            "p95": 1.9998334198757315,
+            "min": 0.0,
+            "max": 2.9997688138160457
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 310.17240466101697,
+            "p50": 310.140625,
+            "p95": 310.265625,
+            "min": 310.140625,
+            "max": 310.265625
+          }
+        },
+        "backend-web": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 0.4406344591099793,
+            "p50": 0.0,
+            "p95": 1.9997993081404815,
+            "min": 0.0,
+            "max": 2.9995847644804985
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 202.328125,
+            "p50": 202.328125,
+            "p95": 202.328125,
+            "min": 202.328125,
+            "max": 202.328125
+          }
+        },
+        "browser": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 16.506794429477516,
+            "p50": 15.998449222315935,
+            "p95": 20.99852903204349,
+            "min": 12.998451520469558,
+            "max": 20.998587718985092
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 1195.5388638771187,
+            "p50": 1195.37890625,
+            "p95": 1198.20703125,
+            "min": 1193.37890625,
+            "max": 1198.2890625
+          }
+        },
+        "frontend-edge": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 11.846248385107637,
+            "p50": 11.998731566088153,
+            "p95": 12.999128512426855,
+            "min": 9.996972756698405,
+            "max": 14.998417337005577
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 160.24609375,
+            "p50": 160.24609375,
+            "p95": 160.24609375,
+            "min": 160.24609375,
+            "max": 160.24609375
+          }
+        },
+        "frontend-web": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 0.01694787001230865,
+            "p50": 0.0,
+            "p95": 0.0,
+            "min": 0.0,
+            "max": 0.9999243307262105
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 420.18359375,
+            "p50": 420.18359375,
+            "p95": 420.18359375,
+            "min": 420.18359375,
+            "max": 420.18359375
+          }
+        },
+        "media-server": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 1.2032626734196257,
+            "p50": 0.9999213491865335,
+            "p95": 1.9998659249887467,
+            "min": 0.0,
+            "max": 1.9998734260108737
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 90.33812235169492,
+            "p50": 90.28515625,
+            "p95": 90.66015625,
+            "min": 89.91015625,
+            "max": 90.66015625
+          }
+        },
+        "stream-edge": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 27.607338062459654,
+            "p50": 27.99704936296964,
+            "p95": 30.997611076099144,
+            "min": 22.998482399137366,
+            "max": 31.997644333425253
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 403.1015625,
+            "p50": 403.1015625,
+            "p95": 403.1015625,
+            "min": 403.1015625,
+            "max": 403.1015625
+          }
+        }
+      },
+      "total_cpu_percent": {
+        "n": 59,
+        "mean": 58.180498733336755,
+        "p50": 57.993244946823495,
+        "p95": 65.9935109240552,
+        "min": 48.99676685033614,
+        "max": 67.99475977983037
+      },
+      "total_rss_mib": {
+        "n": 59,
+        "mean": 2781.9087658898306,
+        "p50": 2781.62109375,
+        "p95": 2784.9921875,
+        "min": 2780.0390625,
+        "max": 2785.07421875
+      },
+      "system_gpu_percent": {
+        "n": 59,
+        "mean": 1.5593220338983051,
+        "p50": 2.0,
+        "p95": 2.0,
+        "min": 1.0,
+        "max": 2.0
+      },
+      "system_gpu_memory_mib": {
+        "n": 59,
+        "mean": 169.0,
+        "p50": 169.0,
+        "p95": 169.0,
+        "min": 169.0,
+        "max": 169.0
+      },
+      "recording_start": {
+        "active": false,
+        "dropped_frames": 0,
+        "duration": 78,
+        "finalization_duration_ms": 328.071649,
+        "finalized": true,
+        "path": "cpu",
+        "received_frames": 1172,
+        "writer_stop_duration_ms": 327.917958,
+        "written_frames": 1172
+      },
+      "recording_end": {
+        "active": false,
+        "dropped_frames": 0,
+        "duration": 78,
+        "finalization_duration_ms": 328.071649,
+        "finalized": true,
+        "path": "cpu",
+        "received_frames": 1172,
+        "writer_stop_duration_ms": 327.917958,
+        "written_frames": 1172
+      }
+    },
+    {
+      "name": "live-record-3",
+      "recording": true,
+      "interval_s": 60.002899999999904,
+      "presented_frames": 901,
+      "presented_fps": 15.015940896190042,
+      "decoded_frames": 902,
+      "decoded_fps": 15.032606757340085,
+      "received_frames": 901,
+      "playback_total_frames": 902,
+      "playback_dropped_frames": 0,
+      "playback_drop_percent": 0,
+      "received_rtp_mbps": 2.5127032193444023,
+      "packets_lost_delta": 0,
+      "rtp_counter_continuity": true,
+      "utc_start_ms": 1792085844923,
+      "utc_end_ms": 1792085904925,
+      "sample_count": 62,
+      "pixel_range_min": 206,
+      "pixel_range_threshold": 5,
+      "nonuniform_image_check_passed": true,
+      "qt": {
+        "status": "measured",
+        "interval_s": 58.999693558,
+        "rendered_frames": 885,
+        "fps": 15.000077909387707,
+        "bridge_dropped_frames": 0,
+        "invalid_frames": 0,
+        "interop_failures": 0
+      },
+      "resources": {
+        "backend-edge": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 0.8975261955001297,
+            "p50": 0.999893458352309,
+            "p95": 2.9999272157661996,
+            "min": 0.0,
+            "max": 6.958690554647316
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 310.265625,
+            "p50": 310.265625,
+            "p95": 310.265625,
+            "min": 310.265625,
+            "max": 310.265625
+          }
+        },
+        "backend-web": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 0.5423235239965668,
+            "p50": 0.0,
+            "p95": 1.9998549645180104,
+            "min": 0.0,
+            "max": 2.9997005398945586
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 202.453125,
+            "p50": 202.453125,
+            "p95": 202.453125,
+            "min": 202.453125,
+            "max": 202.453125
+          }
+        },
+        "browser": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 19.33351607405097,
+            "p50": 17.998671770019424,
+            "p95": 24.99815941052398,
+            "min": 13.998399520986784,
+            "max": 44.98792209256437
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 1197.9391551906779,
+            "p50": 1197.44921875,
+            "p95": 1200.39453125,
+            "min": 1195.3984375,
+            "max": 1201.296875
+          }
+        },
+        "frontend-edge": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 15.128744834958418,
+            "p50": 13.998542583735682,
+            "p95": 17.998218068425512,
+            "min": 10.99874248077533,
+            "max": 54.67542578651463
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 160.29482256355934,
+            "p50": 160.24609375,
+            "p95": 160.37109375,
+            "min": 160.24609375,
+            "max": 160.37109375
+          }
+        },
+        "frontend-web": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 0.0,
+            "p50": 0.0,
+            "p95": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 420.18359375,
+            "p50": 420.18359375,
+            "p95": 420.18359375,
+            "min": 420.18359375,
+            "max": 420.18359375
+          }
+        },
+        "media-server": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 1.2707731518813448,
+            "p50": 0.999927171304312,
+            "p95": 1.9998627674168725,
+            "min": 0.0,
+            "max": 2.999680375056927
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 91.45888506355932,
+            "p50": 91.41015625,
+            "p95": 91.78515625,
+            "min": 91.28515625,
+            "max": 91.78515625
+          }
+        },
+        "stream-edge": {
+          "cpu_percent": {
+            "n": 59,
+            "mean": 176.15701784260037,
+            "p50": 169.98706789385224,
+            "p95": 185.98605736925504,
+            "min": 135.98633214976624,
+            "max": 473.1909577160175
+          },
+          "rss_mib": {
+            "n": 59,
+            "mean": 758.3489141949152,
+            "p50": 758.0078125,
+            "p95": 761.3828125,
+            "min": 754.0078125,
+            "max": 761.3828125
+          }
+        }
+      },
+      "total_cpu_percent": {
+        "n": 59,
+        "mean": 213.32990162298782,
+        "p50": 205.9810678680399,
+        "p95": 222.9777401321622,
+        "min": 169.9829151872078,
+        "max": 574.5890200837356
+      },
+      "total_rss_mib": {
+        "n": 59,
+        "mean": 3140.944120762712,
+        "p50": 3140.4609375,
+        "p95": 3146.75,
+        "min": 3135.46484375,
+        "max": 3147.73828125
+      },
+      "system_gpu_percent": {
+        "n": 59,
+        "mean": 2.4237288135593222,
+        "p50": 3.0,
+        "p95": 3.0,
+        "min": 1.0,
+        "max": 3.0
+      },
+      "system_gpu_memory_mib": {
+        "n": 59,
+        "mean": 169.0,
+        "p50": 169.0,
+        "p95": 169.0,
+        "min": 169.0,
+        "max": 169.0
+      },
+      "recording_start": {
+        "active": true,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "cpu",
+        "received_frames": 241,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 241
+      },
+      "recording_end": {
+        "active": true,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "cpu",
+        "received_frames": 1142,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 1142
+      }
+    },
+    {
+      "name": "long-recording",
+      "recording": true,
+      "interval_s": 600.0003000000003,
+      "presented_frames": 9010,
+      "presented_fps": 15.016659158337081,
+      "decoded_frames": 9011,
+      "decoded_fps": 15.018325824170415,
+      "received_frames": 9011,
+      "playback_total_frames": 9011,
+      "playback_dropped_frames": 1,
+      "playback_drop_percent": 0.011097547442015314,
+      "received_rtp_mbps": 2.499842643412011,
+      "packets_lost_delta": 0,
+      "rtp_counter_continuity": true,
+      "utc_start_ms": 1792085929148,
+      "utc_end_ms": 1792086529148,
+      "sample_count": 597,
+      "pixel_range_min": 174,
+      "pixel_range_threshold": 5,
+      "nonuniform_image_check_passed": true,
+      "qt": {
+        "status": "measured",
+        "interval_s": 598.999916362,
+        "rendered_frames": 8998,
+        "fps": 15.02170493553482,
+        "bridge_dropped_frames": 0,
+        "invalid_frames": 0,
+        "interop_failures": 0
+      },
+      "resources": {
+        "backend-edge": {
+          "cpu_percent": {
+            "n": 599,
+            "mean": 0.7545207010595691,
+            "p50": 0.9998786067378449,
+            "p95": 1.9998612736233452,
+            "min": 0.0,
+            "max": 5.999552337403437
+          },
+          "rss_mib": {
+            "n": 599,
+            "mean": 328.21345471619367,
+            "p50": 328.265625,
+            "p95": 328.265625,
+            "min": 328.015625,
+            "max": 328.265625
+          }
+        },
+        "backend-web": {
+          "cpu_percent": {
+            "n": 599,
+            "mean": 0.5875974054617003,
+            "p50": 0.0,
+            "p95": 1.9998656170306166,
+            "min": 0.0,
+            "max": 7.999403260514909
+          },
+          "rss_mib": {
+            "n": 599,
+            "mean": 203.6365557178631,
+            "p50": 203.078125,
+            "p95": 205.328125,
+            "min": 202.703125,
+            "max": 205.328125
+          }
+        },
+        "browser": {
+          "cpu_percent": {
+            "n": 599,
+            "mean": 20.99473505299615,
+            "p50": 19.99862791413326,
+            "p95": 25.998035172488624,
+            "min": 15.998720182381396,
+            "max": 40.9965440733351
+          },
+          "rss_mib": {
+            "n": 599,
+            "mean": 1209.5033910684474,
+            "p50": 1210.25390625,
+            "p95": 1217.05859375,
+            "min": 1199.55859375,
+            "max": 1218.2265625
+          }
+        },
+        "frontend-edge": {
+          "cpu_percent": {
+            "n": 599,
+            "mean": 16.465926835524414,
+            "p50": 15.998806233075832,
+            "p95": 19.997962647563476,
+            "min": 11.999066076690323,
+            "max": 34.997049818700695
+          },
+          "rss_mib": {
+            "n": 599,
+            "mean": 161.27426570325542,
+            "p50": 161.37109375,
+            "p95": 161.37109375,
+            "min": 160.37109375,
+            "max": 161.37109375
+          }
+        },
+        "frontend-web": {
+          "cpu_percent": {
+            "n": 599,
+            "mean": 0.011685176103985638,
+            "p50": 0.0,
+            "p95": 0.0,
+            "min": 0.0,
+            "max": 0.9999224560132943
+          },
+          "rss_mib": {
+            "n": 599,
+            "mean": 420.4774167883973,
+            "p50": 420.55859375,
+            "p95": 420.55859375,
+            "min": 420.30859375,
+            "max": 420.68359375
+          }
+        },
+        "media-server": {
+          "cpu_percent": {
+            "n": 599,
+            "mean": 1.3554689968293474,
+            "p50": 0.9999273282816279,
+            "p95": 1.9998662329469719,
+            "min": 0.0,
+            "max": 3.9997058696300627
+          },
+          "rss_mib": {
+            "n": 599,
+            "mean": 94.52052248539232,
+            "p50": 94.5546875,
+            "p95": 96.6796875,
+            "min": 92.03515625,
+            "max": 96.9296875
+          }
+        },
+        "stream-edge": {
+          "cpu_percent": {
+            "n": 599,
+            "mean": 194.36933665256606,
+            "p50": 189.98555577817166,
+            "p95": 238.98107174318633,
+            "min": 138.99023148857876,
+            "max": 469.960383279695
+          },
+          "rss_mib": {
+            "n": 599,
+            "mean": 770.7923231427379,
+            "p50": 771.3359375,
+            "p95": 771.4609375,
+            "min": 763.3359375,
+            "max": 771.4609375
+          }
+        }
+      },
+      "total_cpu_percent": {
+        "n": 599,
+        "mean": 234.53927082054122,
+        "p50": 229.9819484868135,
+        "p95": 286.97949588892067,
+        "min": 173.9877717914583,
+        "max": 551.9534714263652
+      },
+      "total_rss_mib": {
+        "n": 599,
+        "mean": 3188.417929622287,
+        "p50": 3189.171875,
+        "p95": 3200.59765625,
+        "min": 3168.828125,
+        "max": 3202.171875
+      },
+      "system_gpu_percent": {
+        "n": 599,
+        "mean": 2.2220367278797997,
+        "p50": 2.0,
+        "p95": 3.0,
+        "min": 1.0,
+        "max": 4.0
+      },
+      "system_gpu_memory_mib": {
+        "n": 599,
+        "mean": 169.0,
+        "p50": 169.0,
+        "p95": 169.0,
+        "min": 169.0,
+        "max": 169.0
+      },
+      "recording_start": {
+        "active": true,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "cpu",
+        "received_frames": 229,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 229
+      },
+      "recording_end": {
+        "active": true,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "cpu",
+        "received_frames": 9241,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 9241
+      }
+    }
+  ],
+  "groups": {
+    "live_only": {
+      "repeats": 3,
+      "web_presented_fps": {
+        "n": 3,
+        "mean": 15.010243671503872,
+        "p50": 15.015365335004253,
+        "p95": 15.015715671340862,
+        "min": 14.9996500081665,
+        "max": 15.015715671340862
+      },
+      "qt_rendered_fps": {
+        "n": 3,
+        "mean": 15.028370707699523,
+        "p50": 15.050818577657255,
+        "p95": 15.068018341677973,
+        "min": 14.96627520376334,
+        "max": 15.068018341677973
+      },
+      "received_rtp_mbps": {
+        "n": 3,
+        "mean": 2.525910275821248,
+        "p50": 2.521722517381819,
+        "p95": 2.559765205478543,
+        "min": 2.4962431046033826,
+        "max": 2.559765205478543
+      },
+      "total_cpu_percent": {
+        "n": 3,
+        "mean": 58.74540608125461,
+        "p50": 58.29901650340834,
+        "p95": 59.75670300701873,
+        "min": 58.180498733336755,
+        "max": 59.75670300701873
+      },
+      "total_rss_mib": {
+        "n": 3,
+        "mean": 2741.069804908192,
+        "p50": 2781.9087658898306,
+        "p95": 2797.9131355932204,
+        "min": 2643.3875132415255,
+        "max": 2797.9131355932204
+      },
+      "system_gpu_percent": {
+        "n": 3,
+        "mean": 1.536723163841808,
+        "p50": 1.5593220338983051,
+        "p95": 1.5593220338983051,
+        "min": 1.4915254237288136,
+        "max": 1.5593220338983051
+      },
+      "system_gpu_memory_mib": {
+        "n": 3,
+        "mean": 167.66666666666666,
+        "p50": 169.0,
+        "p95": 169.0,
+        "min": 165.0,
+        "max": 169.0
+      }
+    },
+    "live_record": {
+      "repeats": 3,
+      "web_presented_fps": {
+        "n": 3,
+        "mean": 15.022381000055283,
+        "p50": 15.017217297967521,
+        "p95": 15.033984806008284,
+        "min": 15.015940896190042,
+        "max": 15.033984806008284
+      },
+      "qt_rendered_fps": {
+        "n": 3,
+        "mean": 15.01694073110253,
+        "p50": 15.017005369592813,
+        "p95": 15.033738914327067,
+        "min": 15.000077909387707,
+        "max": 15.033738914327067
+      },
+      "received_rtp_mbps": {
+        "n": 3,
+        "mean": 2.4828947881823544,
+        "p50": 2.512097043558252,
+        "p95": 2.5127032193444023,
+        "min": 2.4238841016444086,
+        "max": 2.5127032193444023
+      },
+      "total_cpu_percent": {
+        "n": 3,
+        "mean": 206.5276604065831,
+        "p50": 213.32990162298782,
+        "p95": 214.26782615762602,
+        "min": 191.98525343913548,
+        "max": 214.26782615762602
+      },
+      "total_rss_mib": {
+        "n": 3,
+        "mean": 3105.3447210451977,
+        "p50": 3140.944120762712,
+        "p95": 3144.926310911017,
+        "min": 3030.1637314618642,
+        "max": 3144.926310911017
+      },
+      "system_gpu_percent": {
+        "n": 3,
+        "mean": 2.4915254237288136,
+        "p50": 2.4237288135593222,
+        "p95": 2.76271186440678,
+        "min": 2.288135593220339,
+        "max": 2.76271186440678
+      },
+      "system_gpu_memory_mib": {
+        "n": 3,
+        "mean": 169.0,
+        "p50": 169.0,
+        "p95": 169.0,
+        "min": 169.0,
+        "max": 169.0
+      }
+    }
+  },
+  "comparisons": {
+    "web_presented_fps": {
+      "record_minus_baseline": 0.01213732855141103,
+      "percent_change": 0.08086030325046013
+    },
+    "qt_rendered_fps": {
+      "record_minus_baseline": -0.011429976596993185,
+      "percent_change": -0.07605599315657842
+    },
+    "received_rtp_mbps": {
+      "record_minus_baseline": -0.043015487638893735,
+      "percent_change": -1.7029697392916352
+    },
+    "total_cpu_percent": {
+      "record_minus_baseline": 147.7822543253285,
+      "percent_change": 251.56393356260267
+    },
+    "total_rss_mib": {
+      "record_minus_baseline": 364.2749161370057,
+      "percent_change": 13.289516213148994
+    },
+    "system_gpu_percent": {
+      "record_minus_baseline": 0.9548022598870056,
+      "percent_change": 62.13235294117647
+    },
+    "system_gpu_memory_mib": {
+      "record_minus_baseline": 1.3333333333333428,
+      "percent_change": 0.7952286282306219
+    }
+  },
+  "recordings": [
+    {
+      "observed_active_duration_s": 75.174083838,
+      "stop_to_finalized_observed_ms": 2605.4041480000014,
+      "finalized_to_both_replicas_completed_observed_ms": 5713.294514000008,
+      "finalization_duration_ms": 950.119949,
+      "writer_stop_duration_ms": 950.005078,
+      "size_bytes": 70460824,
+      "sha256_match": true,
+      "id": "f450-01",
+      "sha256_edge": "25087910a5affc3e9a45e4cbf7365c0ffe6fc2b7b48326d8f5aef733c9881157",
+      "sha256_server": "25087910a5affc3e9a45e4cbf7365c0ffe6fc2b7b48326d8f5aef733c9881157",
+      "recorder_diagnostics": {
+        "active": false,
+        "dropped_frames": 0,
+        "duration": 76,
+        "finalization_duration_ms": 950.119949,
+        "finalized": true,
+        "path": "cpu",
+        "received_frames": 1142,
+        "writer_stop_duration_ms": 950.005078,
+        "written_frames": 1142
+      },
+      "transfer_timing": {
+        "size_bytes": 70460824,
+        "utc_start_ms": 1792085591750,
+        "utc_end_ms": 1792085591913,
+        "hash_duration_ms": 57.121956,
+        "request_duration_ms": 163.431733
+      },
+      "metadata": {
+        "duration_seconds": 77,
+        "version": 5,
+        "frame_count": "1142",
+        "dropped_frames": "0"
+      },
+      "probe": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "avg_frame_rate": "1713000/114059",
+            "nb_frames": "1142"
+          }
+        ],
+        "format": {
+          "duration": "76.039333",
+          "size": "70460824",
+          "bit_rate": "7413092"
+        }
+      }
+    },
+    {
+      "observed_active_duration_s": 75.008883688,
+      "stop_to_finalized_observed_ms": 1467.0518359999987,
+      "finalized_to_both_replicas_completed_observed_ms": 5311.553469999984,
+      "finalization_duration_ms": 328.071649,
+      "writer_stop_duration_ms": 327.917958,
+      "size_bytes": 69999394,
+      "sha256_match": true,
+      "id": "f450-02",
+      "sha256_edge": "766e91e274b4774ae6c1001f49a28e85ff24d36cc978f3c2a91f6f4de83a8524",
+      "sha256_server": "766e91e274b4774ae6c1001f49a28e85ff24d36cc978f3c2a91f6f4de83a8524",
+      "recorder_diagnostics": {
+        "active": false,
+        "dropped_frames": 0,
+        "duration": 78,
+        "finalization_duration_ms": 328.071649,
+        "finalized": true,
+        "path": "cpu",
+        "received_frames": 1172,
+        "writer_stop_duration_ms": 327.917958,
+        "written_frames": 1172
+      },
+      "transfer_timing": {
+        "size_bytes": 69999394,
+        "utc_start_ms": 1792085676759,
+        "utc_end_ms": 1792085676922,
+        "hash_duration_ms": 56.765659,
+        "request_duration_ms": 163.296737
+      },
+      "metadata": {
+        "duration_seconds": 79,
+        "version": 5,
+        "frame_count": "1172",
+        "dropped_frames": "0"
+      },
+      "probe": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "avg_frame_rate": "439500/29263",
+            "nb_frames": "1172"
+          }
+        ],
+        "format": {
+          "duration": "78.034667",
+          "size": "69999394",
+          "bit_rate": "7176235"
+        }
+      }
+    },
+    {
+      "observed_active_duration_s": 75.014910454,
+      "stop_to_finalized_observed_ms": 2904.1590499999584,
+      "finalized_to_both_replicas_completed_observed_ms": 4899.262060000037,
+      "finalization_duration_ms": 308.162124,
+      "writer_stop_duration_ms": 308.022767,
+      "size_bytes": 69557627,
+      "sha256_match": true,
+      "id": "f450-03",
+      "sha256_edge": "36442a3e79681683d24536ad1262de040fb53315c077a7985e86f917f16ec47f",
+      "sha256_server": "36442a3e79681683d24536ad1262de040fb53315c077a7985e86f917f16ec47f",
+      "recorder_diagnostics": {
+        "active": false,
+        "dropped_frames": 0,
+        "duration": 77,
+        "finalization_duration_ms": 308.162124,
+        "finalized": true,
+        "path": "cpu",
+        "received_frames": 1157,
+        "writer_stop_duration_ms": 308.022767,
+        "written_frames": 1157
+      },
+      "transfer_timing": {
+        "size_bytes": 69557627,
+        "utc_start_ms": 1792085911793,
+        "utc_end_ms": 1792085911974,
+        "hash_duration_ms": 51.758777,
+        "request_duration_ms": 180.328072
+      },
+      "metadata": {
+        "duration_seconds": 78,
+        "version": 5,
+        "frame_count": "1157",
+        "dropped_frames": "0"
+      },
+      "probe": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "avg_frame_rate": "347100/23107",
+            "nb_frames": "1157"
+          }
+        ],
+        "format": {
+          "duration": "77.023333",
+          "size": "69557627",
+          "bit_rate": "7224577"
+        }
+      }
+    },
+    {
+      "observed_active_duration_s": 615.183060351,
+      "stop_to_finalized_observed_ms": 2100.8722779999953,
+      "finalized_to_both_replicas_completed_observed_ms": 2871.3972769998945,
+      "finalization_duration_ms": 391.835127,
+      "writer_stop_duration_ms": 391.753857,
+      "size_bytes": 563137159,
+      "sha256_match": true,
+      "id": "f450-04",
+      "sha256_edge": "dede21beff51db5d2f5194c4b928dbb1c95e2a24fb515873e4aa3baa6bd0ea1b",
+      "sha256_server": "dede21beff51db5d2f5194c4b928dbb1c95e2a24fb515873e4aa3baa6bd0ea1b",
+      "recorder_diagnostics": {
+        "active": false,
+        "dropped_frames": 0,
+        "duration": 616,
+        "finalization_duration_ms": 391.835127,
+        "finalized": true,
+        "path": "cpu",
+        "received_frames": 9255,
+        "writer_stop_duration_ms": 391.753857,
+        "written_frames": 9255
+      },
+      "transfer_timing": {
+        "size_bytes": 563137159,
+        "utc_start_ms": 1792086532329,
+        "utc_end_ms": 1792086533297,
+        "hash_duration_ms": 502.558315,
+        "request_duration_ms": 968.003237
+      },
+      "metadata": {
+        "duration_seconds": 617,
+        "version": 5,
+        "frame_count": "9255",
+        "dropped_frames": "0"
+      },
+      "probe": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "avg_frame_rate": "462750/30809",
+            "nb_frames": "9255"
+          }
+        ],
+        "format": {
+          "duration": "616.180000",
+          "size": "563137159",
+          "bit_rate": "7311333"
+        }
+      }
+    }
+  ]
+}

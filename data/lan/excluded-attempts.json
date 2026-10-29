@@ -1,0 +1,878 @@
+{
+  "attempts": [
+    {
+      "run_id": "2026-10-22T17-52-49-674Z",
+      "started_at": "2026-10-22T17:52:49.674Z",
+      "finished_at": "2026-10-22T17:53:11.846Z",
+      "status": "failed",
+      "script_sha256": "b90078e3940ab1093551130d5d5e638e089396038f9abc1d44ed442e073c90df",
+      "error_category": "browser_counter_absent_or_reset",
+      "commands": [
+        {
+          "id": "6639e9ca-44f3-4175-994d-6edc7d1ea222",
+          "route": "/streams/start",
+          "observed_both_completed_ms": 5025.835195000001,
+          "first_completed_observed_ms": {
+            "edge": 3031.4282700000003,
+            "web": 5025.796844
+          },
+          "last_noncompleted_observed_ms": {
+            "edge": 2816.504032,
+            "web": 4807.333851
+          },
+          "observed_status_history": [
+            {
+              "side": "web",
+              "observed_ms": 60.740126000000146,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "edge",
+              "observed_ms": 1241.124037,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "edge",
+              "observed_ms": 1857.3720430000003,
+              "status": "processing",
+              "version": 3
+            },
+            {
+              "side": "web",
+              "observed_ms": 2072.5388869999997,
+              "status": "claimed",
+              "version": 2
+            },
+            {
+              "side": "web",
+              "observed_ms": 2816.504032,
+              "status": "processing",
+              "version": 3
+            },
+            {
+              "side": "edge",
+              "observed_ms": 3031.4282700000003,
+              "status": "completed",
+              "version": 4
+            },
+            {
+              "side": "web",
+              "observed_ms": 5025.796844,
+              "status": "completed",
+              "version": 4
+            }
+          ],
+          "replicas": {
+            "edge": {
+              "id": "6639e9ca-44f3-4175-994d-6edc7d1ea222",
+              "stream_id": "b9253da5-e941-48ac-b71a-ba721f2d2cb6",
+              "video_id": null,
+              "command": "start",
+              "target": "stream",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:52:53.553Z",
+              "processed_at": "2026-10-22T17:52:53.573Z",
+              "created_at": "2026-10-22T17:52:51.752Z",
+              "updated_at": "2026-10-22T17:52:53.573Z"
+            },
+            "web": {
+              "id": "6639e9ca-44f3-4175-994d-6edc7d1ea222",
+              "stream_id": "b9253da5-e941-48ac-b71a-ba721f2d2cb6",
+              "video_id": null,
+              "command": "start",
+              "target": "stream",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:52:53.553Z",
+              "processed_at": "2026-10-22T17:52:53.573Z",
+              "created_at": "2026-10-22T17:52:51.752Z",
+              "updated_at": "2026-10-22T17:52:53.573Z"
+            }
+          }
+        }
+      ],
+      "setup_commands": [
+        {
+          "id": "c2ca677d-9adb-4408-9fb9-e54ff4423bcb",
+          "route": "/streams/b9253da5-e941-48ac-b71a-ba721f2d2cb6/stop",
+          "observed_both_completed_ms": 3844.2166380000017,
+          "first_completed_observed_ms": {
+            "edge": 1837.5534530000004,
+            "web": 3844.1837410000007
+          },
+          "last_noncompleted_observed_ms": {
+            "edge": 1619.556284000002,
+            "web": 3562.159112000001
+          },
+          "observed_status_history": [
+            {
+              "side": "web",
+              "observed_ms": 76.7706360000011,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "edge",
+              "observed_ms": 973.3299369999986,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "web",
+              "observed_ms": 1837.5534530000004,
+              "status": "processing",
+              "version": 3
+            },
+            {
+              "side": "edge",
+              "observed_ms": 1837.5534530000004,
+              "status": "completed",
+              "version": 4
+            },
+            {
+              "side": "web",
+              "observed_ms": 3844.1837410000007,
+              "status": "completed",
+              "version": 4
+            }
+          ],
+          "replicas": {
+            "edge": {
+              "id": "c2ca677d-9adb-4408-9fb9-e54ff4423bcb",
+              "stream_id": "b9253da5-e941-48ac-b71a-ba721f2d2cb6",
+              "video_id": null,
+              "command": "stop",
+              "target": "stream",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:53:08.554Z",
+              "processed_at": "2026-10-22T17:53:08.568Z",
+              "created_at": "2026-10-22T17:53:06.967Z",
+              "updated_at": "2026-10-22T17:53:08.568Z"
+            },
+            "web": {
+              "id": "c2ca677d-9adb-4408-9fb9-e54ff4423bcb",
+              "stream_id": "b9253da5-e941-48ac-b71a-ba721f2d2cb6",
+              "video_id": null,
+              "command": "stop",
+              "target": "stream",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:53:08.554Z",
+              "processed_at": "2026-10-22T17:53:08.568Z",
+              "created_at": "2026-10-22T17:53:06.967Z",
+              "updated_at": "2026-10-22T17:53:08.568Z"
+            }
+          }
+        }
+      ],
+      "cycle_statuses": [
+        {
+          "index": 1,
+          "status": "failed",
+          "stream_id": "b9253da5-e941-48ac-b71a-ba721f2d2cb6"
+        }
+      ],
+      "cleanup_errors_present": {
+        "recording_cleanup_error": false,
+        "stream_cleanup_error": false
+      }
+    },
+    {
+      "run_id": "2026-10-22T17-53-48-034Z",
+      "started_at": "2026-10-22T17:53:48.034Z",
+      "finished_at": "2026-10-22T17:54:45.880Z",
+      "status": "failed",
+      "script_sha256": "8c24f4391ba6c6cfae413e5e222577f4129326f38cd183b2a608bed69265a4a5",
+      "error_category": "seek_range_malformed_value",
+      "commands": [
+        {
+          "id": "89d37142-12df-47e2-893f-8c047f0da950",
+          "route": "/streams/start",
+          "observed_both_completed_ms": 3080.210089,
+          "first_completed_observed_ms": {
+            "edge": 2212.688166,
+            "web": 3080.1852339999996
+          },
+          "last_noncompleted_observed_ms": {
+            "edge": 1995.829751,
+            "web": 2867.5438989999993
+          },
+          "observed_status_history": [
+            {
+              "side": "web",
+              "observed_ms": 76.65675199999987,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "edge",
+              "observed_ms": 291.88381300000015,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "web",
+              "observed_ms": 1045.2280979999998,
+              "status": "claimed",
+              "version": 2
+            },
+            {
+              "side": "edge",
+              "observed_ms": 1045.2280979999998,
+              "status": "processing",
+              "version": 3
+            },
+            {
+              "side": "web",
+              "observed_ms": 2212.688166,
+              "status": "processing",
+              "version": 3
+            },
+            {
+              "side": "edge",
+              "observed_ms": 2212.688166,
+              "status": "completed",
+              "version": 4
+            },
+            {
+              "side": "web",
+              "observed_ms": 3080.1852339999996,
+              "status": "completed",
+              "version": 4
+            }
+          ],
+          "replicas": {
+            "edge": {
+              "id": "89d37142-12df-47e2-893f-8c047f0da950",
+              "stream_id": "0365ba7b-d6f4-4197-a19b-355d647810f9",
+              "video_id": null,
+              "command": "start",
+              "target": "stream",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:53:50.695Z",
+              "processed_at": "2026-10-22T17:53:50.710Z",
+              "created_at": "2026-10-22T17:53:49.828Z",
+              "updated_at": "2026-10-22T17:53:50.710Z"
+            },
+            "web": {
+              "id": "89d37142-12df-47e2-893f-8c047f0da950",
+              "stream_id": "0365ba7b-d6f4-4197-a19b-355d647810f9",
+              "video_id": null,
+              "command": "start",
+              "target": "stream",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:53:50.695Z",
+              "processed_at": "2026-10-22T17:53:50.710Z",
+              "created_at": "2026-10-22T17:53:49.828Z",
+              "updated_at": "2026-10-22T17:53:50.710Z"
+            }
+          }
+        },
+        {
+          "id": "77115a49-bb03-48bf-bec7-5c077427335e",
+          "route": "/streams/0365ba7b-d6f4-4197-a19b-355d647810f9/recordings/start",
+          "observed_both_completed_ms": 1816.93217,
+          "first_completed_observed_ms": {
+            "edge": 1816.895375,
+            "web": 1816.895375
+          },
+          "last_noncompleted_observed_ms": {
+            "edge": 1598.6862250000013,
+            "web": 1598.6862250000013
+          },
+          "observed_status_history": [
+            {
+              "side": "web",
+              "observed_ms": 56.78788600000007,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "edge",
+              "observed_ms": 732.1612510000014,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "edge",
+              "observed_ms": 1598.6862250000013,
+              "status": "processing",
+              "version": 3
+            },
+            {
+              "side": "web",
+              "observed_ms": 1816.895375,
+              "status": "completed",
+              "version": 4
+            },
+            {
+              "side": "edge",
+              "observed_ms": 1816.895375,
+              "status": "completed",
+              "version": 4
+            }
+          ],
+          "replicas": {
+            "edge": {
+              "id": "77115a49-bb03-48bf-bec7-5c077427335e",
+              "stream_id": "0365ba7b-d6f4-4197-a19b-355d647810f9",
+              "video_id": "3eb72d2d-8137-4a8a-a717-9579a2f5455c",
+              "command": "start",
+              "target": "recording",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:54:04.698Z",
+              "processed_at": "2026-10-22T17:54:04.713Z",
+              "created_at": "2026-10-22T17:54:03.164Z",
+              "updated_at": "2026-10-22T17:54:04.713Z"
+            },
+            "web": {
+              "id": "77115a49-bb03-48bf-bec7-5c077427335e",
+              "stream_id": "0365ba7b-d6f4-4197-a19b-355d647810f9",
+              "video_id": "3eb72d2d-8137-4a8a-a717-9579a2f5455c",
+              "command": "start",
+              "target": "recording",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:54:04.698Z",
+              "processed_at": "2026-10-22T17:54:04.713Z",
+              "created_at": "2026-10-22T17:54:03.164Z",
+              "updated_at": "2026-10-22T17:54:04.713Z"
+            }
+          }
+        },
+        {
+          "id": "b17079e9-8a4d-4e86-9c44-44169d5ad7d2",
+          "route": "/streams/0365ba7b-d6f4-4197-a19b-355d647810f9/recordings/stop",
+          "observed_both_completed_ms": 1182.8845909999945,
+          "first_completed_observed_ms": {
+            "edge": 966.2110639999955,
+            "web": 1182.867164999996
+          },
+          "last_noncompleted_observed_ms": {
+            "edge": 740.577863999999,
+            "web": 966.2110639999955
+          },
+          "observed_status_history": [
+            {
+              "side": "web",
+              "observed_ms": 61.39925499999663,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "edge",
+              "observed_ms": 304.5363609999986,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "edge",
+              "observed_ms": 740.577863999999,
+              "status": "processing",
+              "version": 3
+            },
+            {
+              "side": "web",
+              "observed_ms": 966.2110639999955,
+              "status": "claimed",
+              "version": 2
+            },
+            {
+              "side": "edge",
+              "observed_ms": 966.2110639999955,
+              "status": "completed",
+              "version": 4
+            },
+            {
+              "side": "web",
+              "observed_ms": 1182.867164999996,
+              "status": "completed",
+              "version": 4
+            }
+          ],
+          "replicas": {
+            "edge": {
+              "id": "b17079e9-8a4d-4e86-9c44-44169d5ad7d2",
+              "stream_id": "0365ba7b-d6f4-4197-a19b-355d647810f9",
+              "video_id": "3eb72d2d-8137-4a8a-a717-9579a2f5455c",
+              "command": "stop",
+              "target": "recording",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:54:25.705Z",
+              "processed_at": "2026-10-22T17:54:25.723Z",
+              "created_at": "2026-10-22T17:54:25.048Z",
+              "updated_at": "2026-10-22T17:54:25.723Z"
+            },
+            "web": {
+              "id": "b17079e9-8a4d-4e86-9c44-44169d5ad7d2",
+              "stream_id": "0365ba7b-d6f4-4197-a19b-355d647810f9",
+              "video_id": "3eb72d2d-8137-4a8a-a717-9579a2f5455c",
+              "command": "stop",
+              "target": "recording",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:54:25.705Z",
+              "processed_at": "2026-10-22T17:54:25.723Z",
+              "created_at": "2026-10-22T17:54:25.048Z",
+              "updated_at": "2026-10-22T17:54:25.723Z"
+            }
+          }
+        }
+      ],
+      "setup_commands": [
+        {
+          "id": "fec9cae4-c78c-470f-bc5c-fb4f6877e0d4",
+          "route": "/streams/0365ba7b-d6f4-4197-a19b-355d647810f9/stop",
+          "observed_both_completed_ms": 2954.926389,
+          "first_completed_observed_ms": {
+            "edge": 2100.645848,
+            "web": 2954.9079070000007
+          },
+          "last_noncompleted_observed_ms": {
+            "edge": 1877.7321909999955,
+            "web": 2737.268013999994
+          },
+          "observed_status_history": [
+            {
+              "side": "web",
+              "observed_ms": 102.27900899999804,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "edge",
+              "observed_ms": 1004.5113290000008,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "web",
+              "observed_ms": 1877.7321909999955,
+              "status": "claimed",
+              "version": 2
+            },
+            {
+              "side": "edge",
+              "observed_ms": 1877.7321909999955,
+              "status": "processing",
+              "version": 3
+            },
+            {
+              "side": "web",
+              "observed_ms": 2100.645848,
+              "status": "processing",
+              "version": 3
+            },
+            {
+              "side": "edge",
+              "observed_ms": 2100.645848,
+              "status": "completed",
+              "version": 4
+            },
+            {
+              "side": "web",
+              "observed_ms": 2954.9079070000007,
+              "status": "completed",
+              "version": 4
+            }
+          ],
+          "replicas": {
+            "edge": {
+              "id": "fec9cae4-c78c-470f-bc5c-fb4f6877e0d4",
+              "stream_id": "0365ba7b-d6f4-4197-a19b-355d647810f9",
+              "video_id": null,
+              "command": "stop",
+              "target": "stream",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:54:43.708Z",
+              "processed_at": "2026-10-22T17:54:43.721Z",
+              "created_at": "2026-10-22T17:54:41.980Z",
+              "updated_at": "2026-10-22T17:54:43.721Z"
+            },
+            "web": {
+              "id": "fec9cae4-c78c-470f-bc5c-fb4f6877e0d4",
+              "stream_id": "0365ba7b-d6f4-4197-a19b-355d647810f9",
+              "video_id": null,
+              "command": "stop",
+              "target": "stream",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:54:43.708Z",
+              "processed_at": "2026-10-22T17:54:43.721Z",
+              "created_at": "2026-10-22T17:54:41.980Z",
+              "updated_at": "2026-10-22T17:54:43.721Z"
+            }
+          }
+        }
+      ],
+      "cycle_statuses": [
+        {
+          "index": 1,
+          "status": "failed",
+          "stream_id": "0365ba7b-d6f4-4197-a19b-355d647810f9",
+          "video_id": "3eb72d2d-8137-4a8a-a717-9579a2f5455c"
+        }
+      ],
+      "cleanup_errors_present": {
+        "recording_cleanup_error": false,
+        "stream_cleanup_error": false
+      }
+    },
+    {
+      "run_id": "2026-10-22T17-55-08-347Z",
+      "started_at": "2026-10-22T17:55:08.347Z",
+      "finished_at": "2026-10-22T17:56:00.497Z",
+      "status": "failed",
+      "script_sha256": "a13cb78ef921926c0bd8c88ef40bd4e92542be0dc482c6fdd5de75cac8f1e7d5",
+      "error_category": "seek_range_malformed_value",
+      "commands": [
+        {
+          "id": "568fa7d7-7736-454d-a2d6-b4b85fd9ec8e",
+          "route": "/streams/start",
+          "observed_both_completed_ms": 2760.6068699999996,
+          "first_completed_observed_ms": {
+            "edge": 1888.4865869999999,
+            "web": 2760.576723
+          },
+          "last_noncompleted_observed_ms": {
+            "edge": 1663.1785489999997,
+            "web": 2537.6153249999998
+          },
+          "observed_status_history": [
+            {
+              "side": "web",
+              "observed_ms": 112.06367999999975,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "edge",
+              "observed_ms": 649.0689269999998,
+              "status": "processing",
+              "version": 3
+            },
+            {
+              "side": "web",
+              "observed_ms": 921.949948,
+              "status": "claimed",
+              "version": 2
+            },
+            {
+              "side": "web",
+              "observed_ms": 1888.4865869999999,
+              "status": "processing",
+              "version": 3
+            },
+            {
+              "side": "edge",
+              "observed_ms": 1888.4865869999999,
+              "status": "completed",
+              "version": 4
+            },
+            {
+              "side": "web",
+              "observed_ms": 2760.576723,
+              "status": "completed",
+              "version": 4
+            }
+          ],
+          "replicas": {
+            "edge": {
+              "id": "568fa7d7-7736-454d-a2d6-b4b85fd9ec8e",
+              "stream_id": "640320cf-7821-4c8a-99a2-4c1d989902df",
+              "video_id": null,
+              "command": "start",
+              "target": "stream",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:55:10.970Z",
+              "processed_at": "2026-10-22T17:55:10.992Z",
+              "created_at": "2026-10-22T17:55:10.497Z",
+              "updated_at": "2026-10-22T17:55:10.992Z"
+            },
+            "web": {
+              "id": "568fa7d7-7736-454d-a2d6-b4b85fd9ec8e",
+              "stream_id": "640320cf-7821-4c8a-99a2-4c1d989902df",
+              "video_id": null,
+              "command": "start",
+              "target": "stream",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:55:10.970Z",
+              "processed_at": "2026-10-22T17:55:10.992Z",
+              "created_at": "2026-10-22T17:55:10.497Z",
+              "updated_at": "2026-10-22T17:55:10.992Z"
+            }
+          }
+        },
+        {
+          "id": "98ff18de-6655-442b-85cf-6d371dd57235",
+          "route": "/streams/640320cf-7821-4c8a-99a2-4c1d989902df/recordings/start",
+          "observed_both_completed_ms": 1635.2589289999978,
+          "first_completed_observed_ms": {
+            "edge": 480.9670069999993,
+            "web": 1635.241197999998
+          },
+          "last_noncompleted_observed_ms": {
+            "edge": 267.41367100000025,
+            "web": 1347.0633319999997
+          },
+          "observed_status_history": [
+            {
+              "side": "web",
+              "observed_ms": 49.39988199999971,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "edge",
+              "observed_ms": 267.41367100000025,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "web",
+              "observed_ms": 480.9670069999993,
+              "status": "processing",
+              "version": 3
+            },
+            {
+              "side": "edge",
+              "observed_ms": 480.9670069999993,
+              "status": "completed",
+              "version": 4
+            },
+            {
+              "side": "web",
+              "observed_ms": 1635.241197999998,
+              "status": "completed",
+              "version": 4
+            }
+          ],
+          "replicas": {
+            "edge": {
+              "id": "98ff18de-6655-442b-85cf-6d371dd57235",
+              "stream_id": "640320cf-7821-4c8a-99a2-4c1d989902df",
+              "video_id": "dd9d7c12-1a95-4e52-88b5-bbe3655c8f65",
+              "command": "start",
+              "target": "recording",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:55:23.975Z",
+              "processed_at": "2026-10-22T17:55:23.987Z",
+              "created_at": "2026-10-22T17:55:23.603Z",
+              "updated_at": "2026-10-22T17:55:23.987Z"
+            },
+            "web": {
+              "id": "98ff18de-6655-442b-85cf-6d371dd57235",
+              "stream_id": "640320cf-7821-4c8a-99a2-4c1d989902df",
+              "video_id": "dd9d7c12-1a95-4e52-88b5-bbe3655c8f65",
+              "command": "start",
+              "target": "recording",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:55:23.975Z",
+              "processed_at": "2026-10-22T17:55:23.987Z",
+              "created_at": "2026-10-22T17:55:23.603Z",
+              "updated_at": "2026-10-22T17:55:23.987Z"
+            }
+          }
+        },
+        {
+          "id": "09dfd4e8-9762-45c4-be46-ccea096f65ae",
+          "route": "/streams/640320cf-7821-4c8a-99a2-4c1d989902df/recordings/stop",
+          "observed_both_completed_ms": 1797.788959999998,
+          "first_completed_observed_ms": {
+            "edge": 1137.8605150000003,
+            "web": 1797.7715829999943
+          },
+          "last_noncompleted_observed_ms": {
+            "edge": 922.5719800000006,
+            "web": 1585.2755140000008
+          },
+          "observed_status_history": [
+            {
+              "side": "web",
+              "observed_ms": 49.46386899999925,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "edge",
+              "observed_ms": 701.2405059999946,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "web",
+              "observed_ms": 922.5719800000006,
+              "status": "claimed",
+              "version": 2
+            },
+            {
+              "side": "edge",
+              "observed_ms": 922.5719800000006,
+              "status": "processing",
+              "version": 3
+            },
+            {
+              "side": "web",
+              "observed_ms": 1137.8605150000003,
+              "status": "processing",
+              "version": 3
+            },
+            {
+              "side": "edge",
+              "observed_ms": 1137.8605150000003,
+              "status": "completed",
+              "version": 4
+            },
+            {
+              "side": "web",
+              "observed_ms": 1797.7715829999943,
+              "status": "completed",
+              "version": 4
+            }
+          ],
+          "replicas": {
+            "edge": {
+              "id": "09dfd4e8-9762-45c4-be46-ccea096f65ae",
+              "stream_id": "640320cf-7821-4c8a-99a2-4c1d989902df",
+              "video_id": "dd9d7c12-1a95-4e52-88b5-bbe3655c8f65",
+              "command": "stop",
+              "target": "recording",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:55:45.982Z",
+              "processed_at": "2026-10-22T17:55:45.999Z",
+              "created_at": "2026-10-22T17:55:45.304Z",
+              "updated_at": "2026-10-22T17:55:45.999Z"
+            },
+            "web": {
+              "id": "09dfd4e8-9762-45c4-be46-ccea096f65ae",
+              "stream_id": "640320cf-7821-4c8a-99a2-4c1d989902df",
+              "video_id": "dd9d7c12-1a95-4e52-88b5-bbe3655c8f65",
+              "command": "stop",
+              "target": "recording",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:55:45.982Z",
+              "processed_at": "2026-10-22T17:55:45.999Z",
+              "created_at": "2026-10-22T17:55:45.304Z",
+              "updated_at": "2026-10-22T17:55:45.999Z"
+            }
+          }
+        }
+      ],
+      "setup_commands": [
+        {
+          "id": "a1f2f191-3c7b-47f0-ad68-bbe95ba9432d",
+          "route": "/streams/640320cf-7821-4c8a-99a2-4c1d989902df/stop",
+          "observed_both_completed_ms": 2437.979005000001,
+          "first_completed_observed_ms": {
+            "edge": 1602.7329660000032,
+            "web": 2437.942388000003
+          },
+          "last_noncompleted_observed_ms": {
+            "edge": 1300.0191489999997,
+            "web": 2226.402043000002
+          },
+          "observed_status_history": [
+            {
+              "side": "web",
+              "observed_ms": 169.9634920000026,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "edge",
+              "observed_ms": 1088.4913140000062,
+              "status": "pending",
+              "version": 1
+            },
+            {
+              "side": "web",
+              "observed_ms": 1300.0191489999997,
+              "status": "claimed",
+              "version": 2
+            },
+            {
+              "side": "edge",
+              "observed_ms": 1300.0191489999997,
+              "status": "processing",
+              "version": 3
+            },
+            {
+              "side": "web",
+              "observed_ms": 1602.7329660000032,
+              "status": "processing",
+              "version": 3
+            },
+            {
+              "side": "edge",
+              "observed_ms": 1602.7329660000032,
+              "status": "completed",
+              "version": 4
+            },
+            {
+              "side": "web",
+              "observed_ms": 2437.942388000003,
+              "status": "completed",
+              "version": 4
+            }
+          ],
+          "replicas": {
+            "edge": {
+              "id": "a1f2f191-3c7b-47f0-ad68-bbe95ba9432d",
+              "stream_id": "640320cf-7821-4c8a-99a2-4c1d989902df",
+              "video_id": null,
+              "command": "stop",
+              "target": "stream",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:55:58.986Z",
+              "processed_at": "2026-10-22T17:55:59.001Z",
+              "created_at": "2026-10-22T17:55:57.855Z",
+              "updated_at": "2026-10-22T17:55:59.001Z"
+            },
+            "web": {
+              "id": "a1f2f191-3c7b-47f0-ad68-bbe95ba9432d",
+              "stream_id": "640320cf-7821-4c8a-99a2-4c1d989902df",
+              "video_id": null,
+              "command": "stop",
+              "target": "stream",
+              "status": "completed",
+              "version": 4,
+              "claimed_at": "2026-10-22T17:55:58.986Z",
+              "processed_at": "2026-10-22T17:55:59.001Z",
+              "created_at": "2026-10-22T17:55:57.855Z",
+              "updated_at": "2026-10-22T17:55:59.001Z"
+            }
+          }
+        }
+      ],
+      "cycle_statuses": [
+        {
+          "index": 1,
+          "status": "failed",
+          "stream_id": "640320cf-7821-4c8a-99a2-4c1d989902df",
+          "video_id": "dd9d7c12-1a95-4e52-88b5-bbe3655c8f65"
+        }
+      ],
+      "cleanup_errors_present": {
+        "recording_cleanup_error": false,
+        "stream_cleanup_error": false
+      }
+    }
+  ],
+  "included_in_30_cycle_statistics": false
+}

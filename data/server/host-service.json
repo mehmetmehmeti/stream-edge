@@ -1,0 +1,54 @@
+{
+  "os": "Ubuntu 26.04.1 LTS",
+  "architecture": "x86_64",
+  "node": "v22.23.1",
+  "application_database_version": "PostgreSQL 16.15 (Debian 16.15-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit",
+  "host": "SERVER_HOST",
+  "edge_host": "EDGE_HOST",
+  "application_connection_port": 55432,
+  "captured_at": "2026-10-22T18:32:08.392192+00:00",
+  "listener_ports": [
+    3000,
+    3001,
+    3010,
+    40000
+  ],
+  "services": {
+    "backend-web": {
+      "owner": "USER_01",
+      "cwd": "SERVER_PROJECT/backend-web",
+      "git_commit": "e74beef25f48393e4b8ad148202d703c34af56d5",
+      "git_dirty_status": "",
+      "captured_active": true,
+      "systemd": {
+        "ActiveState": "active",
+        "NRestarts": "0",
+        "ExecMainStartTimestamp": "Thu 2026-10-22 19:17:40 CEST"
+      }
+    },
+    "frontend-web": {
+      "owner": "USER_01",
+      "cwd": "SERVER_PROJECT/frontend-web",
+      "git_commit": "cf15556d405471688897e43931d980c5728e637d",
+      "git_dirty_status": "M next-env.d.ts",
+      "captured_active": true,
+      "systemd": {
+        "ActiveState": "active",
+        "NRestarts": "0",
+        "ExecMainStartTimestamp": "Thu 2026-10-22 19:17:40 CEST"
+      }
+    },
+    "media-server": {
+      "owner": "USER_01",
+      "cwd": "SERVER_PROJECT/media-server",
+      "git_commit": "27d02f566deaa6e4d733bac18f732cd64895ef96",
+      "git_dirty_status": "",
+      "captured_active": true,
+      "systemd": {
+        "ActiveState": "active",
+        "NRestarts": "0",
+        "ExecMainStartTimestamp": "Thu 2026-10-22 19:17:40 CEST"
+      }
+    }
+  }
+}

@@ -1,0 +1,674 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "run_id": "2026-10-15T17-30-22-214Z",
+  "finished_utc": "2026-10-15T17:48:55.132Z",
+  "conditions": [
+    {
+      "name": "live-only-1",
+      "recording": false,
+      "interval_s": 60.001399999999904,
+      "presented_frames": 900,
+      "presented_fps": 14.9996500081665,
+      "decoded_frames": 901,
+      "decoded_fps": 15.016316285953351,
+      "received_frames": 901,
+      "playback_total_frames": 901,
+      "playback_dropped_frames": 0,
+      "playback_drop_percent": 0,
+      "received_rtp_mbps": 2.559765205478543,
+      "packets_lost_delta": 0,
+      "rtp_counter_continuity": true,
+      "utc_start_ms": 1792085447397,
+      "utc_end_ms": 1792085507398,
+      "sample_count": 62,
+      "pixel_range_min": 205,
+      "pixel_range_threshold": 5,
+      "nonuniform_image_check_passed": true,
+      "recording_start": {
+        "active": false,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "none",
+        "received_frames": 0,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 0
+      },
+      "recording_end": {
+        "active": false,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "none",
+        "received_frames": 0,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 0
+      }
+    },
+    {
+      "name": "live-record-1",
+      "recording": true,
+      "interval_s": 59.99780000000028,
+      "presented_frames": 901,
+      "presented_fps": 15.017217297967521,
+      "decoded_frames": 901,
+      "decoded_fps": 15.017217297967521,
+      "received_frames": 902,
+      "playback_total_frames": 901,
+      "playback_dropped_frames": 0,
+      "playback_drop_percent": 0,
+      "received_rtp_mbps": 2.512097043558252,
+      "packets_lost_delta": 0,
+      "rtp_counter_continuity": true,
+      "utc_start_ms": 1792085524249,
+      "utc_end_ms": 1792085584247,
+      "sample_count": 61,
+      "pixel_range_min": 245,
+      "pixel_range_threshold": 5,
+      "nonuniform_image_check_passed": true,
+      "recording_start": {
+        "active": true,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "cpu",
+        "received_frames": 233,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 233
+      },
+      "recording_end": {
+        "active": true,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "cpu",
+        "received_frames": 1134,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 1134
+      }
+    },
+    {
+      "name": "live-record-2",
+      "recording": true,
+      "interval_s": 59.99739999999991,
+      "presented_frames": 902,
+      "presented_fps": 15.033984806008284,
+      "decoded_frames": 901,
+      "decoded_fps": 15.017317417088098,
+      "received_frames": 901,
+      "playback_total_frames": 901,
+      "playback_dropped_frames": 0,
+      "playback_drop_percent": 0,
+      "received_rtp_mbps": 2.4238841016444086,
+      "packets_lost_delta": 0,
+      "rtp_counter_continuity": true,
+      "utc_start_ms": 1792085610852,
+      "utc_end_ms": 1792085670850,
+      "sample_count": 61,
+      "pixel_range_min": 188,
+      "pixel_range_threshold": 5,
+      "nonuniform_image_check_passed": true,
+      "recording_start": {
+        "active": true,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "cpu",
+        "received_frames": 256,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 256
+      },
+      "recording_end": {
+        "active": true,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "cpu",
+        "received_frames": 1158,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 1158
+      }
+    },
+    {
+      "name": "live-only-2",
+      "recording": false,
+      "interval_s": 60.00379999999981,
+      "presented_frames": 901,
+      "presented_fps": 15.015715671340862,
+      "decoded_frames": 901,
+      "decoded_fps": 15.015715671340862,
+      "received_frames": 901,
+      "playback_total_frames": 901,
+      "playback_dropped_frames": 0,
+      "playback_drop_percent": 0,
+      "received_rtp_mbps": 2.4962431046033826,
+      "packets_lost_delta": 0,
+      "rtp_counter_continuity": true,
+      "utc_start_ms": 1792085692809,
+      "utc_end_ms": 1792085752812,
+      "sample_count": 62,
+      "pixel_range_min": 235,
+      "pixel_range_threshold": 5,
+      "nonuniform_image_check_passed": true,
+      "recording_start": {
+        "active": false,
+        "dropped_frames": 0,
+        "duration": 78,
+        "finalization_duration_ms": 328.071649,
+        "finalized": true,
+        "path": "cpu",
+        "received_frames": 1172,
+        "writer_stop_duration_ms": 327.917958,
+        "written_frames": 1172
+      },
+      "recording_end": {
+        "active": false,
+        "dropped_frames": 0,
+        "duration": 78,
+        "finalization_duration_ms": 328.071649,
+        "finalized": true,
+        "path": "cpu",
+        "received_frames": 1172,
+        "writer_stop_duration_ms": 327.917958,
+        "written_frames": 1172
+      }
+    },
+    {
+      "name": "live-only-3",
+      "recording": false,
+      "interval_s": 60.00520000000019,
+      "presented_frames": 901,
+      "presented_fps": 15.015365335004253,
+      "decoded_frames": 901,
+      "decoded_fps": 15.015365335004253,
+      "received_frames": 901,
+      "playback_total_frames": 901,
+      "playback_dropped_frames": 0,
+      "playback_drop_percent": 0,
+      "received_rtp_mbps": 2.521722517381819,
+      "packets_lost_delta": 0,
+      "rtp_counter_continuity": true,
+      "utc_start_ms": 1792085767826,
+      "utc_end_ms": 1792085827831,
+      "sample_count": 62,
+      "pixel_range_min": 244,
+      "pixel_range_threshold": 5,
+      "nonuniform_image_check_passed": true,
+      "recording_start": {
+        "active": false,
+        "dropped_frames": 0,
+        "duration": 78,
+        "finalization_duration_ms": 328.071649,
+        "finalized": true,
+        "path": "cpu",
+        "received_frames": 1172,
+        "writer_stop_duration_ms": 327.917958,
+        "written_frames": 1172
+      },
+      "recording_end": {
+        "active": false,
+        "dropped_frames": 0,
+        "duration": 78,
+        "finalization_duration_ms": 328.071649,
+        "finalized": true,
+        "path": "cpu",
+        "received_frames": 1172,
+        "writer_stop_duration_ms": 327.917958,
+        "written_frames": 1172
+      }
+    },
+    {
+      "name": "live-record-3",
+      "recording": true,
+      "interval_s": 60.002899999999904,
+      "presented_frames": 901,
+      "presented_fps": 15.015940896190042,
+      "decoded_frames": 902,
+      "decoded_fps": 15.032606757340085,
+      "received_frames": 901,
+      "playback_total_frames": 902,
+      "playback_dropped_frames": 0,
+      "playback_drop_percent": 0,
+      "received_rtp_mbps": 2.5127032193444023,
+      "packets_lost_delta": 0,
+      "rtp_counter_continuity": true,
+      "utc_start_ms": 1792085844923,
+      "utc_end_ms": 1792085904925,
+      "sample_count": 62,
+      "pixel_range_min": 206,
+      "pixel_range_threshold": 5,
+      "nonuniform_image_check_passed": true,
+      "recording_start": {
+        "active": true,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "cpu",
+        "received_frames": 241,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 241
+      },
+      "recording_end": {
+        "active": true,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "cpu",
+        "received_frames": 1142,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 1142
+      }
+    },
+    {
+      "name": "long-recording",
+      "recording": true,
+      "interval_s": 600.0003000000003,
+      "presented_frames": 9010,
+      "presented_fps": 15.016659158337081,
+      "decoded_frames": 9011,
+      "decoded_fps": 15.018325824170415,
+      "received_frames": 9011,
+      "playback_total_frames": 9011,
+      "playback_dropped_frames": 1,
+      "playback_drop_percent": 0.011097547442015314,
+      "received_rtp_mbps": 2.499842643412011,
+      "packets_lost_delta": 0,
+      "rtp_counter_continuity": true,
+      "utc_start_ms": 1792085929148,
+      "utc_end_ms": 1792086529148,
+      "sample_count": 597,
+      "pixel_range_min": 174,
+      "pixel_range_threshold": 5,
+      "nonuniform_image_check_passed": true,
+      "recording_start": {
+        "active": true,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "cpu",
+        "received_frames": 229,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 229
+      },
+      "recording_end": {
+        "active": true,
+        "dropped_frames": 0,
+        "finalization_duration_ms": 0,
+        "finalized": false,
+        "path": "cpu",
+        "received_frames": 9241,
+        "writer_stop_duration_ms": 0,
+        "written_frames": 9241
+      }
+    }
+  ],
+  "recordings": [
+    {
+      "observed_active_duration_s": 75.174083838,
+      "stop_to_finalized_observed_ms": 2605.4041480000014,
+      "finalized_to_both_replicas_completed_observed_ms": 5713.294514000008,
+      "finalization_duration_ms": 950.119949,
+      "writer_stop_duration_ms": 950.005078,
+      "size_bytes": 70460824,
+      "sha256_match": true,
+      "id": "f450-01",
+      "sha256_edge": "25087910a5affc3e9a45e4cbf7365c0ffe6fc2b7b48326d8f5aef733c9881157",
+      "sha256_server": "25087910a5affc3e9a45e4cbf7365c0ffe6fc2b7b48326d8f5aef733c9881157",
+      "recorder_diagnostics": {
+        "active": false,
+        "dropped_frames": 0,
+        "duration": 76,
+        "finalization_duration_ms": 950.119949,
+        "finalized": true,
+        "path": "cpu",
+        "received_frames": 1142,
+        "writer_stop_duration_ms": 950.005078,
+        "written_frames": 1142
+      },
+      "transfer_timing": {
+        "size_bytes": 70460824,
+        "utc_start_ms": 1792085591750,
+        "utc_end_ms": 1792085591913,
+        "hash_duration_ms": 57.121956,
+        "request_duration_ms": 163.431733
+      },
+      "metadata": {
+        "duration_seconds": 77,
+        "version": 5,
+        "frame_count": "1142",
+        "dropped_frames": "0"
+      },
+      "probe": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "avg_frame_rate": "1713000/114059",
+            "nb_frames": "1142"
+          }
+        ],
+        "format": {
+          "duration": "76.039333",
+          "size": "70460824",
+          "bit_rate": "7413092"
+        }
+      }
+    },
+    {
+      "observed_active_duration_s": 75.008883688,
+      "stop_to_finalized_observed_ms": 1467.0518359999987,
+      "finalized_to_both_replicas_completed_observed_ms": 5311.553469999984,
+      "finalization_duration_ms": 328.071649,
+      "writer_stop_duration_ms": 327.917958,
+      "size_bytes": 69999394,
+      "sha256_match": true,
+      "id": "f450-02",
+      "sha256_edge": "766e91e274b4774ae6c1001f49a28e85ff24d36cc978f3c2a91f6f4de83a8524",
+      "sha256_server": "766e91e274b4774ae6c1001f49a28e85ff24d36cc978f3c2a91f6f4de83a8524",
+      "recorder_diagnostics": {
+        "active": false,
+        "dropped_frames": 0,
+        "duration": 78,
+        "finalization_duration_ms": 328.071649,
+        "finalized": true,
+        "path": "cpu",
+        "received_frames": 1172,
+        "writer_stop_duration_ms": 327.917958,
+        "written_frames": 1172
+      },
+      "transfer_timing": {
+        "size_bytes": 69999394,
+        "utc_start_ms": 1792085676759,
+        "utc_end_ms": 1792085676922,
+        "hash_duration_ms": 56.765659,
+        "request_duration_ms": 163.296737
+      },
+      "metadata": {
+        "duration_seconds": 79,
+        "version": 5,
+        "frame_count": "1172",
+        "dropped_frames": "0"
+      },
+      "probe": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "avg_frame_rate": "439500/29263",
+            "nb_frames": "1172"
+          }
+        ],
+        "format": {
+          "duration": "78.034667",
+          "size": "69999394",
+          "bit_rate": "7176235"
+        }
+      }
+    },
+    {
+      "observed_active_duration_s": 75.014910454,
+      "stop_to_finalized_observed_ms": 2904.1590499999584,
+      "finalized_to_both_replicas_completed_observed_ms": 4899.262060000037,
+      "finalization_duration_ms": 308.162124,
+      "writer_stop_duration_ms": 308.022767,
+      "size_bytes": 69557627,
+      "sha256_match": true,
+      "id": "f450-03",
+      "sha256_edge": "36442a3e79681683d24536ad1262de040fb53315c077a7985e86f917f16ec47f",
+      "sha256_server": "36442a3e79681683d24536ad1262de040fb53315c077a7985e86f917f16ec47f",
+      "recorder_diagnostics": {
+        "active": false,
+        "dropped_frames": 0,
+        "duration": 77,
+        "finalization_duration_ms": 308.162124,
+        "finalized": true,
+        "path": "cpu",
+        "received_frames": 1157,
+        "writer_stop_duration_ms": 308.022767,
+        "written_frames": 1157
+      },
+      "transfer_timing": {
+        "size_bytes": 69557627,
+        "utc_start_ms": 1792085911793,
+        "utc_end_ms": 1792085911974,
+        "hash_duration_ms": 51.758777,
+        "request_duration_ms": 180.328072
+      },
+      "metadata": {
+        "duration_seconds": 78,
+        "version": 5,
+        "frame_count": "1157",
+        "dropped_frames": "0"
+      },
+      "probe": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "avg_frame_rate": "347100/23107",
+            "nb_frames": "1157"
+          }
+        ],
+        "format": {
+          "duration": "77.023333",
+          "size": "69557627",
+          "bit_rate": "7224577"
+        }
+      }
+    },
+    {
+      "observed_active_duration_s": 615.183060351,
+      "stop_to_finalized_observed_ms": 2100.8722779999953,
+      "finalized_to_both_replicas_completed_observed_ms": 2871.3972769998945,
+      "finalization_duration_ms": 391.835127,
+      "writer_stop_duration_ms": 391.753857,
+      "size_bytes": 563137159,
+      "sha256_match": true,
+      "id": "f450-04",
+      "sha256_edge": "dede21beff51db5d2f5194c4b928dbb1c95e2a24fb515873e4aa3baa6bd0ea1b",
+      "sha256_server": "dede21beff51db5d2f5194c4b928dbb1c95e2a24fb515873e4aa3baa6bd0ea1b",
+      "recorder_diagnostics": {
+        "active": false,
+        "dropped_frames": 0,
+        "duration": 616,
+        "finalization_duration_ms": 391.835127,
+        "finalized": true,
+        "path": "cpu",
+        "received_frames": 9255,
+        "writer_stop_duration_ms": 391.753857,
+        "written_frames": 9255
+      },
+      "transfer_timing": {
+        "size_bytes": 563137159,
+        "utc_start_ms": 1792086532329,
+        "utc_end_ms": 1792086533297,
+        "hash_duration_ms": 502.558315,
+        "request_duration_ms": 968.003237
+      },
+      "metadata": {
+        "duration_seconds": 617,
+        "version": 5,
+        "frame_count": "9255",
+        "dropped_frames": "0"
+      },
+      "probe": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "avg_frame_rate": "462750/30809",
+            "nb_frames": "9255"
+          }
+        ],
+        "format": {
+          "duration": "616.180000",
+          "size": "563137159",
+          "bit_rate": "7311333"
+        }
+      }
+    }
+  ],
+  "commands": [
+    {
+      "observed_completion_ms": 2294.601434,
+      "poll_interval_ms": 200,
+      "replicas": [
+        {
+          "status": "completed",
+          "version": 4
+        },
+        {
+          "status": "completed",
+          "version": 4
+        }
+      ]
+    },
+    {
+      "observed_completion_ms": 1670.3730919999944,
+      "poll_interval_ms": 200,
+      "replicas": [
+        {
+          "status": "completed",
+          "version": 4
+        },
+        {
+          "status": "completed",
+          "version": 4
+        }
+      ]
+    },
+    {
+      "observed_completion_ms": 2603.3682810000028,
+      "poll_interval_ms": 200,
+      "replicas": [
+        {
+          "status": "completed",
+          "version": 4
+        },
+        {
+          "status": "completed",
+          "version": 4
+        }
+      ]
+    },
+    {
+      "observed_completion_ms": 3100.066418000002,
+      "poll_interval_ms": 200,
+      "replicas": [
+        {
+          "status": "completed",
+          "version": 4
+        },
+        {
+          "status": "completed",
+          "version": 4
+        }
+      ]
+    },
+    {
+      "observed_completion_ms": 1464.2138419999974,
+      "poll_interval_ms": 200,
+      "replicas": [
+        {
+          "status": "completed",
+          "version": 4
+        },
+        {
+          "status": "completed",
+          "version": 4
+        }
+      ]
+    },
+    {
+      "observed_completion_ms": 2073.800309000013,
+      "poll_interval_ms": 200,
+      "replicas": [
+        {
+          "status": "completed",
+          "version": 4
+        },
+        {
+          "status": "completed",
+          "version": 4
+        }
+      ]
+    },
+    {
+      "observed_completion_ms": 2902.064493999991,
+      "poll_interval_ms": 200,
+      "replicas": [
+        {
+          "status": "completed",
+          "version": 4
+        },
+        {
+          "status": "completed",
+          "version": 4
+        }
+      ]
+    },
+    {
+      "observed_completion_ms": 1041.183498999977,
+      "poll_interval_ms": 200,
+      "replicas": [
+        {
+          "status": "completed",
+          "version": 4
+        },
+        {
+          "status": "completed",
+          "version": 4
+        }
+      ]
+    },
+    {
+      "observed_completion_ms": 2098.5184819998685,
+      "poll_interval_ms": 200,
+      "replicas": [
+        {
+          "status": "completed",
+          "version": 4
+        },
+        {
+          "status": "completed",
+          "version": 4
+        }
+      ]
+    },
+    {
+      "observed_completion_ms": 1246.878900000127,
+      "poll_interval_ms": 200,
+      "replicas": [
+        {
+          "status": "completed",
+          "version": 4
+        },
+        {
+          "status": "completed",
+          "version": 4
+        }
+      ]
+    }
+  ],
+  "protocol": {
+    "warmup_s": 15,
+    "sample_s": 60,
+    "long_recording_s": 600,
+    "replicates": 3
+  },
+  "capture": {
+    "model": "Intel F450",
+    "width": 1280,
+    "height": 704,
+    "frame_rate": 15,
+    "pixel_format": "YUYV",
+    "recording_codec": "h264",
+    "live_codec": "VP8",
+    "dynamic_frame_rate_control_exposed": false
+  }
+}

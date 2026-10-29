@@ -1,0 +1,12 @@
+{
+  "name": "thesis-evaluation",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Reproducible local measurement tools for thesis comments 19 and 21-25",
+  "scripts": {
+    "test": "node metrics.cjs && node --check verify-benchmark.cjs && python3 -m unittest discover -p 'test_*.py'"
+  },
+  "dependencies": {
+    "playwright": "1.64.1"
+  }
+}

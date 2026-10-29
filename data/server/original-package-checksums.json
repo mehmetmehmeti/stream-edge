@@ -1,0 +1,179 @@
+{
+  "entries": [
+    {
+      "source_label": "server-package/SERVER_EVIDENCE_HANDOFF_2026-10-22.md",
+      "original_sha256": "9bdb9cdb14538deabbbad9dc7467a079d06524274f351c79871891400d8e4251",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/SERVER_EVIDENCE_README.md",
+      "original_sha256": "df53cbd0ff951e80fb3fbf4833970987f0fab531ed386d1ad6f0e45d04db3618",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/VERIFICATION-SUMMARY.md",
+      "original_sha256": "279d8082cb131eba818baf7ce72fbe61ecef5f6d530fbf296bef302e27111d6b",
+      "initially_received": false
+    },
+    {
+      "source_label": "server-package/addresses.json.txt",
+      "original_sha256": "1893f9c6dc81924cd6e5638c4c3f289f1613aaf4bd4fa3ce60d1dad6c8173391",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/architecture.txt",
+      "original_sha256": "5f4cc8c16cd484a9ad67b40157c5071fc25286aeb6194c9283e81f003418bfd5",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/backend-web-commit.txt",
+      "original_sha256": "c7dfc9445c92d9b7b43c73f142c0ac19def696638920582106b0fd6259e57e42",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/backend-web-dirty.txt",
+      "original_sha256": "613fc9424fcac68e33561693522b690281666b9701b5973047d6b97e09b9f59d",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/backend-web-journal.txt",
+      "original_sha256": "d68b2d7751eb8a54b55842f042f2566115982f82ad3ccf8f955d3a6a54089e81",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/backend-web-process.txt",
+      "original_sha256": "e67034700f24d8bd5ccf43310ee32eb1f71ba9615c8c78b2485128aef71ec116",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/backend-web-service.txt",
+      "original_sha256": "687e9e89a1d2d2077fb195f5e985970dd69339326a735cfe83ce29ab724e9c17",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/cleanup-evidence.json",
+      "original_sha256": "f41e5e5a4bac5db6833349c85ddbd5a6a334de9ae69d2ec9e8ac5afdd3e2fbc9",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/connections.txt",
+      "original_sha256": "c349bb31061357bbac403bfac4a257f2025ae7d4dce0e2a321015a72df8c3b82",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/expected-server-evidence.json",
+      "original_sha256": "acba5863f33f859efd7efa836dc4c0bc8b8d496fe28a07a6dc1b6eaaebb505d9",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/frontend-web-commit.txt",
+      "original_sha256": "b83b6673274badb1fb2491e97a27c57f4ae9055646c93b2d77fd6ffae511d349",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/frontend-web-dirty.txt",
+      "original_sha256": "111d15030586c0c2cbe3744a98c168bc10a00abdaa015ca4f1dc8b6961b04683",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/frontend-web-journal.txt",
+      "original_sha256": "7f921d2a348f236fd4967b269cacb9054e587034478d48740c750c75288fc2ba",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/frontend-web-process.txt",
+      "original_sha256": "060f56b981f6c49060c566cd641257ea843590c3dce49a33d900b15176aa278a",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/frontend-web-service.txt",
+      "original_sha256": "2585cd0466fcead9c8a04a9b91ffc44d3415c995e20a6fd660b172c91dccc7cf",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/listeners.txt",
+      "original_sha256": "641f6518422381f6b02c2d856acb628f63a7f30e9048768d1f1636cca3479f41",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/media-server-commit.txt",
+      "original_sha256": "912704162975631c60f60e18fd3b0f5c4840be45371351ffabd6f114c7013f23",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/media-server-dirty.txt",
+      "original_sha256": "e82ba3b6ea263327d02238a70390f1204f2978372358a8965c09973d06e4c92d",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/media-server-journal.txt",
+      "original_sha256": "0af4d0c6e783c858998b67aa25242bfed9961614f035730a30edfb40fbd0a2b4",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/media-server-process.txt",
+      "original_sha256": "39b564cbe2bfd65d6646d3e5ab4463edaf9f74ea44687c504ac08e6bba0a854f",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/media-server-service.txt",
+      "original_sha256": "10a0b05de7b84a499b531ead821f65e883ade935d414c925f1ccd855d753c857",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/node.txt",
+      "original_sha256": "ccd845eeb14433f22bb7b56da700c05b18570e7e402ed48c28970524e7c5c0b1",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/os-release.txt",
+      "original_sha256": "9b8bcddc05d43cc2bc3716a49bd1052ac749f482b3485f3b685ad60caa72e7cf",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/postgres.txt",
+      "original_sha256": "94f26eda54de45d5efc55309dd161f876dc0b883a63e1dcd0f32279539affcc5",
+      "initially_received": false
+    },
+    {
+      "source_label": "server-package/processes.txt",
+      "original_sha256": "6662df88e3e5673f909a73946e9958d8084c19a35118f2223ae20b7dc707129f",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/routes.txt",
+      "original_sha256": "89d5702da6156b1a05563158fed8ae05f14e4ce522627f8b2950143e9479948e",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/selected-database-evidence.json",
+      "original_sha256": "7e8fa55facae72c4b2c17aba271161cf93fd2ed2adffe6f4d4a9cba2e46ab422",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/server-host-service-evidence.json",
+      "original_sha256": "a0712058e43aa2ba7ec08054b84d579e16635133e96ab9715714bb0837ee3a27",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/server-lan-verification.json",
+      "original_sha256": "dc55ffa2bae6da825968e30a72ec379d35ca4b14f6586ce39bc4da72af552611",
+      "initially_received": false
+    },
+    {
+      "source_label": "server-package/supplied-verifier-original-report.json",
+      "original_sha256": "e6546f5d4d2c0371b64b4bb27bb642311a94c618ffaf67f90a4dde892b031c53",
+      "initially_received": true
+    },
+    {
+      "source_label": "server-package/verify-lan-on-server.cjs",
+      "original_sha256": "7c8be370ca94b8883ce392bf91588fc32f35896d811bd2a6718b82f42b1af80d",
+      "initially_received": true
+    }
+  ],
+  "recovered_normalized_report_sha256": "dc55ffa2bae6da825968e30a72ec379d35ca4b14f6586ce39bc4da72af552611",
+  "still_missing": [
+    "VERIFICATION-SUMMARY.md",
+    "postgres.txt"
+  ]
+}

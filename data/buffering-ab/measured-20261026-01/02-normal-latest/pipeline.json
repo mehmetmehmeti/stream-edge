@@ -1,0 +1,8 @@
+{
+  "profile": "latest",
+  "sleep_us": 0,
+  "pipeline": "shmsrc socket-path=WITHHELD_LOCAL_SOCKET is-live=true do-timestamp=true ! video/x-raw,format=RGBA,width=1280,height=704,framerate=15/1 ! queue name=ab_queue max-size-buffers=2 max-size-bytes=0 max-size-time=0 leaky=downstream ! identity name=ab_delay sleep-time=0 ! videoconvert ! video/x-raw,format=I420 ! vp8enc name=ab_encoder deadline=1 cpu-used=8 target-bitrate=2500000 keyframe-max-dist=15 ! rtpvp8pay pt=96 ssrc=2 mtu=1200 ! application/x-rtp,media=video,encoding-name=VP8,payload=96,clock-rate=90000",
+  "pipeline_sha256": "0faf434c8d425273832971d58e0a9a32119d5e70c20d91d73bc913356006e511",
+  "published_pipeline_sha256": "82c32d849f911f1cba819f65900bf4d8d90305852facb56c22149a6a412e5f2a",
+  "hash_note": "pipeline_sha256 is historical and unchanged; only socket location is replaced in the published pipeline."
+}

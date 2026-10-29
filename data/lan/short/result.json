@@ -1,0 +1,1229 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-10-22T17-56-52-657Z",
+  "started_at": "2026-10-22T17:56:52.658Z",
+  "mode": "short",
+  "requested_cycles": 1,
+  "status": "passed",
+  "script_sha256": "298f303a9737d441714f64f3cc7d26bca0587ce2e96709ba11ae7da8c49a700d",
+  "finished_at": "2026-10-22T17:57:45.571Z",
+  "summary_correction": "Derived stream-stop group corrected to exclude recording-stop; all raw readings and the pre-normalization report are preserved.",
+  "host": "EDGE_HOST",
+  "cycles": [
+    {
+      "index": 1,
+      "started_at": "2026-10-22T17:56:54.442Z",
+      "status": "passed",
+      "stream_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+      "video_id": "7a3b41bc-9eaa-4a92-8e88-123e7a85b770",
+      "stop_to_both_completed_and_verification_ms": 11762.507444000003,
+      "finished_at": "2026-10-22T17:57:45.436Z",
+      "startup": {
+        "width": 1280,
+        "height": 704,
+        "frames": 1,
+        "observed_startup_ms": 2969.2341830000005
+      },
+      "live_replicas": {
+        "edge": {
+          "id": "1e51016a-25ae-41e1-a032-7283501a203f",
+          "status": "live",
+          "version": 2,
+          "mediasoup_stream_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+          "started_at": "2026-10-22T17:56:55.300Z",
+          "ended_at": null,
+          "created_at": "2026-10-22T17:56:54.483Z",
+          "updated_at": "2026-10-22T17:56:55.300Z"
+        },
+        "web": {
+          "id": "1e51016a-25ae-41e1-a032-7283501a203f",
+          "status": "live",
+          "version": 2,
+          "mediasoup_stream_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+          "started_at": "2026-10-22T17:56:55.300Z",
+          "ended_at": null,
+          "created_at": "2026-10-22T17:56:54.483Z",
+          "updated_at": "2026-10-22T17:56:55.300Z"
+        }
+      },
+      "recording_replicas": {
+        "edge": {
+          "id": "7a3b41bc-9eaa-4a92-8e88-123e7a85b770",
+          "stream_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+          "status": "recording",
+          "version": 2,
+          "frame_count": null,
+          "dropped_frames": null,
+          "size_bytes": null,
+          "duration_seconds": null,
+          "started_at": "2026-10-22T17:57:07.635Z",
+          "ended_at": null,
+          "uploaded_at": null,
+          "created_at": "2026-10-22T17:57:07.635Z",
+          "updated_at": "2026-10-22T17:57:08.308Z"
+        },
+        "web": {
+          "id": "7a3b41bc-9eaa-4a92-8e88-123e7a85b770",
+          "stream_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+          "status": "recording",
+          "version": 2,
+          "frame_count": null,
+          "dropped_frames": null,
+          "size_bytes": null,
+          "duration_seconds": null,
+          "started_at": "2026-10-22T17:57:07.635Z",
+          "ended_at": null,
+          "uploaded_at": null,
+          "created_at": "2026-10-22T17:57:07.635Z",
+          "updated_at": "2026-10-22T17:57:08.308Z"
+        }
+      },
+      "ended_replicas": {
+        "edge": {
+          "id": "1e51016a-25ae-41e1-a032-7283501a203f",
+          "status": "ended",
+          "version": 4,
+          "mediasoup_stream_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+          "started_at": "2026-10-22T17:56:55.300Z",
+          "ended_at": "2026-10-22T17:57:44.312Z",
+          "created_at": "2026-10-22T17:56:54.483Z",
+          "updated_at": "2026-10-22T17:57:44.312Z"
+        },
+        "web": {
+          "id": "1e51016a-25ae-41e1-a032-7283501a203f",
+          "status": "ended",
+          "version": 4,
+          "mediasoup_stream_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+          "started_at": "2026-10-22T17:56:55.300Z",
+          "ended_at": "2026-10-22T17:57:44.312Z",
+          "created_at": "2026-10-22T17:56:54.483Z",
+          "updated_at": "2026-10-22T17:57:44.312Z"
+        }
+      },
+      "live_only": {
+        "metrics": {
+          "interval_s": 10.012700000017881,
+          "presented_frames": 150,
+          "presented_fps": 14.980974162786474,
+          "decoded_frames": 150,
+          "decoded_fps": 14.980974162786474,
+          "received_frames": 151,
+          "playback_total_frames": 151,
+          "playback_dropped_frames": 0,
+          "playback_drop_percent": 0,
+          "received_rtp_mbps": 1.6054235121367157,
+          "packets_lost_delta": 0,
+          "rtp_counter_continuity": true
+        },
+        "start": {
+          "holoscanConfigured": true,
+          "recording": false,
+          "sourceConfigured": true,
+          "sourceSignal": true,
+          "streaming": true,
+          "status": "ok",
+          "recordingStatus": {
+            "active": false,
+            "dropped_frames": 0,
+            "duration": 22,
+            "ended_at": "2026-10-22T17:55:46Z",
+            "finalization_duration_ms": 265.585826,
+            "finalized": true,
+            "received_frames": 330,
+            "recorded_at": "2026-10-22T17:55:23Z",
+            "writer_stop_duration_ms": 265.481901,
+            "written_frames": 330
+          },
+          "publisher": {
+            "bridge_acquired_frame_count": 15276,
+            "bridge_dropped_frame_count": 0,
+            "bridge_published_frame_count": 15272,
+            "consumed_frame_count": 32,
+            "enabled": true,
+            "frame_stall_timeout_ms": 10000,
+            "frames_progressing": true,
+            "last_frame_age_ms": 14,
+            "last_frame_number": 31,
+            "last_frame_timestamp_ns": 173678316627789,
+            "required": true,
+            "running": true,
+            "session_reused": false,
+            "state": "running",
+            "stream_name": "1e51016a-25ae-41e1-a032-7283501a203f",
+            "framebridge_export": {
+              "bytes_pushed": 115343360,
+              "channels": 4,
+              "effective_fps": 0.5297330333169156,
+              "frame_rate_den": 1,
+              "frame_rate_num": 15,
+              "frames_pushed": 32,
+              "gst_format": "RGBA",
+              "height": 704,
+              "last_frame_number": 31,
+              "last_frame_timestamp_ns": 173678316627789,
+              "started": true,
+              "width": 1280
+            }
+          },
+          "commandSync": {
+            "device_status_interval_ms": 5000,
+            "device_status_keepalive_ms": 25000,
+            "enabled": false,
+            "processed_command_count": 0,
+            "running": false,
+            "state": "disabled",
+            "synced_device_status_count": 0,
+            "synced_local_action_count": 0,
+            "websocket_connected": false,
+            "websocket_enabled": true,
+            "websocket_state": "disabled"
+          }
+        },
+        "end": {
+          "holoscanConfigured": true,
+          "recording": false,
+          "sourceConfigured": true,
+          "sourceSignal": true,
+          "streaming": true,
+          "status": "ok",
+          "recordingStatus": {
+            "active": false,
+            "dropped_frames": 0,
+            "duration": 22,
+            "ended_at": "2026-10-22T17:55:46Z",
+            "finalization_duration_ms": 265.585826,
+            "finalized": true,
+            "received_frames": 330,
+            "recorded_at": "2026-10-22T17:55:23Z",
+            "writer_stop_duration_ms": 265.481901,
+            "written_frames": 330
+          },
+          "publisher": {
+            "bridge_acquired_frame_count": 15426,
+            "bridge_dropped_frame_count": 0,
+            "bridge_published_frame_count": 15422,
+            "consumed_frame_count": 182,
+            "enabled": true,
+            "frame_stall_timeout_ms": 10000,
+            "frames_progressing": true,
+            "last_frame_age_ms": 40,
+            "last_frame_number": 181,
+            "last_frame_timestamp_ns": 173688302929478,
+            "required": true,
+            "running": true,
+            "session_reused": false,
+            "state": "running",
+            "stream_name": "1e51016a-25ae-41e1-a032-7283501a203f",
+            "framebridge_export": {
+              "bytes_pushed": 656015360,
+              "channels": 4,
+              "effective_fps": 2.6420910393659027,
+              "frame_rate_den": 1,
+              "frame_rate_num": 15,
+              "frames_pushed": 182,
+              "gst_format": "RGBA",
+              "height": 704,
+              "last_frame_number": 181,
+              "last_frame_timestamp_ns": 173688302929478,
+              "started": true,
+              "width": 1280
+            }
+          },
+          "commandSync": {
+            "device_status_interval_ms": 5000,
+            "device_status_keepalive_ms": 25000,
+            "enabled": false,
+            "processed_command_count": 0,
+            "running": false,
+            "state": "disabled",
+            "synced_device_status_count": 0,
+            "synced_local_action_count": 0,
+            "websocket_connected": false,
+            "websocket_enabled": true,
+            "websocket_state": "disabled"
+          }
+        },
+        "additional_viewers": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "live_recording": {
+        "metrics": {
+          "interval_s": 20.01520000001788,
+          "presented_frames": 299,
+          "presented_fps": 14.938646628548947,
+          "decoded_frames": 300,
+          "decoded_fps": 14.98860865740697,
+          "received_frames": 301,
+          "playback_total_frames": 301,
+          "playback_dropped_frames": 1,
+          "playback_drop_percent": 0.33222591362126247,
+          "received_rtp_mbps": 1.0244438226938368,
+          "packets_lost_delta": 0,
+          "rtp_counter_continuity": true
+        },
+        "start": {
+          "holoscanConfigured": true,
+          "recording": true,
+          "sourceConfigured": true,
+          "sourceSignal": true,
+          "streaming": true,
+          "status": "ok",
+          "recordingStatus": {
+            "active": true,
+            "dropped_frames": 0,
+            "finalization_duration_ms": 0,
+            "finalized": false,
+            "received_frames": 17,
+            "recorded_at": "2026-10-22T17:57:08Z",
+            "writer_stop_duration_ms": 0,
+            "written_frames": 17
+          },
+          "publisher": {
+            "bridge_acquired_frame_count": 15454,
+            "bridge_dropped_frame_count": 0,
+            "bridge_published_frame_count": 15450,
+            "consumed_frame_count": 210,
+            "enabled": true,
+            "frame_stall_timeout_ms": 10000,
+            "frames_progressing": true,
+            "last_frame_age_ms": 12,
+            "last_frame_number": 209,
+            "last_frame_timestamp_ns": 173690167309572,
+            "required": true,
+            "running": true,
+            "session_reused": false,
+            "state": "running",
+            "stream_name": "1e51016a-25ae-41e1-a032-7283501a203f",
+            "framebridge_export": {
+              "bytes_pushed": 756940800,
+              "channels": 4,
+              "effective_fps": 2.9699850330918136,
+              "frame_rate_den": 1,
+              "frame_rate_num": 15,
+              "frames_pushed": 210,
+              "gst_format": "RGBA",
+              "height": 704,
+              "last_frame_number": 209,
+              "last_frame_timestamp_ns": 173690167309572,
+              "started": true,
+              "width": 1280
+            }
+          },
+          "commandSync": {
+            "device_status_interval_ms": 5000,
+            "device_status_keepalive_ms": 25000,
+            "enabled": false,
+            "processed_command_count": 0,
+            "running": false,
+            "state": "disabled",
+            "synced_device_status_count": 0,
+            "synced_local_action_count": 0,
+            "websocket_connected": false,
+            "websocket_enabled": true,
+            "websocket_state": "disabled"
+          }
+        },
+        "end": {
+          "holoscanConfigured": true,
+          "recording": true,
+          "sourceConfigured": true,
+          "sourceSignal": true,
+          "streaming": true,
+          "status": "ok",
+          "recordingStatus": {
+            "active": true,
+            "dropped_frames": 0,
+            "finalization_duration_ms": 0,
+            "finalized": false,
+            "received_frames": 317,
+            "recorded_at": "2026-10-22T17:57:08Z",
+            "writer_stop_duration_ms": 0,
+            "written_frames": 317
+          },
+          "publisher": {
+            "bridge_acquired_frame_count": 15754,
+            "bridge_dropped_frame_count": 0,
+            "bridge_published_frame_count": 15750,
+            "consumed_frame_count": 510,
+            "enabled": true,
+            "frame_stall_timeout_ms": 10000,
+            "frames_progressing": true,
+            "last_frame_age_ms": 54,
+            "last_frame_number": 509,
+            "last_frame_timestamp_ns": 173710140547357,
+            "required": true,
+            "running": true,
+            "session_reused": false,
+            "state": "running",
+            "stream_name": "1e51016a-25ae-41e1-a032-7283501a203f",
+            "framebridge_export": {
+              "bytes_pushed": 1838284800,
+              "channels": 4,
+              "effective_fps": 5.634023396174453,
+              "frame_rate_den": 1,
+              "frame_rate_num": 15,
+              "frames_pushed": 510,
+              "gst_format": "RGBA",
+              "height": 704,
+              "last_frame_number": 509,
+              "last_frame_timestamp_ns": 173710140547357,
+              "started": true,
+              "width": 1280
+            }
+          },
+          "commandSync": {
+            "device_status_interval_ms": 5000,
+            "device_status_keepalive_ms": 25000,
+            "enabled": false,
+            "processed_command_count": 0,
+            "running": false,
+            "state": "disabled",
+            "synced_device_status_count": 0,
+            "synced_local_action_count": 0,
+            "websocket_connected": false,
+            "websocket_enabled": true,
+            "websocket_state": "disabled"
+          }
+        },
+        "additional_viewers": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "recorder_finalization": {
+        "active": false,
+        "dropped_frames": 0,
+        "duration": 22,
+        "ended_at": "2026-10-22T17:57:30Z",
+        "finalization_duration_ms": 208.128481,
+        "finalized": true,
+        "received_frames": 330,
+        "recorded_at": "2026-10-22T17:57:08Z",
+        "writer_stop_duration_ms": 207.983198,
+        "written_frames": 330
+      },
+      "file": {
+        "id": "7a3b41bc-9eaa-4a92-8e88-123e7a85b770",
+        "sha256_original": "be67a58e479ffedb205d9e5edc44a45cc4c51c97d766908650af13a4a2556659",
+        "sha256_remote_served": "be67a58e479ffedb205d9e5edc44a45cc4c51c97d766908650af13a4a2556659",
+        "hashes_match": true,
+        "decoded_frames_match": true,
+        "range_request_status": 206,
+        "verification_download_ms": 937.1452209999989,
+        "local_probe": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 1280,
+              "height": 704,
+              "nb_frames": "330",
+              "nb_read_frames": "330",
+              "avg_frame_rate": "495000/32959"
+            }
+          ],
+          "format": {
+            "duration": "21.972667",
+            "size": "16596082",
+            "bit_rate": "6042446"
+          }
+        },
+        "remote_served_probe": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 1280,
+              "height": 704,
+              "nb_frames": "330",
+              "nb_read_frames": "330",
+              "avg_frame_rate": "495000/32959"
+            }
+          ],
+          "format": {
+            "duration": "21.972667",
+            "size": "16596082",
+            "bit_rate": "6042446"
+          }
+        },
+        "replicas": {
+          "edge": {
+            "id": "7a3b41bc-9eaa-4a92-8e88-123e7a85b770",
+            "stream_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+            "status": "completed",
+            "version": 5,
+            "frame_count": "330",
+            "dropped_frames": "0",
+            "size_bytes": "16596082",
+            "duration_seconds": 23,
+            "started_at": "2026-10-22T17:57:07.635Z",
+            "ended_at": "2026-10-22T17:57:30.307Z",
+            "uploaded_at": "2026-10-22T17:57:36.322Z",
+            "created_at": "2026-10-22T17:57:07.635Z",
+            "updated_at": "2026-10-22T17:57:36.322Z"
+          },
+          "web": {
+            "id": "7a3b41bc-9eaa-4a92-8e88-123e7a85b770",
+            "stream_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+            "status": "completed",
+            "version": 5,
+            "frame_count": "330",
+            "dropped_frames": "0",
+            "size_bytes": "16596082",
+            "duration_seconds": 23,
+            "started_at": "2026-10-22T17:57:07.635Z",
+            "ended_at": "2026-10-22T17:57:30.307Z",
+            "uploaded_at": "2026-10-22T17:57:36.322Z",
+            "created_at": "2026-10-22T17:57:07.635Z",
+            "updated_at": "2026-10-22T17:57:36.322Z"
+          }
+        },
+        "status_history": [
+          {
+            "side": "web",
+            "observed_at": "2026-10-22T17:57:30.807Z",
+            "status": "uploading",
+            "version": 4
+          },
+          {
+            "side": "edge",
+            "observed_at": "2026-10-22T17:57:30.807Z",
+            "status": "uploading",
+            "version": 4
+          },
+          {
+            "side": "web",
+            "observed_at": "2026-10-22T17:57:36.335Z",
+            "status": "completed",
+            "version": 5
+          },
+          {
+            "side": "edge",
+            "observed_at": "2026-10-22T17:57:36.975Z",
+            "status": "completed",
+            "version": 5
+          }
+        ],
+        "upload_timing": {
+          "video_id": "7a3b41bc-9eaa-4a92-8e88-123e7a85b770",
+          "size_bytes": 16596082,
+          "utc_start_ms": 1792691853258,
+          "utc_end_ms": 1792691856324,
+          "hash_duration_ms": 27.011784,
+          "request_duration_ms": 3066.648915
+        },
+        "local_original": "EDGE_RECORDINGS/7a3b41bc-9eaa-4a92-8e88-123e7a85b770.mp4",
+        "received_copy": "VERIFICATION_DOWNLOADS/7a3b41bc-9eaa-4a92-8e88-123e7a85b770.mp4"
+      },
+      "qt": {
+        "interval_s": 48.868064047,
+        "rendered_frames": 730,
+        "rendered_fps": 14.938181289479884
+      },
+      "playback": {
+        "playback": true,
+        "pause": true,
+        "seek": true,
+        "fullscreen": true,
+        "duration_s": 21.972667,
+        "host": "EDGE_HOST",
+        "browser_location": "edge diagnostic browser using server-hosted web application"
+      }
+    }
+  ],
+  "commands": [
+    {
+      "id": "b90ae357-a465-499f-8e78-67176a30e2c8",
+      "route": "/streams/start",
+      "observed_both_completed_ms": 2912.8393890000007,
+      "first_completed_observed_ms": {
+        "edge": 2063.463957,
+        "web": 2912.80641
+      },
+      "last_noncompleted_observed_ms": {
+        "edge": 1852.48485,
+        "web": 2701.420379
+      },
+      "observed_status_history": [
+        {
+          "side": "web",
+          "observed_ms": 37.79250100000013,
+          "status": "pending",
+          "version": 1
+        },
+        {
+          "side": "edge",
+          "observed_ms": 781.7319140000002,
+          "status": "pending",
+          "version": 1
+        },
+        {
+          "side": "web",
+          "observed_ms": 993.6928140000002,
+          "status": "claimed",
+          "version": 2
+        },
+        {
+          "side": "edge",
+          "observed_ms": 993.6928140000002,
+          "status": "processing",
+          "version": 3
+        },
+        {
+          "side": "web",
+          "observed_ms": 2063.463957,
+          "status": "processing",
+          "version": 3
+        },
+        {
+          "side": "edge",
+          "observed_ms": 2063.463957,
+          "status": "completed",
+          "version": 4
+        },
+        {
+          "side": "web",
+          "observed_ms": 2912.80641,
+          "status": "completed",
+          "version": 4
+        }
+      ],
+      "replicas": {
+        "edge": {
+          "id": "b90ae357-a465-499f-8e78-67176a30e2c8",
+          "stream_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+          "video_id": null,
+          "command": "start",
+          "target": "stream",
+          "status": "completed",
+          "version": 4,
+          "claimed_at": "2026-10-22T17:56:55.288Z",
+          "processed_at": "2026-10-22T17:56:55.300Z",
+          "created_at": "2026-10-22T17:56:54.489Z",
+          "updated_at": "2026-10-22T17:56:55.300Z"
+        },
+        "web": {
+          "id": "b90ae357-a465-499f-8e78-67176a30e2c8",
+          "stream_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+          "video_id": null,
+          "command": "start",
+          "target": "stream",
+          "status": "completed",
+          "version": 4,
+          "claimed_at": "2026-10-22T17:56:55.288Z",
+          "processed_at": "2026-10-22T17:56:55.300Z",
+          "created_at": "2026-10-22T17:56:54.489Z",
+          "updated_at": "2026-10-22T17:56:55.300Z"
+        }
+      }
+    },
+    {
+      "id": "aa32f9a2-49bf-4ac2-a8d5-4e4d7137d209",
+      "route": "/streams/1e51016a-25ae-41e1-a032-7283501a203f/recordings/start",
+      "observed_both_completed_ms": 1756.6955059999982,
+      "first_completed_observed_ms": {
+        "edge": 905.3002259999994,
+        "web": 1756.6717069999995
+      },
+      "last_noncompleted_observed_ms": {
+        "edge": 691.5804529999987,
+        "web": 1546.0156960000004
+      },
+      "observed_status_history": [
+        {
+          "side": "web",
+          "observed_ms": 47.46524899999895,
+          "status": "pending",
+          "version": 1
+        },
+        {
+          "side": "edge",
+          "observed_ms": 263.8722439999983,
+          "status": "pending",
+          "version": 1
+        },
+        {
+          "side": "web",
+          "observed_ms": 905.3002259999994,
+          "status": "processing",
+          "version": 3
+        },
+        {
+          "side": "edge",
+          "observed_ms": 905.3002259999994,
+          "status": "completed",
+          "version": 4
+        },
+        {
+          "side": "web",
+          "observed_ms": 1756.6717069999995,
+          "status": "completed",
+          "version": 4
+        }
+      ],
+      "replicas": {
+        "edge": {
+          "id": "aa32f9a2-49bf-4ac2-a8d5-4e4d7137d209",
+          "stream_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+          "video_id": "7a3b41bc-9eaa-4a92-8e88-123e7a85b770",
+          "command": "start",
+          "target": "recording",
+          "status": "completed",
+          "version": 4,
+          "claimed_at": "2026-10-22T17:57:08.292Z",
+          "processed_at": "2026-10-22T17:57:08.308Z",
+          "created_at": "2026-10-22T17:57:07.639Z",
+          "updated_at": "2026-10-22T17:57:08.308Z"
+        },
+        "web": {
+          "id": "aa32f9a2-49bf-4ac2-a8d5-4e4d7137d209",
+          "stream_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+          "video_id": "7a3b41bc-9eaa-4a92-8e88-123e7a85b770",
+          "command": "start",
+          "target": "recording",
+          "status": "completed",
+          "version": 4,
+          "claimed_at": "2026-10-22T17:57:08.292Z",
+          "processed_at": "2026-10-22T17:57:08.308Z",
+          "created_at": "2026-10-22T17:57:07.639Z",
+          "updated_at": "2026-10-22T17:57:08.308Z"
+        }
+      }
+    },
+    {
+      "id": "c824aa25-0820-418a-ac80-cd239e0ab3bd",
+      "route": "/streams/1e51016a-25ae-41e1-a032-7283501a203f/recordings/stop",
+      "observed_both_completed_ms": 1332.923057,
+      "first_completed_observed_ms": {
+        "edge": 1116.9102899999998,
+        "web": 1332.907693000001
+      },
+      "last_noncompleted_observed_ms": {
+        "edge": 902.9106619999948,
+        "web": 1116.9102899999998
+      },
+      "observed_status_history": [
+        {
+          "side": "web",
+          "observed_ms": 47.819477999997616,
+          "status": "pending",
+          "version": 1
+        },
+        {
+          "side": "edge",
+          "observed_ms": 476.43357399999513,
+          "status": "pending",
+          "version": 1
+        },
+        {
+          "side": "web",
+          "observed_ms": 902.9106619999948,
+          "status": "claimed",
+          "version": 2
+        },
+        {
+          "side": "edge",
+          "observed_ms": 902.9106619999948,
+          "status": "processing",
+          "version": 3
+        },
+        {
+          "side": "web",
+          "observed_ms": 1116.9102899999998,
+          "status": "processing",
+          "version": 3
+        },
+        {
+          "side": "edge",
+          "observed_ms": 1116.9102899999998,
+          "status": "completed",
+          "version": 4
+        },
+        {
+          "side": "web",
+          "observed_ms": 1332.907693000001,
+          "status": "completed",
+          "version": 4
+        }
+      ],
+      "replicas": {
+        "edge": {
+          "id": "c824aa25-0820-418a-ac80-cd239e0ab3bd",
+          "stream_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+          "video_id": "7a3b41bc-9eaa-4a92-8e88-123e7a85b770",
+          "command": "stop",
+          "target": "recording",
+          "status": "completed",
+          "version": 4,
+          "claimed_at": "2026-10-22T17:57:30.297Z",
+          "processed_at": "2026-10-22T17:57:30.307Z",
+          "created_at": "2026-10-22T17:57:29.489Z",
+          "updated_at": "2026-10-22T17:57:30.307Z"
+        },
+        "web": {
+          "id": "c824aa25-0820-418a-ac80-cd239e0ab3bd",
+          "stream_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+          "video_id": "7a3b41bc-9eaa-4a92-8e88-123e7a85b770",
+          "command": "stop",
+          "target": "recording",
+          "status": "completed",
+          "version": 4,
+          "claimed_at": "2026-10-22T17:57:30.297Z",
+          "processed_at": "2026-10-22T17:57:30.307Z",
+          "created_at": "2026-10-22T17:57:29.489Z",
+          "updated_at": "2026-10-22T17:57:30.307Z"
+        }
+      }
+    },
+    {
+      "id": "d9b968bb-481f-47e6-bccc-af031a5c4b40",
+      "route": "/streams/1e51016a-25ae-41e1-a032-7283501a203f/stop",
+      "observed_both_completed_ms": 2148.18477,
+      "first_completed_observed_ms": {
+        "edge": 1325.4165219999995,
+        "web": 2148.143694999999
+      },
+      "last_noncompleted_observed_ms": {
+        "edge": 1098.9437959999996,
+        "web": 1937.624901999996
+      },
+      "observed_status_history": [
+        {
+          "side": "web",
+          "observed_ms": 36.57313599999907,
+          "status": "pending",
+          "version": 1
+        },
+        {
+          "side": "edge",
+          "observed_ms": 672.4630380000017,
+          "status": "pending",
+          "version": 1
+        },
+        {
+          "side": "web",
+          "observed_ms": 1098.9437959999996,
+          "status": "claimed",
+          "version": 2
+        },
+        {
+          "side": "edge",
+          "observed_ms": 1098.9437959999996,
+          "status": "processing",
+          "version": 3
+        },
+        {
+          "side": "web",
+          "observed_ms": 1325.4165219999995,
+          "status": "processing",
+          "version": 3
+        },
+        {
+          "side": "edge",
+          "observed_ms": 1325.4165219999995,
+          "status": "completed",
+          "version": 4
+        },
+        {
+          "side": "web",
+          "observed_ms": 2148.143694999999,
+          "status": "completed",
+          "version": 4
+        }
+      ],
+      "replicas": {
+        "edge": {
+          "id": "d9b968bb-481f-47e6-bccc-af031a5c4b40",
+          "stream_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+          "video_id": null,
+          "command": "stop",
+          "target": "stream",
+          "status": "completed",
+          "version": 4,
+          "claimed_at": "2026-10-22T17:57:44.298Z",
+          "processed_at": "2026-10-22T17:57:44.312Z",
+          "created_at": "2026-10-22T17:57:43.306Z",
+          "updated_at": "2026-10-22T17:57:44.312Z"
+        },
+        "web": {
+          "id": "d9b968bb-481f-47e6-bccc-af031a5c4b40",
+          "stream_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+          "video_id": null,
+          "command": "stop",
+          "target": "stream",
+          "status": "completed",
+          "version": 4,
+          "claimed_at": "2026-10-22T17:57:44.298Z",
+          "processed_at": "2026-10-22T17:57:44.312Z",
+          "created_at": "2026-10-22T17:57:43.306Z",
+          "updated_at": "2026-10-22T17:57:44.312Z"
+        }
+      }
+    }
+  ],
+  "setup_commands": [],
+  "protocol": {
+    "recording_seconds_minimum": 20,
+    "command_poll_pause_ms": 200,
+    "frame_poll_pause_ms": 100,
+    "server_api": "SERVER_HOST:3000",
+    "web_url": "SERVER_HOST:3001",
+    "media_url": "SERVER_HOST:3010",
+    "edge_api": "EDGE_HOST:3002",
+    "L_command": "POST initiation to first observed COMPLETED on both replicas, including polling",
+    "L_startup": "POST initiation to first observed decoded browser frame; not optical latency"
+  },
+  "capture": {
+    "STREAMING_CAMERA_WIDTH": "1280",
+    "STREAMING_CAMERA_HEIGHT": "704",
+    "STREAMING_CAMERA_FRAME_RATE": "15",
+    "STREAMING_CAMERA_PIXEL_FORMAT": "YUYV",
+    "STREAMING_RECORD_FPS": "15",
+    "CLOUD_PUBLISH_FRAME_RATE_NUM": "15"
+  },
+  "local_sync_events": {
+    "sync_inbox": [
+      {
+        "event_id": "fb35ddcd-e83e-45ab-aea5-fd13a5a49b94",
+        "entity_type": "stream",
+        "entity_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+        "action": "CREATE",
+        "version": 1,
+        "status": "APPLIED",
+        "entity_status": "starting"
+      },
+      {
+        "event_id": "7fa97d92-b97f-4ee1-b8ac-907deedbd797",
+        "entity_type": "stream",
+        "entity_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+        "action": "UPDATE",
+        "version": 3,
+        "status": "APPLIED",
+        "entity_status": "stopping"
+      },
+      {
+        "event_id": "61b996cd-f608-4998-bee6-6593a960e93a",
+        "entity_type": "video",
+        "entity_id": "7a3b41bc-9eaa-4a92-8e88-123e7a85b770",
+        "action": "CREATE",
+        "version": 1,
+        "status": "APPLIED",
+        "entity_status": "recording"
+      },
+      {
+        "event_id": "35e72af1-b3bc-44e9-8d29-3ce26b78c970",
+        "entity_type": "video",
+        "entity_id": "7a3b41bc-9eaa-4a92-8e88-123e7a85b770",
+        "action": "UPDATE",
+        "version": 3,
+        "status": "APPLIED",
+        "entity_status": "uploading"
+      },
+      {
+        "event_id": "5abb09fd-d53c-4154-a150-58c671f46394",
+        "entity_type": "video",
+        "entity_id": "7a3b41bc-9eaa-4a92-8e88-123e7a85b770",
+        "action": "UPDATE",
+        "version": 5,
+        "status": "APPLIED",
+        "entity_status": "completed"
+      },
+      {
+        "event_id": "0e419613-4c23-4161-9a21-0fcffb5d484c",
+        "entity_type": "command",
+        "entity_id": "aa32f9a2-49bf-4ac2-a8d5-4e4d7137d209",
+        "action": "CREATE",
+        "version": 1,
+        "status": "APPLIED",
+        "entity_status": "pending"
+      },
+      {
+        "event_id": "6806c939-8c82-40e6-b189-243aeddefb36",
+        "entity_type": "command",
+        "entity_id": "b90ae357-a465-499f-8e78-67176a30e2c8",
+        "action": "CREATE",
+        "version": 1,
+        "status": "APPLIED",
+        "entity_status": "pending"
+      },
+      {
+        "event_id": "a5c0a5bb-911c-48de-b7d5-3dc0571c0744",
+        "entity_type": "command",
+        "entity_id": "c824aa25-0820-418a-ac80-cd239e0ab3bd",
+        "action": "CREATE",
+        "version": 1,
+        "status": "APPLIED",
+        "entity_status": "pending"
+      },
+      {
+        "event_id": "9899553f-1ba6-402e-a289-3c17ac7917a6",
+        "entity_type": "command",
+        "entity_id": "d9b968bb-481f-47e6-bccc-af031a5c4b40",
+        "action": "CREATE",
+        "version": 1,
+        "status": "APPLIED",
+        "entity_status": "pending"
+      }
+    ],
+    "sync_outbox": [
+      {
+        "event_id": "3caac3dc-5ba3-41d7-b4f4-6f9608f5aa00",
+        "entity_type": "stream",
+        "entity_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+        "action": "UPDATE",
+        "version": 2,
+        "status": "APPLIED",
+        "entity_status": "live"
+      },
+      {
+        "event_id": "1bd3eeb9-3533-44b0-b7b4-b914c0ff7170",
+        "entity_type": "stream",
+        "entity_id": "1e51016a-25ae-41e1-a032-7283501a203f",
+        "action": "UPDATE",
+        "version": 4,
+        "status": "APPLIED",
+        "entity_status": "ended"
+      },
+      {
+        "event_id": "01f23060-a999-4bc1-a29a-8d35694d5ac3",
+        "entity_type": "video",
+        "entity_id": "7a3b41bc-9eaa-4a92-8e88-123e7a85b770",
+        "action": "UPDATE",
+        "version": 2,
+        "status": "APPLIED",
+        "entity_status": "recording"
+      },
+      {
+        "event_id": "ee310a67-b374-455a-887e-09ce8901b473",
+        "entity_type": "video",
+        "entity_id": "7a3b41bc-9eaa-4a92-8e88-123e7a85b770",
+        "action": "UPDATE",
+        "version": 4,
+        "status": "APPLIED",
+        "entity_status": "uploading"
+      },
+      {
+        "event_id": "5e3279b4-b660-4041-9d09-d57bf0e432a9",
+        "entity_type": "command",
+        "entity_id": "aa32f9a2-49bf-4ac2-a8d5-4e4d7137d209",
+        "action": "UPDATE",
+        "version": 2,
+        "status": "APPLIED",
+        "entity_status": "claimed"
+      },
+      {
+        "event_id": "bb932415-4541-4818-8e58-b63389f05f29",
+        "entity_type": "command",
+        "entity_id": "aa32f9a2-49bf-4ac2-a8d5-4e4d7137d209",
+        "action": "UPDATE",
+        "version": 3,
+        "status": "APPLIED",
+        "entity_status": "processing"
+      },
+      {
+        "event_id": "90415a5f-0e08-4163-a064-a199cc40fc05",
+        "entity_type": "command",
+        "entity_id": "aa32f9a2-49bf-4ac2-a8d5-4e4d7137d209",
+        "action": "UPDATE",
+        "version": 4,
+        "status": "APPLIED",
+        "entity_status": "completed"
+      },
+      {
+        "event_id": "bd132de4-83cc-4367-a563-488cbb7c7a17",
+        "entity_type": "command",
+        "entity_id": "b90ae357-a465-499f-8e78-67176a30e2c8",
+        "action": "UPDATE",
+        "version": 2,
+        "status": "APPLIED",
+        "entity_status": "claimed"
+      },
+      {
+        "event_id": "a03958dd-7ac6-4f13-a927-833b2c6d9570",
+        "entity_type": "command",
+        "entity_id": "b90ae357-a465-499f-8e78-67176a30e2c8",
+        "action": "UPDATE",
+        "version": 3,
+        "status": "APPLIED",
+        "entity_status": "processing"
+      },
+      {
+        "event_id": "83635135-6add-43f9-ad41-8ad035f56ff8",
+        "entity_type": "command",
+        "entity_id": "b90ae357-a465-499f-8e78-67176a30e2c8",
+        "action": "UPDATE",
+        "version": 4,
+        "status": "APPLIED",
+        "entity_status": "completed"
+      },
+      {
+        "event_id": "50ed56ce-3737-49a6-b9c1-69d2513f4257",
+        "entity_type": "command",
+        "entity_id": "c824aa25-0820-418a-ac80-cd239e0ab3bd",
+        "action": "UPDATE",
+        "version": 2,
+        "status": "APPLIED",
+        "entity_status": "claimed"
+      },
+      {
+        "event_id": "cdeb2edb-eb77-481a-acd3-208edc0d8430",
+        "entity_type": "command",
+        "entity_id": "c824aa25-0820-418a-ac80-cd239e0ab3bd",
+        "action": "UPDATE",
+        "version": 3,
+        "status": "APPLIED",
+        "entity_status": "processing"
+      },
+      {
+        "event_id": "e247f09f-fe66-4c3b-bf1d-464b05278fca",
+        "entity_type": "command",
+        "entity_id": "c824aa25-0820-418a-ac80-cd239e0ab3bd",
+        "action": "UPDATE",
+        "version": 4,
+        "status": "APPLIED",
+        "entity_status": "completed"
+      },
+      {
+        "event_id": "3295b939-6224-4ab1-affa-ef85d911835b",
+        "entity_type": "command",
+        "entity_id": "d9b968bb-481f-47e6-bccc-af031a5c4b40",
+        "action": "UPDATE",
+        "version": 2,
+        "status": "APPLIED",
+        "entity_status": "claimed"
+      },
+      {
+        "event_id": "b76d9b93-b939-4b85-8281-4156db7c386e",
+        "entity_type": "command",
+        "entity_id": "d9b968bb-481f-47e6-bccc-af031a5c4b40",
+        "action": "UPDATE",
+        "version": 3,
+        "status": "APPLIED",
+        "entity_status": "processing"
+      },
+      {
+        "event_id": "264957cc-894c-4260-b148-dcf60ca55146",
+        "entity_type": "command",
+        "entity_id": "d9b968bb-481f-47e6-bccc-af031a5c4b40",
+        "action": "UPDATE",
+        "version": 4,
+        "status": "APPLIED",
+        "entity_status": "completed"
+      }
+    ]
+  },
+  "local_sync_failed_counts": [
+    {
+      "side": "inbox",
+      "n": 0
+    },
+    {
+      "side": "outbox",
+      "n": 0
+    }
+  ],
+  "summary": {
+    "successful_cycles": 1,
+    "startup_ms": {
+      "n": 1,
+      "mean": 2969.2341830000005,
+      "p50": 2969.2341830000005,
+      "p95": 2969.2341830000005,
+      "min": 2969.2341830000005,
+      "max": 2969.2341830000005
+    },
+    "commands": {
+      "/streams/start": {
+        "n": 1,
+        "mean": 2912.8393890000007,
+        "p50": 2912.8393890000007,
+        "p95": 2912.8393890000007,
+        "min": 2912.8393890000007,
+        "max": 2912.8393890000007
+      },
+      "/recordings/start": {
+        "n": 1,
+        "mean": 1756.6955059999982,
+        "p50": 1756.6955059999982,
+        "p95": 1756.6955059999982,
+        "min": 1756.6955059999982,
+        "max": 1756.6955059999982
+      },
+      "/recordings/stop": {
+        "n": 1,
+        "mean": 1332.923057,
+        "p50": 1332.923057,
+        "p95": 1332.923057,
+        "min": 1332.923057,
+        "max": 1332.923057
+      },
+      "/stop": {
+        "n": 1,
+        "mean": 2148.18477,
+        "p50": 2148.18477,
+        "p95": 2148.18477,
+        "min": 2148.18477,
+        "max": 2148.18477
+      }
+    }
+  },
+  "host_evidence": {
+    "host": "EDGE_HOST",
+    "repos": {
+      "backend-edge": {
+        "commit": "945f8c57c53598406e87a13726cabf3c4190a302",
+        "dirty": false
+      },
+      "backend-web": {
+        "commit": "e74beef25f48393e4b8ad148202d703c34af56d5",
+        "dirty": false
+      },
+      "frontend-edge": {
+        "commit": "e73de0eb6fb9b4cc674be4e0006b10ebdc389ff0",
+        "dirty": false
+      },
+      "frontend-web": {
+        "commit": "cf15556d405471688897e43931d980c5728e637d",
+        "dirty": false
+      },
+      "media-server": {
+        "commit": "27d02f566deaa6e4d733bac18f732cd64895ef96",
+        "dirty": false
+      },
+      "stream-edge": {
+        "commit": "843e99f9c93726ec99ba6c0b54ff430b992d814b",
+        "dirty": false
+      }
+    }
+  }
+}

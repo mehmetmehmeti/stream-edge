@@ -1,0 +1,93 @@
+Start testing: Oct 15 20:18 CEST
+----------------------------------------------------------
+1/6 Testing: frame_bridge_tests
+1/6 Test: frame_bridge_tests
+Command: "<PROJECT_ROOT>/stream-edge/streaming-service/build/frame_bridge_tests"
+Directory: <PROJECT_ROOT>/stream-edge/streaming-service/build
+"frame_bridge_tests" start time: Oct 15 20:18 CEST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"frame_bridge_tests" end time: Oct 15 20:18 CEST
+"frame_bridge_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/6 Testing: streaming_source_config_tests
+2/6 Test: streaming_source_config_tests
+Command: "<PROJECT_ROOT>/stream-edge/streaming-service/build/streaming_source_config_tests"
+Directory: <PROJECT_ROOT>/stream-edge/streaming-service/build
+"streaming_source_config_tests" start time: Oct 15 20:18 CEST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"streaming_source_config_tests" end time: Oct 15 20:18 CEST
+"streaming_source_config_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/6 Testing: recording_config_tests
+3/6 Test: recording_config_tests
+Command: "<PROJECT_ROOT>/stream-edge/streaming-service/build/recording_config_tests"
+Directory: <PROJECT_ROOT>/stream-edge/streaming-service/build
+"recording_config_tests" start time: Oct 15 20:18 CEST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"recording_config_tests" end time: Oct 15 20:18 CEST
+"recording_config_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/6 Testing: recording_engine_tests
+4/6 Test: recording_engine_tests
+Command: "<PROJECT_ROOT>/stream-edge/streaming-service/build/recording_engine_tests"
+Directory: <PROJECT_ROOT>/stream-edge/streaming-service/build
+"recording_engine_tests" start time: Oct 15 20:18 CEST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"recording_engine_tests" end time: Oct 15 20:18 CEST
+"recording_engine_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/6 Testing: frame_staging_pool_tests
+5/6 Test: frame_staging_pool_tests
+Command: "<PROJECT_ROOT>/stream-edge/streaming-service/build/frame_staging_pool_tests"
+Directory: <PROJECT_ROOT>/stream-edge/streaming-service/build
+"frame_staging_pool_tests" start time: Oct 15 20:18 CEST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"frame_staging_pool_tests" end time: Oct 15 20:18 CEST
+"frame_staging_pool_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/6 Testing: gstreamer_mp4_writer_smoke_test
+6/6 Test: gstreamer_mp4_writer_smoke_test
+Command: "<PROJECT_ROOT>/stream-edge/streaming-service/build/gstreamer_mp4_writer_smoke_test"
+Directory: <PROJECT_ROOT>/stream-edge/streaming-service/build
+"gstreamer_mp4_writer_smoke_test" start time: Oct 15 20:18 CEST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"gstreamer_mp4_writer_smoke_test" end time: Oct 15 20:18 CEST
+"gstreamer_mp4_writer_smoke_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 15 20:18 CEST

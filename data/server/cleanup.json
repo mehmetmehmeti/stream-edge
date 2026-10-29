@@ -1,0 +1,32 @@
+{
+  "completed_at": "2026-10-22T17:54:50.802Z",
+  "backup_path": "SERVER_BACKUP_ROOT",
+  "deleted": {
+    "commands": 53,
+    "videos": 17,
+    "streams": 11
+  },
+  "backups": {
+    "database": {
+      "size_bytes": 218435,
+      "sha256": "e3727a78942c9e3081bedf938fa3098528f2ed6814048e01471251d568ed4a99",
+      "full_archive_read_verified": true,
+      "file": "SERVER_BACKUP_ROOT/database"
+    },
+    "recordings": {
+      "sha256": "812c6840cad48221f462e248f126273f340b36c7295e7941dfe01728f8a7f3ed",
+      "file_count": 1,
+      "missing_reference_count": 16,
+      "file": "SERVER_BACKUP_ROOT/recordings"
+    }
+  },
+  "post_cleanup_verification": {
+    "captured_at": "2026-10-22T19:55:26.716104+02:00",
+    "remaining_oct15": {
+      "streams": 0,
+      "videos": 0,
+      "commands": 0
+    }
+  },
+  "archives_independently_inspected": false
+}

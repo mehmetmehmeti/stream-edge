@@ -1,0 +1,26 @@
+[
+  {
+    "viewport": "desktop",
+    "recording": {
+      "width": 640,
+      "height": 480,
+      "pixelRange": 195
+    },
+    "fullscreen": true,
+    "seek": true,
+    "fallback": true,
+    "liveFullscreen": false
+  },
+  {
+    "viewport": "mobile",
+    "recording": {
+      "width": 640,
+      "height": 480,
+      "pixelRange": 195
+    },
+    "fullscreen": true,
+    "seek": true,
+    "fallback": true,
+    "liveFullscreen": false
+  }
+]

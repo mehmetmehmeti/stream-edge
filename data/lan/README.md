@@ -1,0 +1,7 @@
+# Two-Laptop LAN Measurements
+
+The accepted `cycles/` dataset contains 30 completed cycles and 120 commands; `short/` contains the separate browser-control check. Together they produced 31 recordings and 124 commands. Do not add the short run to the 30-cycle timing cohort.
+
+Start with [cycle analysis](cycles/analysis.json), [cycle observations](cycles/result.json), and [short-run observations](short/result.json). Sample logs, command histories and available counters accompany them. The [dated report](../../reports/LAN_RUN_REPORT_2026-10-22.md) describes topology and metrics; [verify-lan.py](../../scripts/verify-lan.py) checks the public derivatives offline. [Server evidence](../server/README.md) supplies the independent returned file and database checks. [Setup photo](setup-photo.jpeg) provides context, not timing evidence.
+
+Command/startup times are initiating-client observations including polling, execution and synchronization, not network-only or optical latency. Browser intervals total 150.3361 s; playback dropped 41/2106 frames and RTP loss was 136 packets. The final browser endpoint snapshots were not persisted, so aggregate arithmetic is reproducible from saved interval metrics, but complete raw endpoint reconstruction is unavailable. Three failed preparation attempts and the short summary correction are retained in the public provenance rather than included as successful repetitions.

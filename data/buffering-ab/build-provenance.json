@@ -1,0 +1,17 @@
+{
+  "upstream_sha256": "c1dc9cccee104cc2b36657d757279080974f8dfb51c94a2352fc95685593f6fc",
+  "probe_sha256": "bf2834343e88426532ede5174f324a2e3290f87c2e9bfa38c531bfc37f73073f",
+  "header_sha256": "e6b989771a518ebf96d0393acafa0480dfda9b6af8c378c7aa1c74f3e769eb72",
+  "binary_sha256": "6d81d1873f220716cefff5ddced353ceb24e086dd9d12945b912271c1ea8d38d",
+  "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "pkg_versions": [
+    "1.24.2",
+    "1.24.2",
+    "1.24.2",
+    "3.4.4",
+    "1.8.0"
+  ],
+  "upstream_source": "src/whip-client.c",
+  "baseline_git_commit": "b9b3fac278eb26b7afb583b996869fcd5c5ab2f2",
+  "note": "Exact modified C source, debug.h and GPLv3 LICENSE are published separately by the parent. No binary is staged. Historical hashes are unchanged."
+}

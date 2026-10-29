@@ -1,51 +1,46 @@
-# Thesis Verification Evidence
+# Thesis Evidence: Reviewed Publication, 29 October 2026
 
-Public evidence for professor comment 43 of Mehmet Mehmeti's thesis:
-**Projektimi dhe vlerësimi i një arkitekture heterogjene për transmetim dhe regjistrim të optimizuar të videove në kohë reale**.
+This is the canonical integration-evidence package for Mehmet Mehmeti's thesis. It extends the four functional reports published on 26 October. Measurements span six components, so datasets are stored once in `stream-edge`, with implementation ownership and pinned source commits in [repository-ownership.json](repository-ownership.json). No application `main` branch is changed by this evidence release.
 
-This branch contains only the four existing verification reports named in that comment, an integrity manifest, and an offline checker. It does not change the application's main branch. Preparing this publication did not rerun the camera tests or start the application services.
+## Result To Evidence
 
-## Reports And Producers
-
-| Report | What Was Recorded | Producer Reference |
+| Thesis result | Evidence and reproduction | Professor comments |
 | --- | --- | --- |
-| [workflow-result.json](workflow-result.json) | Seven workflow assertions, generated stream/video IDs, and an FFprobe result: H.264, 640×480, 183 frames, 6.020667 seconds. | [verify-workflow.cjs](https://github.com/mehmetmehmeti/stream-edge/blob/843e99f9c93726ec99ba6c0b54ff430b992d814b/scripts/verify-workflow.cjs) |
-| [recovery-result.json](recovery-result.json) | Three recovery assertions: pending command during disconnection, rejection of stale/duplicate replay, and recording/upload recovery. | [verify-recovery.cjs](https://github.com/mehmetmehmeti/stream-edge/blob/843e99f9c93726ec99ba6c0b54ff430b992d814b/scripts/verify-recovery.cjs) |
-| [cloud-camera-result.json](cloud-camera-result.json) | Browser video dimensions, frame counters 11→611, pixel range 30, recording duration 3.936333 seconds, and an empty browser-error list. | [verify-cloud-camera.cjs](https://github.com/mehmetmehmeti/stream-edge/blob/843e99f9c93726ec99ba6c0b54ff430b992d814b/scripts/verify-cloud-camera.cjs) |
-| [qt-camera.json](qt-camera.json) | Local live-preview observation: `live=true`, `renderedFrames=305`. | [Qt --verify-camera mode in main.cpp](https://github.com/mehmetmehmeti/frontend-edge/blob/e73de0eb6fb9b4cc674be4e0006b10ebdc389ff0/main.cpp#L173-L222) |
+| Historical integration, recovery and camera checks, Tables 9/13 | [Four-report explanation](data/historical/README-2026-10-26.md), root JSONs and [UI controls](data/historical) | 23, 43 |
+| Optical latency, Table 11 | [All 59 photos, readings and exclusions](data/optical/2026-10-22/README.md) | 18, 25, 43 |
+| F450 hardware, timed FPS/resources, recording off/on and long MP4, Tables 3-4/12/14 | [F450 measurements](data/f450/README.md) | 18-19, 21-25, 43 |
+| Two-laptop commands/startup, FPS/drops and playback, Table 10 | [LAN observations](data/lan/README.md), [server checks](data/server/README.md) | 18, 20, 23, 25, 43 |
+| FIFO versus bounded queue, Table 15 | [A/B raw timing and analysis](data/buffering-ab/README.md) | 19, 24-25, 43 |
+| Component and tool tests | [Automated test records and sources](data/automated-tests/README.md) | 43, 49 |
 
-The source links pin the audited implementation used to explain the report producers. The historical JSON files do not embed a run timestamp, original executable hash, or source commit, so these links do not establish a cryptographic binding to the historical executions. The current Qt verification mode also emits a `fullscreen` field; that field is absent from the historical report and has not been added retrospectively.
+The machine-readable [claim map](claims-to-evidence.json) connects sections and tables to their source families. [artifact-manifest.json](artifact-manifest.json) lists every published file's size/hash; provenance files distinguish original hashes from privacy-projected public bytes. A checksum confirms bytes, not authorship or the truth of a reported execution.
 
-### Production Method
+## Offline Verification
 
-- `verify-workflow.cjs` authenticates against the two application APIs, drives start/stop and recording commands, waits for synchronized completion, compares recording SHA-256 values, probes a recording with FFprobe, and checks authenticated HTTP Range playback before writing its report.
-- `verify-recovery.cjs` deliberately stops and restarts the test backends, checks a pending command, injects a stale event and its duplicate, then verifies upload retry and converged recording metadata after reconnection.
-- `verify-cloud-camera.cjs` uses Playwright/Chromium to read video playback counters and sample a 64×48 canvas. `pixelRange` is the red-channel maximum minus minimum; the checked script rejects values below 5. It also opens a recording and captures its dimensions and duration.
-- The Qt `--verify-camera` mode observes the preview and writes its live flag and rendered-frame count to the path selected through `DIPLOMA_TEST_OUTPUT`.
-
-The producer scripts require a configured test installation, camera access, a dedicated test account and running services. Credentials are supplied through the environment, not these reports. Recovery verification intentionally interrupts test services; it should not be run against a production deployment. [The camera runbook](https://github.com/mehmetmehmeti/stream-edge/blob/843e99f9c93726ec99ba6c0b54ff430b992d814b/docs/CAMERA-RUNBOOK.md) describes the application setup. No rerun was performed to publish this package.
-
-## Interpretation Limits
-
-These are historical functional-verification reports, separate from the later F450, two-laptop LAN, optical-latency and buffering A/B measurements discussed in the thesis. In particular:
-
-- `first.time=1.03` is the browser video's `currentTime`, not measured startup latency.
-- Counters 11→611 and 305 lack a recorded observation interval and cannot independently establish FPS.
-- An empty browser-error list or a nonuniform image is not a comprehensive quality or loss metric.
-- The recovery results support the exercised scenarios, not every possible failure or exactly-once physical execution.
-- The hashes in this publication verify the report files, not the underlying MP4 recordings or historical test execution.
-
-## Privacy And Integrity
-
-The four report files were reviewed structurally and for credential/personal-data patterns. They contain test-result statements, generated test session/video UUIDs and numerical metadata; no passwords, JWTs, access tokens, private account email addresses, host paths or database connection strings were found. All four are published byte-for-byte unchanged. Sanitization here means selecting this reviewed allowlist, not editing measured results.
-
-Authentication dumps, environment files, database dumps, operational logs, screenshots, MP4 files and other runtime files are excluded. Generated session IDs are identifiers, not authorization credentials. No claim of a complete raw-data release is made.
-
-[manifest.json](manifest.json) records the SHA-256 and size of each report. Run the offline checks from this directory:
+Prerequisites: Python 3.10+ and Node.js 18+ on PATH. No npm install, camera, browser, application service, database or network connection is needed for the public arithmetic checks.
 
 ```bash
-python3 verify-evidence.py
+python3 -B verify_bundle.py
 sha256sum -c SHA256SUMS.txt
 ```
 
-The checker validates report schemas, expected historical values and file hashes. It does not rerun the application tests or contact any service.
+The checker verifies every included file, binds each of the 59 photo hashes to its exact CSV row, recalculates optical statistics, and checks the public F450/A/B and LAN/server measurements. It does not execute the live experiment producers. Newly performed offline verification is dated 29 October; it is not an independent replication of the historical experiments. Operational runners and their dependency lockfile are provided as source, with their original hardware/layout/configuration requirements.
+
+## Selection And Privacy
+
+Included: cited source data, accepted/excluded optical photos, failed-preparation and correction ledgers, configuration/version records, relevant test/analysis source, and verification records. Excluded: credentials, `.env`, private settings, database dumps, unrestricted operational logs, builds, `node_modules`, duplicate downloads and unrelated trials. Third-party source attribution and GPLv3 license are retained.
+
+**The author chose to keep all MP4s private.** [Recording attestation](data/recording-attestation.json) records the 29 October read-only check of retained recordings against historical hashes, sizes and probe values. Readers cannot independently rehash or decode absent MP4s; the package does not claim otherwise. This restriction differs from the original timer JPEGs, which are public and byte-identical. No photo was retouched.
+
+## Limits That Remain Explicit
+
+- Consecutive optical pictures are not independent trials; display/phone uncertainty is not fully calibrated.
+- Some final browser counter snapshots were not persisted. Saved interval metrics support aggregate checks but not complete endpoint reconstruction.
+- F450 historical dirty patches are not reconstructed from commit/diff hashes alone.
+- The server supplement retains two failed exact version checks while its 31 file checks match. Two requested supplementary files were never supplied.
+- A/B measures an instrumented pre-encoder stage under imposed slowdown, not end-to-end optical latency, universal optimality, stressed FPS improvement or meaningful RSS savings.
+- Current tooling/source references do not retroactively establish missing historical execution fingerprints. The preserved 15 October six-test CTest log and earlier five-test summary have different dates.
+
+## Packaging Practice
+
+The package follows claim-to-artifact mapping, explicit dependencies, documented commands and honest scope, drawing on [ACM SIGPLAN artifact-evaluation guidance](https://popl26.sigplan.org/track/POPL-2026-artifact-evaluation). GitHub supplies reviewable versioned files; no ACM badge, DOI archive or independent replication is claimed. [GitHub file-size guidance](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github) informs the separation of reviewable text/photos from large media. Accessed 29 October 2026.

@@ -1,0 +1,187 @@
+{
+  "draft_date": "07.10.2026",
+  "author": "Mehmet Mehmeti",
+  "title": "Projektimi dhe vlerësimi i një arkitekture heterogjene për transmetim dhe regjistrim të optimizuar të videove në kohë reale",
+  "template": {
+    "path": "<HOME>/Downloads/Tema e Diplomes Erik Behrami.docx",
+    "sha256": "08d7dd3d4046f13febb50e1fffde46f9b83fa53e917d363c399d8b9275f425a2",
+    "use": "structure, formatting and cover logo only"
+  },
+  "repositories": {
+    "diploma-2026-backend-cloud": {
+      "commit": "d230dc9e2437c1dc99c0103211af1dd47676e44b",
+      "worktree_status": ""
+    },
+    "diploma-2026-backend-edge": {
+      "commit": "bf5e505f9d602237af8b36690dbf95d1b471e608",
+      "worktree_status": ""
+    },
+    "diploma-2026-frontend-cloud": {
+      "commit": "a764ba4f7a2d250b83e039ed36895c0d4d687ba9",
+      "worktree_status": ""
+    },
+    "diploma-2026-frontend-edge": {
+      "commit": "b522134a15bf4b966e2cda41341659bc040a760f",
+      "worktree_status": ""
+    },
+    "diploma-2026-stream-edge": {
+      "commit": "6dd887cf8ff31e4e65d0b00959d6ea5da3690a07",
+      "worktree_status": ""
+    },
+    "diploma-media-server": {
+      "commit": "79fa13536d5376337035eab7b753edd41985073c",
+      "worktree_status": ""
+    }
+  },
+  "consulted_sources": [
+    {
+      "path": ".runtime/workflow-result.json",
+      "sha256": "5bca60c03b828013fac1b10806071fff4844abfe17529469e3c3fd0847569efd"
+    },
+    {
+      "path": ".runtime/recovery-result.json",
+      "sha256": "ccab37e8d5a76a160e0b25d7690b7b602c2e182dd8ebfab806cf2c33287ca5f7"
+    },
+    {
+      "path": ".runtime/cloud-camera-result.json",
+      "sha256": "17a0a91246918e3cd4acfe4a0c9cf18d66483a41a536aece97ba49bbad5d9dc0"
+    },
+    {
+      "path": ".runtime/qt-camera.json",
+      "sha256": "5183e003a0158f128a22ffdfeb3b8a6625e9acca4f13a20919159b340c4ea999"
+    },
+    {
+      "path": "diploma-2026-stream-edge/docs/CAMERA-RUNBOOK.md",
+      "sha256": "b9360cd6e2345456b3338cfa5b373b41301f39fefb230576ffab3217fa069f44"
+    },
+    {
+      "path": "diploma-2026-backend-edge/prisma/schema.prisma",
+      "sha256": "b9977065fc4e343ebc3e6e3e933a64b579357996cc65bfd354661670f01353e5"
+    },
+    {
+      "path": "diploma-2026-backend-cloud/prisma/schema.prisma",
+      "sha256": "b9977065fc4e343ebc3e6e3e933a64b579357996cc65bfd354661670f01353e5"
+    },
+    {
+      "path": "diploma-2026-backend-edge/src/command-executor/command-executor.service.ts",
+      "sha256": "c83f23fde8947aa6b5ec505cfb700113559c327af70036e050b5d773fdc6872c"
+    },
+    {
+      "path": "diploma-2026-backend-edge/src/sync/sync.service.ts",
+      "sha256": "30dc54cb4a2c1cbf601840cfd088395ecaafb8c03aa665867bb6d6a562f28896"
+    },
+    {
+      "path": "diploma-2026-backend-edge/src/sync/sync-outbox.service.ts",
+      "sha256": "f96c9d5387bb664e209a64bdeaec5876871ff44decba3eefcd9e9da299b47bba"
+    },
+    {
+      "path": "diploma-2026-backend-edge/src/videos/recording-upload.service.ts",
+      "sha256": "74e669cae25fcf695e47590f11acdf626a9ceaada2ddb7f8332f80a57e46f3a3"
+    },
+    {
+      "path": "diploma-2026-backend-cloud/src/videos/video-files.controller.ts",
+      "sha256": "d805f53682d1da330b63e2fcebbbb5553381a5873993010ccc7f700690d4c10a"
+    },
+    {
+      "path": "diploma-2026-stream-edge/streaming-service/src/services/CloudPublisher.cc",
+      "sha256": "6504930bb5d307f22add7c6ff40325fc393ba15056ca1d860a833d5d07d0fb58"
+    },
+    {
+      "path": "diploma-2026-stream-edge/streaming-service/src/services/FrameBridgeShmPublisher.cc",
+      "sha256": "b238fc647fb39d802852ca931f81ae75d8b91039c797f30852d244a8ba1d9e92"
+    },
+    {
+      "path": "diploma-2026-frontend-edge/core/streaming/VideoPreviewItem.cpp",
+      "sha256": "3751a3e4d8e706127f9b2f6a8a2aa1f3581bb5d93fe0e0e83c0310151c124e58"
+    },
+    {
+      "path": "diploma-2026-frontend-edge/Main.qml",
+      "sha256": "e070b478431d69f94d067214979b172d1531d228b098ed8d1675a183c864155e"
+    },
+    {
+      "path": "diploma-2026-frontend-cloud/src/components/live-stream-viewer.tsx",
+      "sha256": "f9d828d3f82fcda3961081359e4c2b4f6e8595c7088f7bfe29757f046ae49a4a"
+    },
+    {
+      "path": "diploma-media-server/server.mjs",
+      "sha256": "8a0f7e2f02f035b8360b7128c10af3a143a1fa7302db1f78def8d8ba14daa9c6"
+    }
+  ],
+  "historical_reports": {
+    "workflow-result.json": {
+      "results": [
+        "Same cloud account authenticates on edge",
+        "Cloud Start completed on both databases; WHIP stream ID matches",
+        "Duplicate Start rejected without creating another camera session",
+        "Edge recording -> cloud stop -> checksum-verified upload -> synchronized COMPLETED -> authenticated range playback",
+        "Stop Stream finalizes the active recording before releasing the camera; both replicas receive the uploaded file metadata",
+        "Edge Stop completed in cloud and released the camera and media session",
+        "A second stream starts successfully with a new synchronized stream ID"
+      ],
+      "streamId": "3d1048e6-0d53-4981-88c3-3b782f3a4b94",
+      "videoId": "df0a7696-ac58-4182-849d-670758092ae0",
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 640,
+            "height": 480,
+            "nb_frames": "183"
+          }
+        ],
+        "format": {
+          "duration": "6.020667"
+        }
+      }
+    },
+    "recovery-result.json": {
+      "results": [
+        "Cloud Stop stayed pending while edge backend was offline and completed after reconnect",
+        "A delayed PENDING event and its duplicate cannot replay a completed command",
+        "Recording survived cloud outage; upload retried; file metadata and frame counts converged on both replicas"
+      ]
+    },
+    "cloud-camera-result.json": {
+      "first": {
+        "width": 640,
+        "height": 480,
+        "time": 1.03,
+        "frames": 11
+      },
+      "last": {
+        "width": 640,
+        "height": 480,
+        "frames": 611,
+        "pixelRange": 30
+      },
+      "recording": {
+        "width": 640,
+        "height": 480,
+        "duration": 3.936333
+      },
+      "errors": []
+    },
+    "qt-camera.json": {
+      "live": true,
+      "renderedFrames": 305
+    }
+  },
+  "verification_during_drafting": {
+    "ctest": "5/5 passed on 07.10.2026; build already existed",
+    "tests": [
+      "frame_bridge_tests",
+      "recording_config_tests",
+      "recording_engine_tests",
+      "frame_staging_pool_tests",
+      "gstreamer_mp4_writer_smoke_test"
+    ],
+    "fresh_camera_or_browser_test": false,
+    "applications_started": false
+  },
+  "limitations": [
+    "No complete quantitative performance campaign",
+    "No newly validated two-host deployment",
+    "No general multi-writer convergence proof"
+  ]
+}

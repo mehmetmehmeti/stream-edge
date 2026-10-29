@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "professor_comment_numbering": "original numbered comments 1-51",
+  "groups": [
+    {
+      "id": "historical",
+      "comments": [
+        23,
+        43
+      ],
+      "thesis_sections": [
+        "5.1",
+        "5.2",
+        "5.4",
+        "5.6"
+      ],
+      "evidence": [
+        "workflow-result.json",
+        "recovery-result.json",
+        "cloud-camera-result.json",
+        "qt-camera.json",
+        "data/historical"
+      ],
+      "scope": "historical functional checks, not timed FPS",
+      "tables": [
+        9,
+        13
+      ]
+    },
+    {
+      "id": "optical",
+      "comments": [
+        18,
+        25,
+        43
+      ],
+      "thesis_sections": [
+        "5.2"
+      ],
+      "tables": [
+        11
+      ],
+      "evidence": [
+        "data/optical/2026-10-22"
+      ],
+      "scope": "59 supplied photos; 25 local and 21 web accepted readings"
+    },
+    {
+      "id": "f450",
+      "comments": [
+        18,
+        19,
+        21,
+        22,
+        24,
+        25,
+        43
+      ],
+      "thesis_sections": [
+        "3.4",
+        "5.3",
+        "5.7"
+      ],
+      "tables": [
+        3,
+        4,
+        12,
+        14
+      ],
+      "evidence": [
+        "data/f450",
+        "data/recording-attestation.json"
+      ],
+      "scope": "3 off/on pairs, resources/FPS and long recording; MP4s private"
+    },
+    {
+      "id": "lan",
+      "comments": [
+        18,
+        20,
+        23,
+        25,
+        43
+      ],
+      "thesis_sections": [
+        "5.2",
+        "5.3",
+        "5.4"
+      ],
+      "tables": [
+        10
+      ],
+      "evidence": [
+        "data/lan",
+        "data/server"
+      ],
+      "scope": "30-cycle cohort plus separate short controls; file and metadata checks"
+    },
+    {
+      "id": "ab",
+      "comments": [
+        19,
+        24,
+        25,
+        43
+      ],
+      "thesis_sections": [
+        "5.7"
+      ],
+      "tables": [
+        15
+      ],
+      "evidence": [
+        "data/buffering-ab"
+      ],
+      "scope": "12-trial queue-policy ablation; native timing, resource and browser counters"
+    },
+    {
+      "id": "automated-tests",
+      "comments": [
+        43,
+        49
+      ],
+      "thesis_sections": [
+        "5.5"
+      ],
+      "evidence": [
+        "data/automated-tests",
+        "thesis-documentation/evaluation",
+        "sources"
+      ],
+      "scope": "test source, preserved CTest log, offline checks and producer references"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "wall_elapsed_s": 10.002170533000026,
+  "capture_returncode": -2,
+  "status": "measured",
+  "metrics_valid": true,
+  "captured_buffers": 148,
+  "measured_buffers": 117,
+  "driver_error_buffers": 0,
+  "incomplete_buffers": 0,
+  "warmup_s": 2.0,
+  "driver_interval_s": 7.71908499999995,
+  "driver_first_timestamp_s": 1851.74996,
+  "driver_last_timestamp_s": 1859.469045,
+  "observed_fps": 15.027687867150155,
+  "minimum_frame_interval_ms": 66.37500000010732,
+  "maximum_frame_interval_ms": 66.73299999988558,
+  "driver_sequence_gaps": 0,
+  "started_utc": "2026-10-15T17:21:29.666666+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "checks": 1569,
+  "scope": "Public-only offline arithmetic and measurement-owned derivative hashes; no experiments or decoding.",
+  "limitations": [
+    "Media withheld: cannot publicly redo decoding or raw MP4 hashes.",
+    "A/B browser terminal endpoints missing; saved browser aggregates are not independently endpoint-recomputed."
+  ],
+  "verified_utc": "2026-10-29T19:10:17.474Z",
+  "layout": "standalone",
+  "integration_checks": {
+    "auto_detect_renamed_provenance": "passed",
+    "explicit_integrated_flag": "passed",
+    "parent_unowned_file_excluded_from_inventory_and_privacy_scan": "passed",
+    "checks_each": 1569
+  },
+  "numeric_inputs": "Measurement numeric data and historical source hashes unchanged; only verifier, README, provenance digests and this verification record updated."
+}

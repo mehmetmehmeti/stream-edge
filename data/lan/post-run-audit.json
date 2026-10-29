@@ -1,0 +1,252 @@
+{
+  "captured_at": "2026-10-22T18:11:43.717Z",
+  "replica": "edge",
+  "command_count": 124,
+  "video_count": 31,
+  "status": "passed",
+  "old_test_rows": {
+    "backend-edge": {
+      "streams": 0,
+      "videos": 0,
+      "commands": 0
+    },
+    "backend-web": {
+      "streams": 0,
+      "videos": 0,
+      "commands": 0
+    }
+  },
+  "sync": {
+    "sync_inbox": [
+      {
+        "status": "APPLIED",
+        "n": 281
+      }
+    ],
+    "sync_outbox": [
+      {
+        "status": "APPLIED",
+        "n": 496
+      }
+    ]
+  },
+  "emitted_recording_transitions": [
+    {
+      "id": "7a3b41bc-9eaa-4a92-8e88-123e7a85b770",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "e65e8c69-014b-45d9-b6d1-038f6dcb8926",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "26b404fe-9e02-4cb2-9418-2f01390b05a4",
+      "statuses": [
+        "uploading",
+        "recording"
+      ]
+    },
+    {
+      "id": "aa1e6bf2-ac64-485d-803c-ee7664840cc6",
+      "statuses": [
+        "uploading",
+        "recording"
+      ]
+    },
+    {
+      "id": "e78b5c47-9f60-4a4e-b011-8e519edc49c9",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "0259695e-4a7f-41e0-b773-e277e68a20c2",
+      "statuses": [
+        "uploading",
+        "recording"
+      ]
+    },
+    {
+      "id": "d4127b7b-d029-43f6-9d78-bde948acd876",
+      "statuses": [
+        "uploading",
+        "recording"
+      ]
+    },
+    {
+      "id": "995f8286-2fbc-4b52-b797-d8e5d0bcb072",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "05bd9e7e-3df8-4015-8cdc-e3729b9e6ad7",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "eb55b16f-d461-4a2a-9c42-dad425640c8b",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "01a31a45-abcd-4eac-9ca2-46fcf3627c8a",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "7043fae4-be3c-4dbb-8705-2db58564c73c",
+      "statuses": [
+        "uploading",
+        "recording"
+      ]
+    },
+    {
+      "id": "e931e23a-fb11-4868-862c-7f1060958ebf",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "16d5de68-78e1-4e41-8078-0a414cec1dfe",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "26a85eba-9169-4f79-8dc2-614201a00b63",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "c1701911-4847-4a0d-8b73-366efc121444",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "2a646fa5-ff01-4d01-a58c-1f6bbec25da8",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "d3a856b8-ed16-4527-9b08-58b4fa6c298b",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "f2588741-5b14-4f33-891b-8ddffc348ef7",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "782f3ffe-1e4b-4d90-afc4-86b5f1329794",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "f6021efa-edde-4059-a6d6-45f63857667d",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "7d4ce773-12ae-4b23-8375-b4a7c1fedbd4",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "c1fec549-2886-425d-b93d-8056479fe9e7",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "4feb68ee-a560-4a31-a69b-adaf0752f933",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "06c662ff-3e50-4890-aa78-8524844cfd1b",
+      "statuses": [
+        "uploading",
+        "recording"
+      ]
+    },
+    {
+      "id": "b477d670-ec98-4c5a-90ad-650702551753",
+      "statuses": [
+        "uploading",
+        "recording"
+      ]
+    },
+    {
+      "id": "671c1007-f2c6-423e-bd13-843bee7b37fa",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "a1647ac0-dc0d-43a8-99cb-91716da583ac",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "60059f39-d27f-4556-a016-8f94807cdb5b",
+      "statuses": [
+        "uploading",
+        "recording"
+      ]
+    },
+    {
+      "id": "85caca95-dce5-4c95-a512-75c433dab33e",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    },
+    {
+      "id": "1a7ff251-2636-42e7-a934-f48af7424c48",
+      "statuses": [
+        "recording",
+        "uploading"
+      ]
+    }
+  ]
+}

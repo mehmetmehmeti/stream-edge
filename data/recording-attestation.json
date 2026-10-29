@@ -1,0 +1,1174 @@
+{
+  "attested_utc": "2026-10-29T18:32:46.539710+00:00",
+  "verified_current_local_files": 46,
+  "media_included": false,
+  "public_redo_decoding_possible": false,
+  "recordings": [
+    {
+      "recording": "f450-01",
+      "cohort": "f450",
+      "historical_sha256": "25087910a5affc3e9a45e4cbf7365c0ffe6fc2b7b48326d8f5aef733c9881157",
+      "current_sha256": "25087910a5affc3e9a45e4cbf7365c0ffe6fc2b7b48326d8f5aef733c9881157",
+      "historical_bytes": 70460824,
+      "current_bytes": 70460824,
+      "historical_decoded_frames": 1142,
+      "historical_duration_s": 76.039333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "1142"
+          }
+        ],
+        "format": {
+          "duration": "76.039333",
+          "size": "70460824"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "f450-02",
+      "cohort": "f450",
+      "historical_sha256": "766e91e274b4774ae6c1001f49a28e85ff24d36cc978f3c2a91f6f4de83a8524",
+      "current_sha256": "766e91e274b4774ae6c1001f49a28e85ff24d36cc978f3c2a91f6f4de83a8524",
+      "historical_bytes": 69999394,
+      "current_bytes": 69999394,
+      "historical_decoded_frames": 1172,
+      "historical_duration_s": 78.034667,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "1172"
+          }
+        ],
+        "format": {
+          "duration": "78.034667",
+          "size": "69999394"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "f450-03",
+      "cohort": "f450",
+      "historical_sha256": "36442a3e79681683d24536ad1262de040fb53315c077a7985e86f917f16ec47f",
+      "current_sha256": "36442a3e79681683d24536ad1262de040fb53315c077a7985e86f917f16ec47f",
+      "historical_bytes": 69557627,
+      "current_bytes": 69557627,
+      "historical_decoded_frames": 1157,
+      "historical_duration_s": 77.023333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "1157"
+          }
+        ],
+        "format": {
+          "duration": "77.023333",
+          "size": "69557627"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "f450-04",
+      "cohort": "f450",
+      "historical_sha256": "dede21beff51db5d2f5194c4b928dbb1c95e2a24fb515873e4aa3baa6bd0ea1b",
+      "current_sha256": "dede21beff51db5d2f5194c4b928dbb1c95e2a24fb515873e4aa3baa6bd0ea1b",
+      "historical_bytes": 563137159,
+      "current_bytes": 563137159,
+      "historical_decoded_frames": 9255,
+      "historical_duration_s": 616.18,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "9255"
+          }
+        ],
+        "format": {
+          "duration": "616.180000",
+          "size": "563137159"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-01",
+      "cohort": "cycles",
+      "historical_sha256": "25e03afe16a1e35edac15db161c95e768d83f830e451ad5c07d466c936c005da",
+      "current_sha256": "25e03afe16a1e35edac15db161c95e768d83f830e451ad5c07d466c936c005da",
+      "historical_bytes": 6751149,
+      "current_bytes": 6751149,
+      "historical_decoded_frames": 135,
+      "historical_duration_s": 8.988,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "135"
+          }
+        ],
+        "format": {
+          "duration": "8.988000",
+          "size": "6751149"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-02",
+      "cohort": "cycles",
+      "historical_sha256": "e8ec4b462ce0a6bbb4322b8f9df88b11843107d1d8eafa845f464b45d7e29767",
+      "current_sha256": "e8ec4b462ce0a6bbb4322b8f9df88b11843107d1d8eafa845f464b45d7e29767",
+      "historical_bytes": 5364125,
+      "current_bytes": 5364125,
+      "historical_decoded_frames": 106,
+      "historical_duration_s": 7.058,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "106"
+          }
+        ],
+        "format": {
+          "duration": "7.058000",
+          "size": "5364125"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-03",
+      "cohort": "cycles",
+      "historical_sha256": "5a3f7263f59ba5f9357b0892b9f178e7501afb8c3b76bbf56c19c84373e2c742",
+      "current_sha256": "5a3f7263f59ba5f9357b0892b9f178e7501afb8c3b76bbf56c19c84373e2c742",
+      "historical_bytes": 6379020,
+      "current_bytes": 6379020,
+      "historical_decoded_frames": 105,
+      "historical_duration_s": 6.989333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "105"
+          }
+        ],
+        "format": {
+          "duration": "6.989333",
+          "size": "6379020"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-04",
+      "cohort": "cycles",
+      "historical_sha256": "837dfa6ec5eabc8a543155850c03a180ec9d1d9dcd7cdb6e1bf3d43ef04e318a",
+      "current_sha256": "837dfa6ec5eabc8a543155850c03a180ec9d1d9dcd7cdb6e1bf3d43ef04e318a",
+      "historical_bytes": 7463104,
+      "current_bytes": 7463104,
+      "historical_decoded_frames": 120,
+      "historical_duration_s": 7.987333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "7.987333",
+          "size": "7463104"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-05",
+      "cohort": "cycles",
+      "historical_sha256": "820214cad1429d376578399c06eb7a9ae5f5dbeedc029c7fda408497572f4dd2",
+      "current_sha256": "820214cad1429d376578399c06eb7a9ae5f5dbeedc029c7fda408497572f4dd2",
+      "historical_bytes": 8451729,
+      "current_bytes": 8451729,
+      "historical_decoded_frames": 135,
+      "historical_duration_s": 8.988,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "135"
+          }
+        ],
+        "format": {
+          "duration": "8.988000",
+          "size": "8451729"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-06",
+      "cohort": "cycles",
+      "historical_sha256": "95c0cbff91dc4629478f4c9e07cba5280bfe1fd3d5314c811e592941e8a590a1",
+      "current_sha256": "95c0cbff91dc4629478f4c9e07cba5280bfe1fd3d5314c811e592941e8a590a1",
+      "historical_bytes": 7135079,
+      "current_bytes": 7135079,
+      "historical_decoded_frames": 120,
+      "historical_duration_s": 7.991333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "7.991333",
+          "size": "7135079"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-07",
+      "cohort": "cycles",
+      "historical_sha256": "09900e1a4d764edaeb554a9d4cfc2ab8c12989b923fe2e036b5700ccd84afa94",
+      "current_sha256": "09900e1a4d764edaeb554a9d4cfc2ab8c12989b923fe2e036b5700ccd84afa94",
+      "historical_bytes": 6456921,
+      "current_bytes": 6456921,
+      "historical_decoded_frames": 105,
+      "historical_duration_s": 6.989333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "105"
+          }
+        ],
+        "format": {
+          "duration": "6.989333",
+          "size": "6456921"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-08",
+      "cohort": "cycles",
+      "historical_sha256": "f2a81410cdfdf2ba3e2234c410c6bf2093692ad17b20e9c25ec3ea0aa86c544c",
+      "current_sha256": "f2a81410cdfdf2ba3e2234c410c6bf2093692ad17b20e9c25ec3ea0aa86c544c",
+      "historical_bytes": 7878313,
+      "current_bytes": 7878313,
+      "historical_decoded_frames": 120,
+      "historical_duration_s": 7.988667,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "7.988667",
+          "size": "7878313"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-09",
+      "cohort": "cycles",
+      "historical_sha256": "8c0498d952b6e903c3103e7f0ebd7231d891d2624e22f803f993dbd16254ce70",
+      "current_sha256": "8c0498d952b6e903c3103e7f0ebd7231d891d2624e22f803f993dbd16254ce70",
+      "historical_bytes": 7978457,
+      "current_bytes": 7978457,
+      "historical_decoded_frames": 120,
+      "historical_duration_s": 7.986667,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "7.986667",
+          "size": "7978457"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-10",
+      "cohort": "cycles",
+      "historical_sha256": "154f826ccb37c877088eb0390848fdbd941f38cb7b63eb908c5fe0aa3b29d247",
+      "current_sha256": "154f826ccb37c877088eb0390848fdbd941f38cb7b63eb908c5fe0aa3b29d247",
+      "historical_bytes": 7921269,
+      "current_bytes": 7921269,
+      "historical_decoded_frames": 120,
+      "historical_duration_s": 7.99,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "7.990000",
+          "size": "7921269"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-11",
+      "cohort": "cycles",
+      "historical_sha256": "24ed2c1cacb75e277178aa194ed682e05a1b1c09e605bda01eca080c7fd54357",
+      "current_sha256": "24ed2c1cacb75e277178aa194ed682e05a1b1c09e605bda01eca080c7fd54357",
+      "historical_bytes": 6976284,
+      "current_bytes": 6976284,
+      "historical_decoded_frames": 105,
+      "historical_duration_s": 6.992667,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "105"
+          }
+        ],
+        "format": {
+          "duration": "6.992667",
+          "size": "6976284"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-12",
+      "cohort": "cycles",
+      "historical_sha256": "df55984512b06c7b5c5ca6f5978c794633a94118e5585e510edc6d85440b909e",
+      "current_sha256": "df55984512b06c7b5c5ca6f5978c794633a94118e5585e510edc6d85440b909e",
+      "historical_bytes": 8026858,
+      "current_bytes": 8026858,
+      "historical_decoded_frames": 121,
+      "historical_duration_s": 8.057333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "121"
+          }
+        ],
+        "format": {
+          "duration": "8.057333",
+          "size": "8026858"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-13",
+      "cohort": "cycles",
+      "historical_sha256": "ccdf4b5a56135bc1f2e8a7af3da0b6c18ef447c46c32aaeb208f6bd4cf44b34e",
+      "current_sha256": "ccdf4b5a56135bc1f2e8a7af3da0b6c18ef447c46c32aaeb208f6bd4cf44b34e",
+      "historical_bytes": 7039272,
+      "current_bytes": 7039272,
+      "historical_decoded_frames": 105,
+      "historical_duration_s": 6.990667,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "105"
+          }
+        ],
+        "format": {
+          "duration": "6.990667",
+          "size": "7039272"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-14",
+      "cohort": "cycles",
+      "historical_sha256": "14d7f4b510d05fdf2fe581dffa81dcef38ff10bd44511f2535a73babe73cd840",
+      "current_sha256": "14d7f4b510d05fdf2fe581dffa81dcef38ff10bd44511f2535a73babe73cd840",
+      "historical_bytes": 7055968,
+      "current_bytes": 7055968,
+      "historical_decoded_frames": 105,
+      "historical_duration_s": 6.991333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "105"
+          }
+        ],
+        "format": {
+          "duration": "6.991333",
+          "size": "7055968"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-15",
+      "cohort": "cycles",
+      "historical_sha256": "0af11e3bf76b7a516b0d2c98d37c7b97b6aa26a4add34aaa9d2242f39ef360fc",
+      "current_sha256": "0af11e3bf76b7a516b0d2c98d37c7b97b6aa26a4add34aaa9d2242f39ef360fc",
+      "historical_bytes": 7139041,
+      "current_bytes": 7139041,
+      "historical_decoded_frames": 106,
+      "historical_duration_s": 7.061333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "106"
+          }
+        ],
+        "format": {
+          "duration": "7.061333",
+          "size": "7139041"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-16",
+      "cohort": "cycles",
+      "historical_sha256": "8a4a2e244fc228724f26b808ad49baad22622ee52d2a1303d746de853f591a70",
+      "current_sha256": "8a4a2e244fc228724f26b808ad49baad22622ee52d2a1303d746de853f591a70",
+      "historical_bytes": 7971238,
+      "current_bytes": 7971238,
+      "historical_decoded_frames": 120,
+      "historical_duration_s": 7.989333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "7.989333",
+          "size": "7971238"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-17",
+      "cohort": "cycles",
+      "historical_sha256": "8e43eb6568ee7e34e901b7ff677a9af4aabaf9fbce9fe72f397cfacbe3295be6",
+      "current_sha256": "8e43eb6568ee7e34e901b7ff677a9af4aabaf9fbce9fe72f397cfacbe3295be6",
+      "historical_bytes": 9041354,
+      "current_bytes": 9041354,
+      "historical_decoded_frames": 136,
+      "historical_duration_s": 9.055333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "136"
+          }
+        ],
+        "format": {
+          "duration": "9.055333",
+          "size": "9041354"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-18",
+      "cohort": "cycles",
+      "historical_sha256": "741a5300887d3a06badb73fcc48523acc6ec5ced489aff185385af10f8d81411",
+      "current_sha256": "741a5300887d3a06badb73fcc48523acc6ec5ced489aff185385af10f8d81411",
+      "historical_bytes": 8887220,
+      "current_bytes": 8887220,
+      "historical_decoded_frames": 135,
+      "historical_duration_s": 8.989333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "135"
+          }
+        ],
+        "format": {
+          "duration": "8.989333",
+          "size": "8887220"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-19",
+      "cohort": "cycles",
+      "historical_sha256": "eb4df606673f28b8652c74227e799fa1c4232dcfb9a5383630fdd7ee82b4026f",
+      "current_sha256": "eb4df606673f28b8652c74227e799fa1c4232dcfb9a5383630fdd7ee82b4026f",
+      "historical_bytes": 7024657,
+      "current_bytes": 7024657,
+      "historical_decoded_frames": 105,
+      "historical_duration_s": 6.990667,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "105"
+          }
+        ],
+        "format": {
+          "duration": "6.990667",
+          "size": "7024657"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-20",
+      "cohort": "cycles",
+      "historical_sha256": "cdf9e200ed1821d5a63ee80a7917865291aafc360480f59fab23faea473671e6",
+      "current_sha256": "cdf9e200ed1821d5a63ee80a7917865291aafc360480f59fab23faea473671e6",
+      "historical_bytes": 7975060,
+      "current_bytes": 7975060,
+      "historical_decoded_frames": 120,
+      "historical_duration_s": 7.990667,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "7.990667",
+          "size": "7975060"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-21",
+      "cohort": "cycles",
+      "historical_sha256": "f19ae27e2e9f1610ed606e5703f7370922a5ba064c02598e7571949df833d610",
+      "current_sha256": "f19ae27e2e9f1610ed606e5703f7370922a5ba064c02598e7571949df833d610",
+      "historical_bytes": 7972932,
+      "current_bytes": 7972932,
+      "historical_decoded_frames": 120,
+      "historical_duration_s": 7.99,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "7.990000",
+          "size": "7972932"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-22",
+      "cohort": "cycles",
+      "historical_sha256": "af55509564ad4485643d06bb644efaf86b404675591b21022b9b1af95322553c",
+      "current_sha256": "af55509564ad4485643d06bb644efaf86b404675591b21022b9b1af95322553c",
+      "historical_bytes": 9014646,
+      "current_bytes": 9014646,
+      "historical_decoded_frames": 136,
+      "historical_duration_s": 9.055333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "136"
+          }
+        ],
+        "format": {
+          "duration": "9.055333",
+          "size": "9014646"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-23",
+      "cohort": "cycles",
+      "historical_sha256": "a9778b18c9feeba32c0b84e440eaa671645f7a6f6bffa75659b391b5a1990114",
+      "current_sha256": "a9778b18c9feeba32c0b84e440eaa671645f7a6f6bffa75659b391b5a1990114",
+      "historical_bytes": 8034132,
+      "current_bytes": 8034132,
+      "historical_decoded_frames": 120,
+      "historical_duration_s": 7.99,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "7.990000",
+          "size": "8034132"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-24",
+      "cohort": "cycles",
+      "historical_sha256": "e1d753c0983feb8983602104fee917adcb2373a682d55fc336af18020b985fc3",
+      "current_sha256": "e1d753c0983feb8983602104fee917adcb2373a682d55fc336af18020b985fc3",
+      "historical_bytes": 8966064,
+      "current_bytes": 8966064,
+      "historical_decoded_frames": 135,
+      "historical_duration_s": 8.988667,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "135"
+          }
+        ],
+        "format": {
+          "duration": "8.988667",
+          "size": "8966064"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-25",
+      "cohort": "cycles",
+      "historical_sha256": "82eca8358f19fe1308569611c6adcb513eb4db25a1bd094d9dc0892fd83d0a09",
+      "current_sha256": "82eca8358f19fe1308569611c6adcb513eb4db25a1bd094d9dc0892fd83d0a09",
+      "historical_bytes": 6624506,
+      "current_bytes": 6624506,
+      "historical_decoded_frames": 106,
+      "historical_duration_s": 7.057333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "106"
+          }
+        ],
+        "format": {
+          "duration": "7.057333",
+          "size": "6624506"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-26",
+      "cohort": "cycles",
+      "historical_sha256": "943f17621b2487893f0b49ddd7287ccc0c67a6a6bbd549e26f80cef7a4f2ea35",
+      "current_sha256": "943f17621b2487893f0b49ddd7287ccc0c67a6a6bbd549e26f80cef7a4f2ea35",
+      "historical_bytes": 8364617,
+      "current_bytes": 8364617,
+      "historical_decoded_frames": 135,
+      "historical_duration_s": 8.99,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "135"
+          }
+        ],
+        "format": {
+          "duration": "8.990000",
+          "size": "8364617"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-27",
+      "cohort": "cycles",
+      "historical_sha256": "11c5d7f4c4427faa86f8bb195872dcc39df91da2fa7224ce8bef73f1a7978a08",
+      "current_sha256": "11c5d7f4c4427faa86f8bb195872dcc39df91da2fa7224ce8bef73f1a7978a08",
+      "historical_bytes": 7542717,
+      "current_bytes": 7542717,
+      "historical_decoded_frames": 120,
+      "historical_duration_s": 7.990667,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "7.990667",
+          "size": "7542717"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-28",
+      "cohort": "cycles",
+      "historical_sha256": "e893595d8a9d73fef4b9853afca0f87d1659f0013da0f6fd67ef7ee3d7d107fb",
+      "current_sha256": "e893595d8a9d73fef4b9853afca0f87d1659f0013da0f6fd67ef7ee3d7d107fb",
+      "historical_bytes": 7392976,
+      "current_bytes": 7392976,
+      "historical_decoded_frames": 120,
+      "historical_duration_s": 7.99,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "7.990000",
+          "size": "7392976"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-29",
+      "cohort": "cycles",
+      "historical_sha256": "00ac804db9425886b23c065eac8f89794713baf2b24173bf5e2e94ec6f11c5b0",
+      "current_sha256": "00ac804db9425886b23c065eac8f89794713baf2b24173bf5e2e94ec6f11c5b0",
+      "historical_bytes": 8309893,
+      "current_bytes": 8309893,
+      "historical_decoded_frames": 135,
+      "historical_duration_s": 8.988667,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "135"
+          }
+        ],
+        "format": {
+          "duration": "8.988667",
+          "size": "8309893"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "cycles-30",
+      "cohort": "cycles",
+      "historical_sha256": "22740970ddfa4a6d2b24b516cda3acfeb7621173b7c3dedd1424ea45cdf7bee9",
+      "current_sha256": "22740970ddfa4a6d2b24b516cda3acfeb7621173b7c3dedd1424ea45cdf7bee9",
+      "historical_bytes": 8267537,
+      "current_bytes": 8267537,
+      "historical_decoded_frames": 136,
+      "historical_duration_s": 9.056667,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "136"
+          }
+        ],
+        "format": {
+          "duration": "9.056667",
+          "size": "8267537"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "buffering-ab-01",
+      "cohort": "buffering-ab",
+      "historical_sha256": "060a27591e216c46dbe0f0a47e7c8ff0c1d9a887ca5573a6040f609cbec591fb",
+      "current_sha256": "060a27591e216c46dbe0f0a47e7c8ff0c1d9a887ca5573a6040f609cbec591fb",
+      "historical_bytes": 69055508,
+      "current_bytes": 69055508,
+      "historical_decoded_frames": 1171,
+      "historical_duration_s": 77.963333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "1171"
+          }
+        ],
+        "format": {
+          "duration": "77.963333",
+          "size": "69055508"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "buffering-ab-02",
+      "cohort": "buffering-ab",
+      "historical_sha256": "c1c0f14bbc7b36184dad7dc6468f4875f098002ab06183e1fd009370a229b57c",
+      "current_sha256": "c1c0f14bbc7b36184dad7dc6468f4875f098002ab06183e1fd009370a229b57c",
+      "historical_bytes": 68299891,
+      "current_bytes": 68299891,
+      "historical_decoded_frames": 1157,
+      "historical_duration_s": 77.031333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "1157"
+          }
+        ],
+        "format": {
+          "duration": "77.031333",
+          "size": "68299891"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "buffering-ab-03",
+      "cohort": "buffering-ab",
+      "historical_sha256": "428b2007376684c6759e5425066bb59afaa092bf542a4f7b8655e9495a8b48a0",
+      "current_sha256": "428b2007376684c6759e5425066bb59afaa092bf542a4f7b8655e9495a8b48a0",
+      "historical_bytes": 67966267,
+      "current_bytes": 67966267,
+      "historical_decoded_frames": 1157,
+      "historical_duration_s": 77.031333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "1157"
+          }
+        ],
+        "format": {
+          "duration": "77.031333",
+          "size": "67966267"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "buffering-ab-04",
+      "cohort": "buffering-ab",
+      "historical_sha256": "39d9a749bf4e0ba0897f5a532629ba9729fb81d18e1f651676e104b9963df8b7",
+      "current_sha256": "39d9a749bf4e0ba0897f5a532629ba9729fb81d18e1f651676e104b9963df8b7",
+      "historical_bytes": 69784949,
+      "current_bytes": 69784949,
+      "historical_decoded_frames": 1187,
+      "historical_duration_s": 79.031333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "1187"
+          }
+        ],
+        "format": {
+          "duration": "79.031333",
+          "size": "69784949"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "buffering-ab-05",
+      "cohort": "buffering-ab",
+      "historical_sha256": "f4292fadab53d9e501ba0d7e2e05fd9d26f6b47f1f1d68464896a9c6c42d3f19",
+      "current_sha256": "f4292fadab53d9e501ba0d7e2e05fd9d26f6b47f1f1d68464896a9c6c42d3f19",
+      "historical_bytes": 69511200,
+      "current_bytes": 69511200,
+      "historical_decoded_frames": 1172,
+      "historical_duration_s": 78.029333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "1172"
+          }
+        ],
+        "format": {
+          "duration": "78.029333",
+          "size": "69511200"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "buffering-ab-06",
+      "cohort": "buffering-ab",
+      "historical_sha256": "7f66e6988612a64645edd4447293cacbd81cc02c84a9a7cc53e0e956fb7c728f",
+      "current_sha256": "7f66e6988612a64645edd4447293cacbd81cc02c84a9a7cc53e0e956fb7c728f",
+      "historical_bytes": 68197046,
+      "current_bytes": 68197046,
+      "historical_decoded_frames": 1157,
+      "historical_duration_s": 77.03,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "1157"
+          }
+        ],
+        "format": {
+          "duration": "77.030000",
+          "size": "68197046"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "buffering-ab-07",
+      "cohort": "buffering-ab",
+      "historical_sha256": "949a4eb9a1d8a7517268c0ec6dc0568865fda47d6afaa07296c9268bdb116f36",
+      "current_sha256": "949a4eb9a1d8a7517268c0ec6dc0568865fda47d6afaa07296c9268bdb116f36",
+      "historical_bytes": 70039752,
+      "current_bytes": 70039752,
+      "historical_decoded_frames": 1186,
+      "historical_duration_s": 78.961333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "1186"
+          }
+        ],
+        "format": {
+          "duration": "78.961333",
+          "size": "70039752"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "buffering-ab-08",
+      "cohort": "buffering-ab",
+      "historical_sha256": "4d0fdc0290630c0231005b621d3ed09b9673f4147170738f2d165f15b621ed95",
+      "current_sha256": "4d0fdc0290630c0231005b621d3ed09b9673f4147170738f2d165f15b621ed95",
+      "historical_bytes": 68872570,
+      "current_bytes": 68872570,
+      "historical_decoded_frames": 1172,
+      "historical_duration_s": 78.029333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "1172"
+          }
+        ],
+        "format": {
+          "duration": "78.029333",
+          "size": "68872570"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "buffering-ab-09",
+      "cohort": "buffering-ab",
+      "historical_sha256": "33d65773659d702c428654f892ba426468fc2a4b45ec9ba2c28462403ac19d31",
+      "current_sha256": "33d65773659d702c428654f892ba426468fc2a4b45ec9ba2c28462403ac19d31",
+      "historical_bytes": 69434951,
+      "current_bytes": 69434951,
+      "historical_decoded_frames": 1172,
+      "historical_duration_s": 78.029333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "1172"
+          }
+        ],
+        "format": {
+          "duration": "78.029333",
+          "size": "69434951"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "buffering-ab-10",
+      "cohort": "buffering-ab",
+      "historical_sha256": "110ee19c6599eb4f92c240e87f0d85ca18eaeb98704a77013a140315e3f03e99",
+      "current_sha256": "110ee19c6599eb4f92c240e87f0d85ca18eaeb98704a77013a140315e3f03e99",
+      "historical_bytes": 70358637,
+      "current_bytes": 70358637,
+      "historical_decoded_frames": 1187,
+      "historical_duration_s": 79.028667,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "1187"
+          }
+        ],
+        "format": {
+          "duration": "79.028667",
+          "size": "70358637"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "buffering-ab-11",
+      "cohort": "buffering-ab",
+      "historical_sha256": "7bd8f1b4666cd4fcdf865af20ca785b38ec20573ec284205b21b32518436838f",
+      "current_sha256": "7bd8f1b4666cd4fcdf865af20ca785b38ec20573ec284205b21b32518436838f",
+      "historical_bytes": 69682873,
+      "current_bytes": 69682873,
+      "historical_decoded_frames": 1171,
+      "historical_duration_s": 77.963333,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "1171"
+          }
+        ],
+        "format": {
+          "duration": "77.963333",
+          "size": "69682873"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    },
+    {
+      "recording": "buffering-ab-12",
+      "cohort": "buffering-ab",
+      "historical_sha256": "58e967667e9f89beffb6afa2e89d835b91875f34016bfe142a60e7c11f08a9e7",
+      "current_sha256": "58e967667e9f89beffb6afa2e89d835b91875f34016bfe142a60e7c11f08a9e7",
+      "historical_bytes": 70446550,
+      "current_bytes": 70446550,
+      "historical_decoded_frames": 1187,
+      "historical_duration_s": 79.028,
+      "retained_offline_ffprobe_fields": {
+        "streams": [
+          {
+            "width": 1280,
+            "height": 704,
+            "codec_name": "h264",
+            "nb_read_frames": "1187"
+          }
+        ],
+        "format": {
+          "duration": "79.028000",
+          "size": "70446550"
+        }
+      },
+      "ffprobe_fields_note": "Retained report from earlier 29 October offline audit; this stage rehashes bytes only, does not rerun decoding."
+    }
+  ],
+  "input_provenance": [
+    {
+      "source_path": ".runtime/evaluation/20261015T173020Z/benchmark-result.json",
+      "original_sha256": "2cf1ada04676f56e5550078ceae793a5721c2a99a6b737fa1dd838cb0507be25"
+    },
+    {
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/result.json",
+      "original_sha256": "4e0e520743427b65db9c2bcd2de6d3610cf1f605b3f0ac49b248930dae2bd2c7"
+    },
+    {
+      "source_path": ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/result.json",
+      "original_sha256": "0085e3a739537800d3ee0ff946d231b9157dc1bbefefe29edd94b203958865f9"
+    }
+  ],
+  "scope": "4 F450, 12 measured A/B and 30 cycle byte-hash attestations only. No cycle raw data is staged; the LAN agent owns that cohort.",
+  "limitation": "Private MP4s withheld. Public readers cannot independently decode media or recheck media byte hashes. Historical/current equality is a staging attestation, not publicly reproducible decoding."
+}

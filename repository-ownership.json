@@ -1,0 +1,44 @@
+{
+  "stream-edge": {
+    "repository": "https://github.com/mehmetmehmeti/stream-edge",
+    "source_commit": "843e99f9c93726ec99ba6c0b54ff430b992d814b",
+    "source_url": "https://github.com/mehmetmehmeti/stream-edge/tree/843e99f9c93726ec99ba6c0b54ff430b992d814b",
+    "local_worktree_clean_at_packaging": true,
+    "evidence_home": "mehmetmehmeti/stream-edge: thesis-evidence-2026-10-29"
+  },
+  "backend-edge": {
+    "repository": "https://github.com/mehmetmehmeti/backend-edge",
+    "source_commit": "945f8c57c53598406e87a13726cabf3c4190a302",
+    "source_url": "https://github.com/mehmetmehmeti/backend-edge/tree/945f8c57c53598406e87a13726cabf3c4190a302",
+    "local_worktree_clean_at_packaging": true,
+    "evidence_home": "mehmetmehmeti/stream-edge: thesis-evidence-2026-10-29"
+  },
+  "backend-web": {
+    "repository": "https://github.com/mehmetmehmeti/backend-web",
+    "source_commit": "e74beef25f48393e4b8ad148202d703c34af56d5",
+    "source_url": "https://github.com/mehmetmehmeti/backend-web/tree/e74beef25f48393e4b8ad148202d703c34af56d5",
+    "local_worktree_clean_at_packaging": true,
+    "evidence_home": "mehmetmehmeti/stream-edge: thesis-evidence-2026-10-29"
+  },
+  "frontend-edge": {
+    "repository": "https://github.com/mehmetmehmeti/frontend-edge",
+    "source_commit": "e73de0eb6fb9b4cc674be4e0006b10ebdc389ff0",
+    "source_url": "https://github.com/mehmetmehmeti/frontend-edge/tree/e73de0eb6fb9b4cc674be4e0006b10ebdc389ff0",
+    "local_worktree_clean_at_packaging": true,
+    "evidence_home": "mehmetmehmeti/stream-edge: thesis-evidence-2026-10-29"
+  },
+  "frontend-web": {
+    "repository": "https://github.com/mehmetmehmeti/frontend-web",
+    "source_commit": "cf15556d405471688897e43931d980c5728e637d",
+    "source_url": "https://github.com/mehmetmehmeti/frontend-web/tree/cf15556d405471688897e43931d980c5728e637d",
+    "local_worktree_clean_at_packaging": true,
+    "evidence_home": "mehmetmehmeti/stream-edge: thesis-evidence-2026-10-29"
+  },
+  "media-server": {
+    "repository": "https://github.com/mehmetmehmeti/media-server",
+    "source_commit": "27d02f566deaa6e4d733bac18f732cd64895ef96",
+    "source_url": "https://github.com/mehmetmehmeti/media-server/tree/27d02f566deaa6e4d733bac18f732cd64895ef96",
+    "local_worktree_clean_at_packaging": true,
+    "evidence_home": "mehmetmehmeti/stream-edge: thesis-evidence-2026-10-29"
+  }
+}

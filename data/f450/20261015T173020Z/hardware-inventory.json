@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "host": "EDGE_HOST",
+  "collected_utc": "2026-10-15T17:30:22.293300+00:00",
+  "kernel": "7.0.0-38-generic",
+  "os": "Ubuntu 24.04.4 LTS",
+  "cpu": {
+    "Architecture": "x86_64",
+    "Model name": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "CPU(s)": "12",
+    "Core(s) per socket": "8",
+    "Socket(s)": "1"
+  },
+  "logical_cpu_count": 12,
+  "memory": {
+    "MemTotal": "16067744 kB",
+    "os_visible_gib": 15.323394775390625
+  },
+  "gpu": {
+    "model": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "driver_version": "595.91.07",
+    "memory": "4096 MiB"
+  },
+  "software_versions": {
+    "node": "v22.23.1",
+    "npm": "10.9.8",
+    "ffprobe": "ffprobe version 6.1.1-3ubuntu5 Copyright (c) 2007-2023 the FFmpeg developers",
+    "gstreamer": "gst-launch-1.0 version 1.24.2",
+    "postgresql": "psql (PostgreSQL) 16.15 (Ubuntu 16.15-0ubuntu0.24.04.1)",
+    "chrome": "Google Chrome 155.0.8059.39",
+    "cmake": "cmake version 4.3.2",
+    "Qt6": "6.8.3",
+    "holoscan": "3.7.0",
+    "cuda_compiler_release": "12.8",
+    "cuda_compiler_version": "12.8.93"
+  },
+  "installed_application_packages": {
+    "backend-edge": {
+      "@nestjs/core": "11.1.29",
+      "@prisma/client": "7.9.1",
+      "typescript": "5.9.3"
+    },
+    "backend-web": {
+      "@nestjs/core": "11.1.29",
+      "@prisma/client": "7.9.1",
+      "typescript": "5.9.3"
+    },
+    "frontend-web": {
+      "next": "16.2.1",
+      "react": "19.2.4",
+      "mediasoup-client": "3.23.2",
+      "typescript": "5.9.3"
+    },
+    "media-server": {
+      "mediasoup": "3.21.2",
+      "mediasoup-client": "3.21.0"
+    }
+  },
+  "capture_configuration": {
+    "STREAMING_CAMERA_WIDTH": "1280",
+    "STREAMING_CAMERA_HEIGHT": "704",
+    "STREAMING_CAMERA_FRAME_RATE": "15",
+    "STREAMING_CAMERA_PIXEL_FORMAT": "YUYV",
+    "STREAMING_CAMERA_EXPOSURE_TIME": "",
+    "STREAMING_CAMERA_GAIN": "",
+    "STREAMING_CAMERA_DYNAMIC_FRAME_RATE": "0",
+    "MEDIA_PUBLISH_VIDEO_CODEC": "vp8",
+    "STREAMING_RECORD_WIDTH": "1280",
+    "STREAMING_RECORD_HEIGHT": "704",
+    "STREAMING_RECORD_FPS": "15",
+    "STREAMING_RECORD_MODE": "auto",
+    "STREAMING_RECORD_BITRATE_KBPS": "8000"
+  },
+  "limits": [
+    "OS-visible RAM is not installed-module capacity.",
+    "Resolved Qt/CUDA versions supplement initially unavailable PATH commands.",
+    "This is a privacy projection of the 15 October inventory, not a fresh hardware scan."
+  ]
+}

@@ -1,0 +1,699 @@
+{
+  "schema_version": 1,
+  "generated_date": "2026-10-29",
+  "repository": "https://github.com/mehmetmehmeti/stream-edge",
+  "inputs": [
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-52-49-674Z/result.json",
+      "original_sha256": "ad9a88bed281fddc5a73b55f4355b8d43d6fd6fda82da12fa7e10fd07de51d60",
+      "original_size_bytes": 14430,
+      "derivatives": [
+        {
+          "published_path": "data/lan/excluded-attempts.json",
+          "published_sha256": "79527755563ec1b733b4c7b9f9030254d9b322b43fe8db55544a23f20e47a1cb",
+          "schema": "excluded-attempts-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-53-48-034Z/result.json",
+      "original_sha256": "12bb2b8af9d960f9f606e973431e3dedb6a82e2b507828ac4a014677487dd17b",
+      "original_size_bytes": 44514,
+      "derivatives": [
+        {
+          "published_path": "data/lan/excluded-attempts.json",
+          "published_sha256": "79527755563ec1b733b4c7b9f9030254d9b322b43fe8db55544a23f20e47a1cb",
+          "schema": "excluded-attempts-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-55-08-347Z/result.json",
+      "original_sha256": "2f5069b10bc6fb816d13c98612f0c46375d392b927768abb62837dfb443b6922",
+      "original_size_bytes": 45313,
+      "derivatives": [
+        {
+          "published_path": "data/lan/excluded-attempts.json",
+          "published_sha256": "79527755563ec1b733b4c7b9f9030254d9b322b43fe8db55544a23f20e47a1cb",
+          "schema": "excluded-attempts-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-56-52-657Z/analysis.json",
+      "original_sha256": "41f8a87cf16cda566b07ba4fa6d7fbee8eb8c14232fb6fc99304b69936b53bc6",
+      "original_size_bytes": 4341,
+      "derivatives": [
+        {
+          "published_path": "data/lan/short/analysis.json",
+          "published_sha256": "4eb003a80ce5bd6e11c87a47bd128daf074c9123aa4742068918cba5eed840f8",
+          "schema": "lan-analysis-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-56-52-657Z/command-timings.csv",
+      "original_sha256": "f46a7c14c51add1ad9088d74054c04cc8b4d7fab4d7d7ac09beb84488d2734c7",
+      "original_size_bytes": 415,
+      "derivatives": [
+        {
+          "published_path": "data/lan/short/command-timings.csv",
+          "published_sha256": "f46a7c14c51add1ad9088d74054c04cc8b4d7fab4d7d7ac09beb84488d2734c7",
+          "schema": "numeric-command-csv-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-56-52-657Z/events.jsonl",
+      "original_sha256": "81dada2fab699e70278a4ac604c347c8c88214c9c55d02f9a5207ee95ebce3f9",
+      "original_size_bytes": 104266,
+      "derivatives": [
+        {
+          "published_path": "data/lan/short/samples.jsonl",
+          "published_sha256": "a24cd276d30f3eb8d45a3dbf77ac74090921abdc22098cd37317d712e2d3ab30",
+          "schema": "sample-events-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-56-52-657Z/qt.jsonl",
+      "original_sha256": "64c336eb0510d9d5325f20f69f665e6f1d7cad254443fcbd909d7f467c17d23c",
+      "original_size_bytes": 22873,
+      "derivatives": [
+        {
+          "published_path": "data/lan/short/qt.jsonl",
+          "published_sha256": "64c336eb0510d9d5325f20f69f665e6f1d7cad254443fcbd909d7f467c17d23c",
+          "schema": "qt-samples-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-56-52-657Z/resources.jsonl",
+      "original_sha256": "07ccefcb6ad58f7ad003af46635bd0cee1ee664face6824bf3502eb9c18e456b",
+      "original_size_bytes": 158044,
+      "derivatives": [
+        {
+          "published_path": "data/lan/short/resources.jsonl",
+          "published_sha256": "dc06cc201606920cf9ececca2ef71ba9a97e3c9b348e4e16e7ab30a57fcb5ae1",
+          "schema": "resource-samples-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-56-52-657Z/result-before-summary-normalization.json",
+      "original_sha256": "d4042f0f51878d51e568262db283f18cba795afdc010336376b8d42fba734df1",
+      "original_size_bytes": 54788,
+      "derivatives": [
+        {
+          "published_path": "data/lan/short/summary-normalization.json",
+          "published_sha256": "0be2aa11006747e830fc043bb6b81175ea9e9a430a8e06dfc0eed24c5d1bb861",
+          "schema": "summary-normalization-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-56-52-657Z/result.json",
+      "original_sha256": "ea1eee5a9dc8b12b101781907d6538c3925ee00d20625d840327d053c20d3e93",
+      "original_size_bytes": 54938,
+      "derivatives": [
+        {
+          "published_path": "data/lan/short/result.json",
+          "published_sha256": "85c265eab1da20fd77b8c92d24be7abf068394f294c4b46939b0b038c6cc28a6",
+          "schema": "lan-result-v1"
+        },
+        {
+          "published_path": "data/lan/short/summary-normalization.json",
+          "published_sha256": "0be2aa11006747e830fc043bb6b81175ea9e9a430a8e06dfc0eed24c5d1bb861",
+          "schema": "summary-normalization-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-56-52-657Z/transfers.jsonl",
+      "original_sha256": "7f01c8efbb1aa8e908d2ac6890383395930255283f0f25d7211aa35ad9a7e718",
+      "original_size_bytes": 193,
+      "derivatives": [
+        {
+          "published_path": "data/lan/short/transfers.jsonl",
+          "published_sha256": "7f01c8efbb1aa8e908d2ac6890383395930255283f0f25d7211aa35ad9a7e718",
+          "schema": "transfer-samples-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/analysis.json",
+      "original_sha256": "5f16faa5024fd07e1f67a77ef92797e4d2ca47b9f382118e018c05dfd05be707",
+      "original_size_bytes": 4418,
+      "derivatives": [
+        {
+          "published_path": "data/lan/cycles/analysis.json",
+          "published_sha256": "77e3ed75064c9696d996913a397e35f9448975808ef991e5e5a8eb37ac9eaaca",
+          "schema": "lan-analysis-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/command-timings.csv",
+      "original_sha256": "0c9619cc5392c72b592f0148c1963ab6818b818c8f632273a3618dec474d15b1",
+      "original_size_bytes": 478,
+      "derivatives": [
+        {
+          "published_path": "data/lan/cycles/command-timings.csv",
+          "published_sha256": "0c9619cc5392c72b592f0148c1963ab6818b818c8f632273a3618dec474d15b1",
+          "schema": "numeric-command-csv-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/events.jsonl",
+      "original_sha256": "10cbff55064a6fadf9af8d3a6c1679df1778d8a601045ef4baab8ef4e32f036e",
+      "original_size_bytes": 564669,
+      "derivatives": [
+        {
+          "published_path": "data/lan/cycles/samples.jsonl",
+          "published_sha256": "625eda085b34e114ddc8da4400fe6a58b0217530142eac6b32e977e21f46ebcb",
+          "schema": "sample-events-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/expected-server-evidence.json",
+      "original_sha256": "acba5863f33f859efd7efa836dc4c0bc8b8d496fe28a07a6dc1b6eaaebb505d9",
+      "original_size_bytes": 30042,
+      "derivatives": [
+        {
+          "published_path": "data/lan/expected-server-evidence.json",
+          "published_sha256": "1587b8346e2ad3f0586d0bb43af944974a88ceb2015cc874c320212d89e310b9",
+          "schema": "manifest-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/post-run-audit.json",
+      "original_sha256": "a9240de34ef4889ef6b22e056b87d5782f4a274d7f7a7dfc0142af4a405b6720",
+      "original_size_bytes": 4726,
+      "derivatives": [
+        {
+          "published_path": "data/lan/post-run-audit.json",
+          "published_sha256": "934070608a5cba722c8ce43544bd27e443e6c8a8c349ce4d3d959333732889c8",
+          "schema": "post-run-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/qt.jsonl",
+      "original_sha256": "f7d5ef61127793e415cae55bb5b85250e4ae4e0b10a87601939e51fd7fbd0f5a",
+      "original_size_bytes": 1013324,
+      "derivatives": [
+        {
+          "published_path": "data/lan/cycles/qt.jsonl",
+          "published_sha256": "f7d5ef61127793e415cae55bb5b85250e4ae4e0b10a87601939e51fd7fbd0f5a",
+          "schema": "qt-samples-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/resources.jsonl",
+      "original_sha256": "5c17837ea3bf77f483bc813fbed5727eccb40184cf6c3b2ce88af8ab845077d5",
+      "original_size_bytes": 2407051,
+      "derivatives": [
+        {
+          "published_path": "data/lan/cycles/resources.jsonl",
+          "published_sha256": "ed9c4b654569d9a534cf3331ca78e398f7fa651865871627c457081e1418697d",
+          "schema": "resource-samples-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/result.json",
+      "original_sha256": "0085e3a739537800d3ee0ff946d231b9157dc1bbefefe29edd94b203958865f9",
+      "original_size_bytes": 1151753,
+      "derivatives": [
+        {
+          "published_path": "data/lan/cycles/result.json",
+          "published_sha256": "846cd3bbd356a4e35aa0e4c8ee7c99e24146ad3127986d2105b127dcc4cf1f9c",
+          "schema": "lan-result-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/transfers.jsonl",
+      "original_sha256": "33fd200e006085411f4885486e04c530179cde0f63d034df7647b52bfae773cf",
+      "original_size_bytes": 6113,
+      "derivatives": [
+        {
+          "published_path": "data/lan/cycles/transfers.jsonl",
+          "published_sha256": "33fd200e006085411f4885486e04c530179cde0f63d034df7647b52bfae773cf",
+          "schema": "transfer-samples-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/lan-evaluation/hardware-20261022.json",
+      "original_sha256": "3a50fda3310fc37151ee94f6d6f8a990b56f911db827231ea87e6cc8c6f11a1f",
+      "original_size_bytes": 20398,
+      "derivatives": [
+        {
+          "published_path": "data/lan/hardware.json",
+          "published_sha256": "ff7c5656fbdf2918f30d3eef16b6e065463bd0bedfe7d3d246f67b5c8434e6d4",
+          "schema": "edge-hardware-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/server-evidence/2026-10-23/hardware/server-hardware-supplement-2026-10-23.json",
+      "original_sha256": "73da86e4bd6b3c680078c4d43f3b1fc62b8754ef319e1ed9c808a63e65255f34",
+      "original_size_bytes": 1931,
+      "derivatives": [
+        {
+          "published_path": "data/server/hardware.json",
+          "published_sha256": "0203c86c9c3fbacb4db021eb9a6a4cd015285d1f4d52837c8acf9a64adf3d62c",
+          "schema": "hardware-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/server-evidence/2026-10-23/received/SHA256SUMS.txt",
+      "original_sha256": "e11a96015ddf03da38b408d2efb007de489da2f60acf0b69aaafe9bd334cf59a",
+      "original_size_bytes": 3032,
+      "derivatives": [
+        {
+          "published_path": "data/server/original-package-checksums.json",
+          "published_sha256": "d69ebcca9b55046b05373cb2773d1c81175f0a372e24f5f09b2e4beaa922efac",
+          "schema": "original-package-checksums-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/server-evidence/2026-10-23/received/cleanup-evidence.json",
+      "original_sha256": "f41e5e5a4bac5db6833349c85ddbd5a6a334de9ae69d2ec9e8ac5afdd3e2fbc9",
+      "original_size_bytes": 1691,
+      "derivatives": [
+        {
+          "published_path": "data/server/cleanup.json",
+          "published_sha256": "adb0bee2bd438ff7201af2b4e96a1ad89775796fa09993f9586fd6812014ee2b",
+          "schema": "cleanup-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/server-evidence/2026-10-23/received/selected-database-evidence.json",
+      "original_sha256": "7e8fa55facae72c4b2c17aba271161cf93fd2ed2adffe6f4d4a9cba2e46ab422",
+      "original_size_bytes": 52833,
+      "derivatives": [
+        {
+          "published_path": "data/server/selected-database-evidence.json",
+          "published_sha256": "b5164aa399e803c51477704c46e6a2924b952b1e0d989f11e54e1ad3882eef01",
+          "schema": "selected-database-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/server-evidence/2026-10-23/received/server-host-service-evidence.json",
+      "original_sha256": "a0712058e43aa2ba7ec08054b84d579e16635133e96ab9715714bb0837ee3a27",
+      "original_size_bytes": 29558,
+      "derivatives": [
+        {
+          "published_path": "data/server/host-service.json",
+          "published_sha256": "729dfda91f0e2159cee26cae007201c0dc754889d41933a42952db63a5f092dc",
+          "schema": "host-service-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/server-evidence/2026-10-23/received/supplied-verifier-original-report.json",
+      "original_sha256": "e6546f5d4d2c0371b64b4bb27bb642311a94c618ffaf67f90a4dde892b031c53",
+      "original_size_bytes": 75930,
+      "derivatives": [
+        {
+          "published_path": "data/server/supplied-verifier-original-report.json",
+          "published_sha256": "b9bc7219b406e869c7556329952c88e18d920204b6ff6821d9adb27bf1813a13",
+          "schema": "server-report-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/server-evidence/2026-10-23/returned-server-evidence-audit-2026-10-23.json",
+      "original_sha256": "8c1d84f84a49d90a37667712cf209f79a976059aec215c1aa60a52031c891801",
+      "original_size_bytes": 51861,
+      "derivatives": [
+        {
+          "published_path": "data/server/receipt-audit.json",
+          "published_sha256": "7a2b691e189ac5fedc5df8d27f7d26d59d06fd10071f652b1b97001f99a31126",
+          "schema": "receipt-v1"
+        },
+        {
+          "published_path": "data/server/host-service.json",
+          "published_sha256": "729dfda91f0e2159cee26cae007201c0dc754889d41933a42952db63a5f092dc",
+          "schema": "host-service-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/server-evidence/2026-10-23/supplement/server-lan-verification-from-paste.json",
+      "original_sha256": "dc55ffa2bae6da825968e30a72ec379d35ca4b14f6586ce39bc4da72af552611",
+      "original_size_bytes": 131394,
+      "derivatives": [
+        {
+          "published_path": "data/server/server-lan-verification.json",
+          "published_sha256": "cbaf65e7bfe4877360d24c924c877949d6fe176fd27eacbd775a1cc155712e19",
+          "schema": "server-report-v1"
+        }
+      ]
+    },
+    {
+      "source": ".runtime/server-evidence/2026-10-23/supplement/server-pasted-supplement-audit.json",
+      "original_sha256": "5098442981d20d982b0e4f67b7a743f5dd167c6c1ca07ef288d2c5738e88fa90",
+      "original_size_bytes": 1042,
+      "derivatives": [
+        {
+          "published_path": "data/server/supplement-audit.json",
+          "published_sha256": "ef5e1751d04b7ded1c82c97f58e666e7d037da9a35927447aa7f521e46da07c8",
+          "schema": "supplement-audit-v1"
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "published_path": "data/lan/short/result.json",
+      "published_sha256": "85c265eab1da20fd77b8c92d24be7abf068394f294c4b46939b0b038c6cc28a6",
+      "published_size_bytes": 39008,
+      "schema": "lan-result-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/2026-10-22T17-56-52-657Z/result.json"
+      ]
+    },
+    {
+      "published_path": "data/lan/short/analysis.json",
+      "published_sha256": "4eb003a80ce5bd6e11c87a47bd128daf074c9123aa4742068918cba5eed840f8",
+      "published_size_bytes": 4214,
+      "schema": "lan-analysis-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/2026-10-22T17-56-52-657Z/analysis.json"
+      ]
+    },
+    {
+      "published_path": "data/lan/short/command-timings.csv",
+      "published_sha256": "f46a7c14c51add1ad9088d74054c04cc8b4d7fab4d7d7ac09beb84488d2734c7",
+      "published_size_bytes": 415,
+      "schema": "numeric-command-csv-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/2026-10-22T17-56-52-657Z/command-timings.csv"
+      ]
+    },
+    {
+      "published_path": "data/lan/short/qt.jsonl",
+      "published_sha256": "64c336eb0510d9d5325f20f69f665e6f1d7cad254443fcbd909d7f467c17d23c",
+      "published_size_bytes": 22873,
+      "schema": "qt-samples-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/2026-10-22T17-56-52-657Z/qt.jsonl"
+      ]
+    },
+    {
+      "published_path": "data/lan/short/transfers.jsonl",
+      "published_sha256": "7f01c8efbb1aa8e908d2ac6890383395930255283f0f25d7211aa35ad9a7e718",
+      "published_size_bytes": 193,
+      "schema": "transfer-samples-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/2026-10-22T17-56-52-657Z/transfers.jsonl"
+      ]
+    },
+    {
+      "published_path": "data/lan/short/resources.jsonl",
+      "published_sha256": "dc06cc201606920cf9ececca2ef71ba9a97e3c9b348e4e16e7ab30a57fcb5ae1",
+      "published_size_bytes": 24727,
+      "schema": "resource-samples-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/2026-10-22T17-56-52-657Z/resources.jsonl"
+      ]
+    },
+    {
+      "published_path": "data/lan/short/samples.jsonl",
+      "published_sha256": "a24cd276d30f3eb8d45a3dbf77ac74090921abdc22098cd37317d712e2d3ab30",
+      "published_size_bytes": 70058,
+      "schema": "sample-events-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/2026-10-22T17-56-52-657Z/events.jsonl"
+      ]
+    },
+    {
+      "published_path": "data/lan/cycles/result.json",
+      "published_sha256": "846cd3bbd356a4e35aa0e4c8ee7c99e24146ad3127986d2105b127dcc4cf1f9c",
+      "published_size_bytes": 893300,
+      "schema": "lan-result-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/result.json"
+      ]
+    },
+    {
+      "published_path": "data/lan/cycles/analysis.json",
+      "published_sha256": "77e3ed75064c9696d996913a397e35f9448975808ef991e5e5a8eb37ac9eaaca",
+      "published_size_bytes": 4292,
+      "schema": "lan-analysis-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/analysis.json"
+      ]
+    },
+    {
+      "published_path": "data/lan/cycles/command-timings.csv",
+      "published_sha256": "0c9619cc5392c72b592f0148c1963ab6818b818c8f632273a3618dec474d15b1",
+      "published_size_bytes": 478,
+      "schema": "numeric-command-csv-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/command-timings.csv"
+      ]
+    },
+    {
+      "published_path": "data/lan/cycles/qt.jsonl",
+      "published_sha256": "f7d5ef61127793e415cae55bb5b85250e4ae4e0b10a87601939e51fd7fbd0f5a",
+      "published_size_bytes": 1013324,
+      "schema": "qt-samples-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/qt.jsonl"
+      ]
+    },
+    {
+      "published_path": "data/lan/cycles/transfers.jsonl",
+      "published_sha256": "33fd200e006085411f4885486e04c530179cde0f63d034df7647b52bfae773cf",
+      "published_size_bytes": 6113,
+      "schema": "transfer-samples-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/transfers.jsonl"
+      ]
+    },
+    {
+      "published_path": "data/lan/cycles/resources.jsonl",
+      "published_sha256": "ed9c4b654569d9a534cf3331ca78e398f7fa651865871627c457081e1418697d",
+      "published_size_bytes": 377270,
+      "schema": "resource-samples-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/resources.jsonl"
+      ]
+    },
+    {
+      "published_path": "data/lan/cycles/samples.jsonl",
+      "published_sha256": "625eda085b34e114ddc8da4400fe6a58b0217530142eac6b32e977e21f46ebcb",
+      "published_size_bytes": 363961,
+      "schema": "sample-events-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/events.jsonl"
+      ]
+    },
+    {
+      "published_path": "data/lan/expected-server-evidence.json",
+      "published_sha256": "1587b8346e2ad3f0586d0bb43af944974a88ceb2015cc874c320212d89e310b9",
+      "published_size_bytes": 30024,
+      "schema": "manifest-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/expected-server-evidence.json"
+      ]
+    },
+    {
+      "published_path": "data/lan/post-run-audit.json",
+      "published_sha256": "934070608a5cba722c8ce43544bd27e443e6c8a8c349ce4d3d959333732889c8",
+      "published_size_bytes": 4726,
+      "schema": "post-run-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/2026-10-22T17-58-29-117Z/post-run-audit.json"
+      ]
+    },
+    {
+      "published_path": "data/lan/short/summary-normalization.json",
+      "published_sha256": "0be2aa11006747e830fc043bb6b81175ea9e9a430a8e06dfc0eed24c5d1bb861",
+      "published_size_bytes": 904,
+      "schema": "summary-normalization-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/2026-10-22T17-56-52-657Z/result-before-summary-normalization.json",
+        ".runtime/lan-evaluation/2026-10-22T17-56-52-657Z/result.json"
+      ]
+    },
+    {
+      "published_path": "data/lan/excluded-attempts.json",
+      "published_sha256": "79527755563ec1b733b4c7b9f9030254d9b322b43fe8db55544a23f20e47a1cb",
+      "published_size_bytes": 29574,
+      "schema": "excluded-attempts-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/2026-10-22T17-52-49-674Z/result.json",
+        ".runtime/lan-evaluation/2026-10-22T17-53-48-034Z/result.json",
+        ".runtime/lan-evaluation/2026-10-22T17-55-08-347Z/result.json"
+      ]
+    },
+    {
+      "published_path": "data/lan/hardware.json",
+      "published_sha256": "ff7c5656fbdf2918f30d3eef16b6e065463bd0bedfe7d3d246f67b5c8434e6d4",
+      "published_size_bytes": 584,
+      "schema": "edge-hardware-v1",
+      "inputs": [
+        ".runtime/lan-evaluation/hardware-20261022.json"
+      ]
+    },
+    {
+      "published_path": "data/server/supplied-verifier-original-report.json",
+      "published_sha256": "b9bc7219b406e869c7556329952c88e18d920204b6ff6821d9adb27bf1813a13",
+      "published_size_bytes": 61381,
+      "schema": "server-report-v1",
+      "inputs": [
+        ".runtime/server-evidence/2026-10-23/received/supplied-verifier-original-report.json"
+      ]
+    },
+    {
+      "published_path": "data/server/server-lan-verification.json",
+      "published_sha256": "cbaf65e7bfe4877360d24c924c877949d6fe176fd27eacbd775a1cc155712e19",
+      "published_size_bytes": 115193,
+      "schema": "server-report-v1",
+      "inputs": [
+        ".runtime/server-evidence/2026-10-23/supplement/server-lan-verification-from-paste.json"
+      ]
+    },
+    {
+      "published_path": "data/server/selected-database-evidence.json",
+      "published_sha256": "b5164aa399e803c51477704c46e6a2924b952b1e0d989f11e54e1ad3882eef01",
+      "published_size_bytes": 49082,
+      "schema": "selected-database-v1",
+      "inputs": [
+        ".runtime/server-evidence/2026-10-23/received/selected-database-evidence.json"
+      ]
+    },
+    {
+      "published_path": "data/server/cleanup.json",
+      "published_sha256": "adb0bee2bd438ff7201af2b4e96a1ad89775796fa09993f9586fd6812014ee2b",
+      "published_size_bytes": 851,
+      "schema": "cleanup-v1",
+      "inputs": [
+        ".runtime/server-evidence/2026-10-23/received/cleanup-evidence.json"
+      ]
+    },
+    {
+      "published_path": "data/server/receipt-audit.json",
+      "published_sha256": "7a2b691e189ac5fedc5df8d27f7d26d59d06fd10071f652b1b97001f99a31126",
+      "published_size_bytes": 1984,
+      "schema": "receipt-v1",
+      "inputs": [
+        ".runtime/server-evidence/2026-10-23/returned-server-evidence-audit-2026-10-23.json"
+      ]
+    },
+    {
+      "published_path": "data/server/host-service.json",
+      "published_sha256": "729dfda91f0e2159cee26cae007201c0dc754889d41933a42952db63a5f092dc",
+      "published_size_bytes": 1608,
+      "schema": "host-service-v1",
+      "inputs": [
+        ".runtime/server-evidence/2026-10-23/received/server-host-service-evidence.json",
+        ".runtime/server-evidence/2026-10-23/returned-server-evidence-audit-2026-10-23.json"
+      ]
+    },
+    {
+      "published_path": "data/server/supplement-audit.json",
+      "published_sha256": "ef5e1751d04b7ded1c82c97f58e666e7d037da9a35927447aa7f521e46da07c8",
+      "published_size_bytes": 829,
+      "schema": "supplement-audit-v1",
+      "inputs": [
+        ".runtime/server-evidence/2026-10-23/supplement/server-pasted-supplement-audit.json"
+      ]
+    },
+    {
+      "published_path": "data/server/hardware.json",
+      "published_sha256": "0203c86c9c3fbacb4db021eb9a6a4cd015285d1f4d52837c8acf9a64adf3d62c",
+      "published_size_bytes": 1246,
+      "schema": "hardware-v1",
+      "inputs": [
+        ".runtime/server-evidence/2026-10-23/hardware/server-hardware-supplement-2026-10-23.json"
+      ]
+    },
+    {
+      "published_path": "data/server/original-package-checksums.json",
+      "published_sha256": "d69ebcca9b55046b05373cb2773d1c81175f0a372e24f5f09b2e4beaa922efac",
+      "published_size_bytes": 7083,
+      "schema": "original-package-checksums-v1",
+      "inputs": [
+        ".runtime/server-evidence/2026-10-23/received/SHA256SUMS.txt"
+      ]
+    },
+    {
+      "published_path": "scripts/verify-lan.py",
+      "published_sha256": "632f0cf2aabb5a32f43dcf382e94e11d4c6e148e00859764d0a55804a6c6eeb0",
+      "published_size_bytes": 16568,
+      "schema": "offline-verifier-v1",
+      "inputs": []
+    },
+    {
+      "published_path": "provenance/lan-stage-README.md",
+      "published_sha256": "539990d3a5b831dceef5da6d32cbe28fba683567576c4ba85692c52b695e07c6",
+      "published_size_bytes": 2277,
+      "schema": "release-readme-v1",
+      "inputs": [],
+      "standalone_stage_sha256": "8e171b94c241f61f81f58bad3fb56e2f57ceec46abb889927a9505d6a9643256",
+      "integration_transformation": "Integrated layout/scope annotation only."
+    },
+    {
+      "published_path": "provenance/schemas.json",
+      "published_sha256": "720ea37d08008bb394da4e54a566d41b9c8ed8a11d3e3754b024fc2b1016d698",
+      "published_size_bytes": 368109,
+      "schema": "projection-schemas-v1",
+      "inputs": []
+    }
+  ],
+  "host_aliases": {
+    "edge": "EDGE_HOST",
+    "server": "SERVER_HOST",
+    "server_owner": "USER_01",
+    "hardware_host": "SERVER_HOST"
+  },
+  "producer_source_policy": "Not staged. Parent owns exact producer scripts and global manifest.",
+  "provenance_limits": [
+    "31 server hashes are supplied historical measurements, not fresh independent file decoding.",
+    "Cycle runner hash bound; short runner differs from current source; historical dependency/build hashes absent.",
+    "Final browser endpoint snapshot missing; aggregate arithmetic starts from saved interval metrics.",
+    "Manifest/post-run/augmented-server collector producers unlocated.",
+    "Raw hardware/supplement pastes not copied/read here; their existing original hashes are retained.",
+    "Hardware timestamp absent; host attribution by user, not independent hostname attestation.",
+    "Raw package process/journal/network files and backup archives not opened or copied.",
+    "Initial checksum receipt misses three members; supplementation recovers one; two remain missing.",
+    "No source producer/build files and no global manifest emitted."
+  ],
+  "redactions": {
+    "method": "Structured field allowlists, not regex-only sanitization",
+    "excluded": [
+      "account/user/device IDs",
+      "auth and playback URLs",
+      "raw host interfaces",
+      "absolute local paths",
+      "process/systemd/journal text",
+      "environment values",
+      "GPU raw CSV and serials",
+      "footage"
+    ],
+    "retained": [
+      "generated entity UUID joins",
+      "failure/null statuses",
+      "numeric precision",
+      "file hashes",
+      "versions and event IDs"
+    ]
+  },
+  "read_only_originals": true,
+  "no_service_camera_database_tests": true,
+  "integrated_layout_note": "The standalone LAN README is preserved at provenance/lan-stage-README.md; the integrated package has its own root index. Data bytes are unchanged."
+}

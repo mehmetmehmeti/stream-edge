@@ -1,0 +1,445 @@
+{
+  "schema_version": 1,
+  "analysis_date": "2026-10-22",
+  "method": "Manual visual transcription of the direct (upper) and streamed (lower) stopwatch in each supplied JPEG; native-resolution timer crops inspected for every image.",
+  "sampling": "User describes consecutive phone-captured frames/pictures; exact capture/export mode, spacing and exposure are not established. These are not independent test runs.",
+  "source_monitor_refresh_hz": 60,
+  "receiver_display_refresh_hz": null,
+  "units": "Integer milliseconds shown by the stopwatch, not a claim of millisecond measurement accuracy.",
+  "row_schema": [
+    "filename_stem",
+    "source_ms",
+    "streamed_ms",
+    "status",
+    "note"
+  ],
+  "sets": [
+    {
+      "id": "local",
+      "label": "Local live stream (user label)",
+      "source_directory": "images/local",
+      "rows": [
+        [
+          "4ce8eb75-cf84-4bfd-b65f-e7af7dca46cf",
+          11055,
+          null,
+          "ambiguous",
+          "Streamed fractional digits overlap (10.9??); excluded, not inferred from adjacent pictures."
+        ],
+        [
+          "ff4f9dbf-8891-4532-b3c5-f14d8f5fbe93",
+          11055,
+          10884,
+          "accepted",
+          ""
+        ],
+        [
+          "0bf361bb-da2a-4cb2-9e74-86806a906239",
+          10998,
+          10826,
+          "accepted",
+          ""
+        ],
+        [
+          "ec17b081-f7ff-46e6-9ada-91d24d9d1c01",
+          10941,
+          null,
+          "ambiguous",
+          "Streamed final fractional digit overlaps (10.82?); excluded."
+        ],
+        [
+          "e54e5843-6c3b-495f-852a-a28d6fbd4893",
+          10884,
+          10712,
+          "accepted",
+          "Slight streamed-digit shadowing; 10.712 remains legible."
+        ],
+        [
+          "7ec91dea-6c92-4596-9193-2b7ae7b3bdeb",
+          10826,
+          10712,
+          "accepted",
+          "Slight streamed-digit shadowing; 10.712 remains legible."
+        ],
+        [
+          "f081b63b-8b23-4357-bae9-11ddd023020a",
+          10769,
+          10597,
+          "accepted",
+          ""
+        ],
+        [
+          "367aa6a2-ce4e-4249-acfe-9c2d2bb09f18",
+          10712,
+          10540,
+          "accepted",
+          ""
+        ],
+        [
+          "3542d29d-b295-480f-940f-2fea73330b58",
+          10655,
+          10483,
+          "accepted",
+          "Minor shadowing of streamed 4; 10.483 is legible."
+        ],
+        [
+          "fa14a8a8-c708-4a1c-8230-064aa813d169",
+          10655,
+          10483,
+          "accepted",
+          "Repeated displayed pair, separate supplied file."
+        ],
+        [
+          "327917df-8e86-467c-a260-1990f1fa2728",
+          10597,
+          10426,
+          "accepted",
+          ""
+        ],
+        [
+          "55593e42-8e8d-45c7-a781-6265cbb601ff",
+          10540,
+          10368,
+          "accepted",
+          "Minor streamed-digit shadowing; 10.368 is legible."
+        ],
+        [
+          "bfd62a8e-fb94-4121-a072-71cdf22c6b9e",
+          10483,
+          null,
+          "ambiguous",
+          "Streamed last two fractional digits overlap (10.3??); excluded."
+        ],
+        [
+          "d0e6a1b9-945e-4a18-9bf1-6016306ba465",
+          10426,
+          10311,
+          "accepted",
+          ""
+        ],
+        [
+          "211f674d-20ee-4c22-b772-e8351e5d8e0d",
+          10368,
+          10197,
+          "accepted",
+          ""
+        ],
+        [
+          "4404d62e-f367-4157-8262-415283a7eb0c",
+          10311,
+          10140,
+          "accepted",
+          "Minor streamed-digit shadowing; 10.140 is legible."
+        ],
+        [
+          "e374f673-733e-45d9-babd-95a7d2f229f6",
+          9796,
+          9624,
+          "accepted",
+          "Attachment order is not chronological; retained as supplied."
+        ],
+        [
+          "cfa7a71e-8449-4134-8842-438f001a11ef",
+          10254,
+          null,
+          "ambiguous",
+          "Streamed fractional digits overlap (10.0??); excluded."
+        ],
+        [
+          "01f34446-c2e9-49e0-9f22-783dd814d18b",
+          10254,
+          10082,
+          "accepted",
+          ""
+        ],
+        [
+          "55ffc01e-38ad-4e61-9da8-92b05e57e8a3",
+          10140,
+          10025,
+          "accepted",
+          ""
+        ],
+        [
+          "8476dee7-04dc-4ef4-a268-54293e1d2706",
+          10140,
+          null,
+          "ambiguous",
+          "Streamed seconds/fractional digits overlap near 09.9??; excluded."
+        ],
+        [
+          "253f4c2d-02b0-4ccb-b28e-1053716ff67f",
+          10082,
+          9910,
+          "accepted",
+          "Streamed 09.910 is legible despite minor digit shadowing."
+        ],
+        [
+          "4be1851f-b506-4130-9e13-c2e13a0df685",
+          10025,
+          9910,
+          "accepted",
+          "Streamed 09.910 is legible despite minor digit shadowing."
+        ],
+        [
+          "13e2d553-1c26-4ff8-b8eb-01e05a565ea1",
+          9968,
+          9796,
+          "accepted",
+          ""
+        ],
+        [
+          "8bd60071-3db9-42d6-9146-e1c917b97a0c",
+          9910,
+          null,
+          "ambiguous",
+          "Streamed final fractional digit overlaps (09.79?); excluded."
+        ],
+        [
+          "73a84d5d-a3c9-41f0-a3f8-4b10c35acaaf",
+          9853,
+          9681,
+          "accepted",
+          "Streamed 09.681 is legible with minor final-digit shadowing."
+        ],
+        [
+          "170952cc-21a1-4a1f-afb9-5e3143338468",
+          9853,
+          9681,
+          "accepted",
+          "Repeated displayed pair, separate supplied file."
+        ],
+        [
+          "4ec8fcd9-4606-407e-bda9-12089509ec36",
+          9738,
+          9566,
+          "accepted",
+          ""
+        ],
+        [
+          "84221ef8-a0f5-412e-bdde-c1bc08a78bbc",
+          9681,
+          9509,
+          "accepted",
+          "Streamed 09.509 is legible with minor middle-digit shadowing."
+        ],
+        [
+          "3c65895d-1085-4ccf-b1eb-d9dd99e7e35a",
+          9624,
+          9509,
+          "accepted",
+          "Streamed 09.509 is legible with minor middle-digit shadowing."
+        ],
+        [
+          "49226676-a037-47d5-bc12-bdf4ce256d39",
+          9566,
+          9394,
+          "accepted",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "web",
+      "label": "Web live stream (user label)",
+      "source_directory": "images/web",
+      "rows": [
+        [
+          "ba73b2ba-b038-4e87-99a4-eea6a481f59d",
+          95699,
+          null,
+          "ambiguous",
+          "Streamed fractional digits strongly overlap (35.4??); excluded."
+        ],
+        [
+          "a4ad09c0-c872-4220-9d4d-f0e32a239c14",
+          95699,
+          95470,
+          "accepted",
+          "Streamed 35.470 is legible with minor digit shadowing."
+        ],
+        [
+          "7a7fa3ba-3e08-4982-a321-6995d71e90fd",
+          null,
+          null,
+          "ambiguous",
+          "Source fractional digits overlap (35.[mixed]); streamed digits also shadowed. No source value inferred from sequence."
+        ],
+        [
+          "9707271f-7fbc-45f5-978f-42bd02d41767",
+          95584,
+          95355,
+          "accepted",
+          ""
+        ],
+        [
+          "2227f3da-7439-46a1-9e35-186212483c87",
+          95527,
+          95298,
+          "accepted",
+          ""
+        ],
+        [
+          "e38357f6-0a2f-46d1-ad77-45bfb1fef18e",
+          95470,
+          95298,
+          "accepted",
+          ""
+        ],
+        [
+          "88e087c6-39bf-4c59-b162-880ac03a22d8",
+          9452,
+          9280,
+          "accepted",
+          "Streamed 09.280 is legible with minor final-digit shadowing; separate stopwatch range from most web pictures."
+        ],
+        [
+          "c26f1293-45a6-4f39-b15d-8c88afb51f22",
+          9394,
+          9223,
+          "accepted",
+          ""
+        ],
+        [
+          "35e62a93-9f81-43ca-960b-f3476478f86c",
+          9337,
+          9165,
+          "accepted",
+          "Streamed 09.165 is legible with minor first-digit shadowing."
+        ],
+        [
+          "111ee65e-39c9-42d6-a8b2-be398b058dac",
+          96730,
+          96501,
+          "accepted",
+          ""
+        ],
+        [
+          "ecc69bcf-be72-4ca7-87cf-5e53ddb5f5ca",
+          96673,
+          null,
+          "ambiguous",
+          "Streamed fractional digits overlap (36.50?); excluded."
+        ],
+        [
+          "258a7e4c-804c-4789-9b11-4adcbc9efc8e",
+          96615,
+          96443,
+          "accepted",
+          "Streamed 36.443 is legible with minor digit shadowing."
+        ],
+        [
+          "d5be4fbf-8298-47c8-9b15-ef2256c19f0e",
+          null,
+          96386,
+          "ambiguous",
+          "Source fractional digits overlap (36.[mixed]); excluded, not inferred from expected latency."
+        ],
+        [
+          "51424316-778f-4b70-a24f-86429e39f9e9",
+          96501,
+          96272,
+          "accepted",
+          ""
+        ],
+        [
+          "0ab15124-50a8-4af9-9985-8bc91d403019",
+          96501,
+          96272,
+          "accepted",
+          "Repeated displayed pair, separate supplied file."
+        ],
+        [
+          "c4b7b204-7b8f-425a-b87b-8245879c78fc",
+          null,
+          null,
+          "ambiguous",
+          "Both source and streamed fractional digits overlap; excluded."
+        ],
+        [
+          "48307b1c-6c5c-48d6-ab7f-abca9821cccb",
+          96386,
+          96157,
+          "accepted",
+          ""
+        ],
+        [
+          "7e6d63e6-12a6-4930-a33e-08ec47503219",
+          96329,
+          96100,
+          "accepted",
+          ""
+        ],
+        [
+          "11c900a9-28e3-4b0c-98aa-8bebcf00091a",
+          96272,
+          96100,
+          "accepted",
+          "Streamed 36.100 is legible with minor first-digit shadowing."
+        ],
+        [
+          "058e9c02-a3f8-4d38-8c67-dbc38925624f",
+          null,
+          95584,
+          "ambiguous",
+          "Source fractional digits overlap (35.8??); excluded."
+        ],
+        [
+          "51f579e5-9439-4d54-8583-cf3cf8d60ae9",
+          96214,
+          96042,
+          "accepted",
+          ""
+        ],
+        [
+          "dc961ead-f4d8-48c0-873a-2284bdf13600",
+          96100,
+          95871,
+          "accepted",
+          "Streamed 35.871 is legible with minor final-digit shadowing."
+        ],
+        [
+          "bde7ca5e-7ffe-4553-8a3e-d474f383b7e0",
+          96100,
+          95871,
+          "accepted",
+          "Repeated displayed pair; minor final-digit shadowing."
+        ],
+        [
+          "bb68df05-1c26-428b-b64f-1e9f3b23f7eb",
+          null,
+          null,
+          "ambiguous",
+          "Source seconds/fractional digits and streamed fractional digits are in transition; excluded."
+        ],
+        [
+          "2926c7bb-2c77-46da-9580-8e6d9caa6eb3",
+          95985,
+          95756,
+          "accepted",
+          ""
+        ],
+        [
+          "d3889df7-2e08-44b4-b56c-c8f109490a49",
+          95928,
+          95699,
+          "accepted",
+          ""
+        ],
+        [
+          "d1451ebc-3b8a-4ced-b18e-3c41e813bb5d",
+          95871,
+          95699,
+          "accepted",
+          ""
+        ],
+        [
+          "a3b7d59c-9b3d-4782-a411-264919ae0a78",
+          95814,
+          95642,
+          "accepted",
+          "Streamed 35.642 is legible with minor digit shadowing."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "collected_utc": "2026-10-22T18:01:40.466210+00:00",
+  "logical_cpu_count": 12,
+  "host": "EDGE_HOST",
+  "memory": {
+    "MemTotal": "16067752 kB"
+  },
+  "capture_configuration": {
+    "STREAMING_CAMERA_WIDTH": "1280",
+    "STREAMING_CAMERA_HEIGHT": "704",
+    "STREAMING_CAMERA_FRAME_RATE": "15",
+    "STREAMING_CAMERA_PIXEL_FORMAT": "YUYV",
+    "STREAMING_RECORD_WIDTH": "1280",
+    "STREAMING_RECORD_HEIGHT": "704",
+    "STREAMING_RECORD_FPS": "15",
+    "STREAMING_RECORD_MODE": "auto",
+    "STREAMING_RECORD_BITRATE_KBPS": "8000",
+    "MEDIA_PUBLISH_VIDEO_CODEC": "vp8"
+  }
+}

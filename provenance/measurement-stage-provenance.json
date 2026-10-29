@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "source_labels_are_relative": true,
+  "files": [
+    {
+      "published_path": "data/f450/20261015T173020Z/benchmark-result.json",
+      "source_path": ".runtime/evaluation/20261015T173020Z/benchmark-result.json",
+      "original_sha256": "2cf1ada04676f56e5550078ceae793a5721c2a99a6b737fa1dd838cb0507be25",
+      "published_sha256": "8348b116b56b8e97a706daba27d424f8418ab3d3c3192a930970f9285b79896d",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/f450/20261015T173020Z/summary.json",
+      "source_path": ".runtime/evaluation/20261015T173020Z/summary.json",
+      "original_sha256": "08849affe1ba8d54adbf82cca4a4ae2551e8244b43568d8412ded905e1aecf7e",
+      "published_sha256": "588280b8dbb089ed344a9f90ce9e7abe60352126f3ccc4d26304fa3c87b91f00",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/f450/20261015T173020Z/samples.jsonl",
+      "source_path": ".runtime/evaluation/20261015T173020Z/samples.jsonl",
+      "original_sha256": "373663a6fc17034dcfc27cf057dbb839ebd05f2008a712a2dc3fe547c517b226",
+      "published_sha256": "1956fbfd97fe978015e54a8ce613c9ae9a17ce41981593b0da1ab0f069894792",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/f450/20261015T173020Z/resources.jsonl",
+      "source_path": ".runtime/evaluation/20261015T173020Z/resources.jsonl",
+      "original_sha256": "2637f7a47d96a0503fe1080ad5448fdaa8ef61eb349a13cd151d1dae4faf37de",
+      "published_sha256": "fd66c655a8f3be3c42664b57a933e48b533fb81d1293f7506a689eb388f85569",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/f450/20261015T173020Z/qt.jsonl",
+      "source_path": ".runtime/evaluation/20261015T173020Z/qt.jsonl",
+      "original_sha256": "3af0b318d0806630f6557e9b0ee15e083cf3172f9a2700edbaf35d0eacc06cb3",
+      "published_sha256": "3af0b318d0806630f6557e9b0ee15e083cf3172f9a2700edbaf35d0eacc06cb3",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/f450/20261015T173020Z/transfers.jsonl",
+      "source_path": ".runtime/evaluation/20261015T173020Z/transfers.jsonl",
+      "original_sha256": "6cfbc5c1c998d5bfeaca674e4afb0a63645f516851e36638437f92c6554854ff",
+      "published_sha256": "6057f12b01652b2e08af9a4e1babe878c3febe847dd6c989f82c1ebb4f534eab",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/result.json",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/result.json",
+      "original_sha256": "4e0e520743427b65db9c2bcd2de6d3610cf1f605b3f0ac49b248930dae2bd2c7",
+      "published_sha256": "17af0136d08b96cc52b17b2652bcd020e405aae6e9e326ea2dca34bf34a7b5d1",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/analysis.json",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/analysis.json",
+      "original_sha256": "58b673fbeeea5b19fb1f8bffd642ee0b589fe5bf1e74ebedec5e74c85a8e968c",
+      "published_sha256": "66ccf875247e682df6949e1b9c500f8a3e2e550ed0db5ee941bcf1c17ad9794b",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/resources.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/resources.jsonl",
+      "original_sha256": "2bcee72d5208aad5ecad3769659b9456be4d4d31afcc54c9ddebccc081bfd686",
+      "published_sha256": "64f22079f3ea5d9ec755bcc78073f0319fb0e96054f9314a55ae0bc32a198d3d",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/qt.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/qt.jsonl",
+      "original_sha256": "056155d0f89116eb5adf6cec65cdae342cfd7b15d2913a31a74beccf7c27547c",
+      "published_sha256": "056155d0f89116eb5adf6cec65cdae342cfd7b15d2913a31a74beccf7c27547c",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/transfers.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/transfers.jsonl",
+      "original_sha256": "997772adb9a505cfa6f5ea0fd47180a1a9eab3daaab845321d84eeac4a5acc73",
+      "published_sha256": "cf34dfde067a6b79104a34b2540a695c14180a143f7db9fa6373ed16ce0622aa",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/01-normal-fifo/probe.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/01-normal-fifo/probe.jsonl",
+      "original_sha256": "90cad4ed5fe8977f7e40f69f6a603cbb5b2a602c6c36f47288ca89feceab9f07",
+      "published_sha256": "224823ea208eb1b7c259bee5f33c95e4973f73757b59e2c866604962b217c0e4",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/01-normal-fifo/samples.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/01-normal-fifo/samples.jsonl",
+      "original_sha256": "181224a861dbd50ac568f1ad685f6594ccf5aa45dc6f77f25efe9736c854bfce",
+      "published_sha256": "57d956ae2c7c5ce61c1e75d547098d229984e850eb81d58fb58e8037915a0047",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/01-normal-fifo/pipeline.json",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/01-normal-fifo/pipeline.json",
+      "original_sha256": "aece006a1d9df83800316140c4d32821f9d0af0b9eb880bfec31a6e300ebfc45",
+      "published_sha256": "1aebbb692ab9546a05aa3759c0d331c9e8a0d6360b6158fcca35a86fee430915",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/02-normal-latest/probe.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/02-normal-latest/probe.jsonl",
+      "original_sha256": "b75904c99908e1336744f0170e006595fafbebf53ed0ae980721f7c86308b5f7",
+      "published_sha256": "49ee52448261866af3573a8ab344559c66fa2b2f36939ecee2eb1e45fcc87957",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/02-normal-latest/samples.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/02-normal-latest/samples.jsonl",
+      "original_sha256": "5461b290a5c18285a540a2e53bf3cb8517bf2613d8588c2b8f847764edfac491",
+      "published_sha256": "b1aac4792ff511848d13c3ebb9f0a1a35fb95fa0a28f6441e19e905aaca36bc3",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/02-normal-latest/pipeline.json",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/02-normal-latest/pipeline.json",
+      "original_sha256": "fdcb52ead2d53d05e7c06b4633ab71bc191e05fccaa790d1a22180976f0bbc2f",
+      "published_sha256": "ac8c4faffc8f0d32837022df4b787639d636399a4977b4af049eda061d882567",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/03-normal-latest/probe.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/03-normal-latest/probe.jsonl",
+      "original_sha256": "8033fab1ded0667d538dd9fec6f9d97f30c44e39c0c99170c4282ef7c028b7a9",
+      "published_sha256": "ae6403e14faeebbe4c90747eceff109a6b7a5df85e1c52c914f289636ae2d545",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/03-normal-latest/samples.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/03-normal-latest/samples.jsonl",
+      "original_sha256": "339194e4e615ba9e421a5d77a3e22411ed4fad12d920b8821965524aafa321f5",
+      "published_sha256": "6e399d9f8f83dee8e1a9bee09346a2436e037de5afaddfd05d39425b33aef12d",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/03-normal-latest/pipeline.json",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/03-normal-latest/pipeline.json",
+      "original_sha256": "fdcb52ead2d53d05e7c06b4633ab71bc191e05fccaa790d1a22180976f0bbc2f",
+      "published_sha256": "ac8c4faffc8f0d32837022df4b787639d636399a4977b4af049eda061d882567",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/04-normal-fifo/probe.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/04-normal-fifo/probe.jsonl",
+      "original_sha256": "4327c7662a07e232848a0dbbe115e62d4cf418510059e820317136995a3d8ba4",
+      "published_sha256": "07dbae9d0c1d5067338288b7359ad37ce5d34ca01659f9e109f9f37f34fc9f5f",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/04-normal-fifo/samples.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/04-normal-fifo/samples.jsonl",
+      "original_sha256": "bf5547196c67240dc86e9bb43cf6360db6e035a060e101eeb9fa7724173448bc",
+      "published_sha256": "2dc2e322208a02bda8b5bff47f15df788687c57655937b3c24d08cfbf62c5dd2",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/04-normal-fifo/pipeline.json",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/04-normal-fifo/pipeline.json",
+      "original_sha256": "aece006a1d9df83800316140c4d32821f9d0af0b9eb880bfec31a6e300ebfc45",
+      "published_sha256": "1aebbb692ab9546a05aa3759c0d331c9e8a0d6360b6158fcca35a86fee430915",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/05-normal-fifo/probe.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/05-normal-fifo/probe.jsonl",
+      "original_sha256": "d05af090df64d0faa45ba2bfc0ae34e9c5c7a69a682526e34e609618e069bb7d",
+      "published_sha256": "bd707f652320783689f222c01bbd4c62ee19ea4a53b84dfbf79098da54fe8103",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/05-normal-fifo/samples.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/05-normal-fifo/samples.jsonl",
+      "original_sha256": "067019a70c847b6e6c8f8d204495747d2983180dbda49a8d3a40afd0934d7950",
+      "published_sha256": "af89fb7ee54398413dfebde15e166f7d50f83d4f5b1112d25bea18dec9986555",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/05-normal-fifo/pipeline.json",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/05-normal-fifo/pipeline.json",
+      "original_sha256": "aece006a1d9df83800316140c4d32821f9d0af0b9eb880bfec31a6e300ebfc45",
+      "published_sha256": "1aebbb692ab9546a05aa3759c0d331c9e8a0d6360b6158fcca35a86fee430915",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/06-normal-latest/probe.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/06-normal-latest/probe.jsonl",
+      "original_sha256": "9300d3b1a3add045877c2dfaa8a12f78c1482d13c9b03440e7db32d9fc6e64c7",
+      "published_sha256": "815b2fd1cd4b66fad68a1c7cfe70b5a760ebc2ba8e23998aeef03af76e7bac6b",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/06-normal-latest/samples.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/06-normal-latest/samples.jsonl",
+      "original_sha256": "0e6eca4109e1959cc7faa636b2ebfbc9e56e527cdc9540f6cf10b34692e14356",
+      "published_sha256": "05d09f22a11c1c2c9302f368c29b701aa818e90761f4bcdf2cf24d48592955ba",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/06-normal-latest/pipeline.json",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/06-normal-latest/pipeline.json",
+      "original_sha256": "fdcb52ead2d53d05e7c06b4633ab71bc191e05fccaa790d1a22180976f0bbc2f",
+      "published_sha256": "ac8c4faffc8f0d32837022df4b787639d636399a4977b4af049eda061d882567",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/07-slow-latest/probe.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/07-slow-latest/probe.jsonl",
+      "original_sha256": "c5009ea49dd83ef8682f75373d290f5eee02e8bd7f53242fa09fb05338d9170e",
+      "published_sha256": "149649636c7fbb4959a08960b89574b81643d332f00d60273abccd039e446312",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/07-slow-latest/samples.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/07-slow-latest/samples.jsonl",
+      "original_sha256": "a02f47f0f127f4ffcaa357531d006f93b8e5bb39d14897702f27d122a9b5577b",
+      "published_sha256": "575386527673f253a468461b06ac94e3579c9e7b52442ac53344d0d9f13087f1",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/07-slow-latest/pipeline.json",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/07-slow-latest/pipeline.json",
+      "original_sha256": "5723642e66bd0a5bae8a7e525bce5291086109040f254a02ea21a14dbcc230b5",
+      "published_sha256": "c5da660a3c45dba18f9b7742d5587ccae2e587d471c6d57ab2585a5914df6c81",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/08-slow-fifo/probe.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/08-slow-fifo/probe.jsonl",
+      "original_sha256": "2df275b901caf5527f28d8dffc38391df162b5bf86c4e936b95c32d1840a0960",
+      "published_sha256": "cd47ec5553b7ee003905f540d3e4ad318e4716f4b906331ae701ee3b16a76ff9",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/08-slow-fifo/samples.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/08-slow-fifo/samples.jsonl",
+      "original_sha256": "24e8f9de1b0c9034be820cc51764f79b82f0f2628e6296fcb65275796fd8f73e",
+      "published_sha256": "d72deddd19fbe778744037b53b45ca1592b6bcf40b2faf1b67988d9bde22155c",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/08-slow-fifo/pipeline.json",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/08-slow-fifo/pipeline.json",
+      "original_sha256": "2849e7dcbab4ba52b17167af43d439ec327334c8687eb68ac0c4f2b91986556e",
+      "published_sha256": "76f5f4864727688dfa3102c903a40f88b99c3bd2be110f0aebf320ce3b56b6c2",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/09-slow-fifo/probe.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/09-slow-fifo/probe.jsonl",
+      "original_sha256": "e2bd5c4ff886d8605a7152bec9ddb83fc8073cc3a826f4ed54246ad76f0383f5",
+      "published_sha256": "89f8d410dca822dd88b1b496d73fade554444b7760a70c437c0a867f525865b3",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/09-slow-fifo/samples.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/09-slow-fifo/samples.jsonl",
+      "original_sha256": "a9896f921a9004fa7bf99dd80855f36004ab6a239baa26a6e32d9745dc7f58f3",
+      "published_sha256": "4e8cb42dcba0e1b8cbfbe66db166a6b69f3636c6245f4c4a8912f338d0e4373d",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/09-slow-fifo/pipeline.json",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/09-slow-fifo/pipeline.json",
+      "original_sha256": "2849e7dcbab4ba52b17167af43d439ec327334c8687eb68ac0c4f2b91986556e",
+      "published_sha256": "76f5f4864727688dfa3102c903a40f88b99c3bd2be110f0aebf320ce3b56b6c2",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/10-slow-latest/probe.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/10-slow-latest/probe.jsonl",
+      "original_sha256": "1147139167c7fee6081328e8955e4c0f6e56b133d29f13e74a20831777249f5a",
+      "published_sha256": "82665db272f7673379c316c77a85c3eccccb187daf76ba2af361891eea615181",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/10-slow-latest/samples.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/10-slow-latest/samples.jsonl",
+      "original_sha256": "3950e1567fa895cfdb46adf520956da30cae2c5d17b41e90fc04204fbdc924b8",
+      "published_sha256": "f12496e36feb79f11474ae90624104bc8252591a966cf22532394ba6935d5ff8",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/10-slow-latest/pipeline.json",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/10-slow-latest/pipeline.json",
+      "original_sha256": "5723642e66bd0a5bae8a7e525bce5291086109040f254a02ea21a14dbcc230b5",
+      "published_sha256": "c5da660a3c45dba18f9b7742d5587ccae2e587d471c6d57ab2585a5914df6c81",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/11-slow-latest/probe.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/11-slow-latest/probe.jsonl",
+      "original_sha256": "68a78100610a8534e3ff63b3f0e3f7b1221179de207490a3920d444eb1c3859a",
+      "published_sha256": "ed1e1cc8413d6a115ba258765129d81e6b6df7e2edd1c2fdba9563fcafbde2ea",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/11-slow-latest/samples.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/11-slow-latest/samples.jsonl",
+      "original_sha256": "462da8fbadc7948d320249b4890928647b7cf2ee01661f175f94fbcb8d03cb10",
+      "published_sha256": "e8cf51bc8d36076ff8287fdc9670d51c677bb96150584e82d5d191912ea00d05",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/11-slow-latest/pipeline.json",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/11-slow-latest/pipeline.json",
+      "original_sha256": "5723642e66bd0a5bae8a7e525bce5291086109040f254a02ea21a14dbcc230b5",
+      "published_sha256": "c5da660a3c45dba18f9b7742d5587ccae2e587d471c6d57ab2585a5914df6c81",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/12-slow-fifo/probe.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/12-slow-fifo/probe.jsonl",
+      "original_sha256": "802f9455be38e4464f85cc840c2110130f61d9b914661efdce39fcda8f4f710d",
+      "published_sha256": "53e0bef7fb6f56d15253ed15dce01bf2bd2d1ee6148fb2b66da219265156b085",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/12-slow-fifo/samples.jsonl",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/12-slow-fifo/samples.jsonl",
+      "original_sha256": "de277e15d9bc9dbdee64b98076f15c25a61f1a55491f8cc33a6df2fc3f64a80b",
+      "published_sha256": "ae73366c14165067f6d3fd05e50cc0557b4aeaf5b72577719218a8c66013f2b0",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/measured-20261026-01/12-slow-fifo/pipeline.json",
+      "source_path": ".runtime/buffering-ab/measured-20261026-01/12-slow-fifo/pipeline.json",
+      "original_sha256": "2849e7dcbab4ba52b17167af43d439ec327334c8687eb68ac0c4f2b91986556e",
+      "published_sha256": "76f5f4864727688dfa3102c903a40f88b99c3bd2be110f0aebf320ce3b56b6c2",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/buffering-ab/build-provenance.json",
+      "source_path": ".runtime/buffering-ab/tools-20261026/build-provenance.json",
+      "original_sha256": "32dbc9160f2efe7c039e55d1e5803c221d3931cedb08017981196013de665c60",
+      "published_sha256": "99dcbd2cdb91cbfb3960d3c1f40686dcbb56b734a1fedbd6694de86f88121d2a",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/camera-preflight/result.json",
+      "source_path": ".runtime/camera-diagnostic/f450-1280x704-preflight-20261015T1725/result.json",
+      "original_sha256": "af68f3123155844eb85ff7f7d1bfefb4ed8803c180d9b52d431110d3a97107a7",
+      "published_sha256": "aad3d9fd3387cc1b71042b6ffefacc931ba490902a4caaea10ba9e50561bf184",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "data/camera-preflight/capture-buffers.jsonl",
+      "source_path": ".runtime/camera-diagnostic/f450-1280x704-preflight-20261015T1725/capture.log",
+      "original_sha256": "262360aa3aff31a1e439bc38c803bb8ba1434a6668906ff905bdbb38cd8f95f7",
+      "published_sha256": "7e4eded6a19c47632841fe01683b1f8ae7ec79844ec8fb021a86b42638c49a36",
+      "privacy_transform": "Extract only sequence, driver timestamp, byte count and error flag; omit raw driver/device descriptions."
+    },
+    {
+      "published_path": "data/f450/20261015T173020Z/decoded-file-verification.json",
+      "source_path": ".runtime/evaluation/20261015T173020Z/decoded-file-verification.json",
+      "original_sha256": "0a42a3cedb124c7d93bb8ad5754be09b58f4e71518630b54d021b31a786aec53",
+      "published_sha256": "af80a2b18ffa315db2327ad09e18f50b220372d62fa2fa7f4dd941c7b239e964",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted."
+    },
+    {
+      "published_path": "recording-attestation.json",
+      "source_path": null,
+      "original_sha256": null,
+      "published_sha256": "739c2f324d02ac424b2fd5e2c73ed2743a23f4f1e74659a1f052871b56ab8365",
+      "privacy_transform": "Generated from private audit records plus fresh SHA256/size checks of 46 current local MP4s; private paths and identifiers replaced; no video copied."
+    },
+    {
+      "published_path": "provenance/measurement-stage-README.md",
+      "source_path": null,
+      "original_sha256": null,
+      "published_sha256": "0031d5a93b9ac67041d219a843e7fb295be007211fda6666b46e05cd8a00af4f",
+      "privacy_transform": "Explicit schema projection; identifiers, paths and unrestricted text omitted.",
+      "standalone_stage_sha256": "7041ea14e2d99f4f5fc6e57ebb92ea292c574e3f3bd1f0fd709fe202a083744e",
+      "integration_transformation": "Integrated layout/scope annotation only."
+    },
+    {
+      "published_path": "scripts/verify-measurements.py",
+      "source_path": null,
+      "original_sha256": null,
+      "published_sha256": "a99fa9e70523bb7e64c9c7bb271bc52f94cdc00ff36777b19642b34d2dcdf8da",
+      "privacy_transform": "New public-only verifier with standalone/integrated owned-manifest modes; no private input paths or external dependencies."
+    },
+    {
+      "published_path": "verification-result.json",
+      "source_path": null,
+      "original_sha256": null,
+      "published_sha256": "4d71c4e3cf06e61fda72f8e76038bb7ffda343b9b37ca9db4cced40c7c9d725e",
+      "privacy_transform": "New 29 October offline public-only arithmetic verification; not historical CTest or a new experiment."
+    }
+  ],
+  "historical_source_hashes_unchanged": true,
+  "self_excluded": true,
+  "notes": "All paths are relative labels. Numeric measurement values are unrounded. Generated files have no original digest. Parent owns the global manifest.",
+  "integrated_layout_note": "The standalone measurement README is preserved at provenance/measurement-stage-README.md; data bytes are unchanged."
+}

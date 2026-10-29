@@ -1,0 +1,32 @@
+{
+  "changes": [
+    {
+      "pointer": "/summary/commands/~1stop/mean",
+      "before": 1740.5539135,
+      "after": 2148.18477
+    },
+    {
+      "pointer": "/summary/commands/~1stop/min",
+      "before": 1332.923057,
+      "after": 2148.18477
+    },
+    {
+      "pointer": "/summary/commands/~1stop/n",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "pointer": "/summary/commands/~1stop/p50",
+      "before": 1740.5539135,
+      "after": 2148.18477
+    },
+    {
+      "pointer": "/summary_correction",
+      "before": null,
+      "after": "Derived stream-stop group corrected to exclude recording-stop; all raw readings and the pre-normalization report are preserved."
+    }
+  ],
+  "original_sha256": "d4042f0f51878d51e568262db283f18cba795afdc010336376b8d42fba734df1",
+  "corrected_sha256": "ea1eee5a9dc8b12b101781907d6538c3925ee00d20625d840327d053c20d3e93",
+  "raw_readings_changed": false
+}

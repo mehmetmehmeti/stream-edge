@@ -1,0 +1,20 @@
+{
+  "audit_date": "2026-10-23",
+  "raw_sha256": "0e492d9b932bd43bad773c25b68d5a002cc8150fa7d7de00d6613ce5d9ee8aeb",
+  "normalized_sha256": "dc55ffa2bae6da825968e30a72ec379d35ca4b14f6586ce39bc4da72af552611",
+  "normalized_matches_package_checksum": true,
+  "base_report_identical_except_status": true,
+  "provided_verifier_status": "passed",
+  "supplemental_status": "failed",
+  "version_differences_correspond_to_previously_reviewed_edge_applied_events": true,
+  "server_browser_playback_confirmed": null,
+  "hardware_details_present": false,
+  "supplemental_failed_checks": [
+    "d4127b7b-d029-43f6-9d78-bde948acd876:version_matches_manifest",
+    "06c662ff-3e50-4890-aa78-8524844cfd1b:version_matches_manifest"
+  ],
+  "remaining_original_checksum_list_files_missing": [
+    "VERIFICATION-SUMMARY.md",
+    "postgres.txt"
+  ]
+}

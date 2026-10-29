@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "source_path": ".runtime/evaluation/20261015T173020Z/hardware.json",
+  "original_sha256": "978ce7cc0445c0f4444dc903ea6bfaa788eb000b737c44d1f7feecde6bc72991",
+  "published_path": "data/f450/20261015T173020Z/hardware-inventory.json",
+  "published_sha256": "660e400bcde6eac5dddf819f6f4dd83bf0df1124b1e0aceb0afbff39ec831068",
+  "projection_script": "scripts/project-f450-inventory.py",
+  "transformation": "Explicit CPU/GPU/memory/version/configuration fields only; host aliased EDGE_HOST. Raw process/network/environment/serial data and private paths omitted. Numerical inventory values unchanged.",
+  "private_source_available_publicly": false,
+  "scope": "Supports Tables 3-4; not a new hardware scan or performance experiment."
+}

@@ -1,0 +1,39 @@
+{
+  "provided_date": "2026-10-23",
+  "capture_timestamp": null,
+  "architecture": "x86_64",
+  "gpu_vram_bytes": null,
+  "source_attachment_sha256": "26005157dcef02e712bd98219d4303b7c56dbb062d60df461701f96813faba49",
+  "host": "SERVER_HOST",
+  "host_attribution": "User identified later hardware paste as second laptop; no hostname or capture time in paste.",
+  "source_attachment_label": "server-hardware-paste",
+  "memory": {
+    "os_reported_total": "30Gi",
+    "os_reported_total_approx_gib": 30,
+    "exact_total_bytes": null,
+    "installed_module_capacity_bytes": null,
+    "swap_total_reported": "8.0Gi"
+  },
+  "cpu": {
+    "model": "13th Gen Intel(R) Core(TM) i7-13700HX",
+    "sockets": 1,
+    "cores_per_socket_reported": 16,
+    "logical_cpus_reported": 24,
+    "online_logical_cpus": "0-23",
+    "max_mhz_reported": 5000
+  },
+  "graphics": [
+    {
+      "pci_id": "8086:4688",
+      "label": "Intel Corporation Alder Lake-HX GT1 [UHD Graphics 770]"
+    },
+    {
+      "pci_id": "10de:2860",
+      "label": "NVIDIA Corporation AD106M [GeForce RTX 4070 Max-Q / Mobile]"
+    }
+  ],
+  "limitations": [
+    "Rounded OS-visible RAM, not verified installed DIMM capacity.",
+    "No timed server GPU-use or hardware-encoding evidence."
+  ]
+}
