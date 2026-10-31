@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-31",
+  "purpose": "Local UI screenshot refresh, not a repeat of the F450 performance or two-laptop experiments",
+  "camera": {
+    "type": "Integrated camera",
+    "configuredWidth": 640,
+    "configuredHeight": 480,
+    "configuredFps": 30
+  },
+  "scene": "Clothing; explicitly approved by the author",
+  "publication": "Public screenshot/measurement evidence authorized by the author on 2026-10-31; original MP4 remains private.",
+  "videoId": "61822cf1-5eed-4904-a40f-3e1cd1aa98b6",
+  "metadataDurationSeconds": 61,
+  "probe": {
+    "programs": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "width": 640,
+        "height": 480,
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "5559000/183037",
+        "duration": "61.012333",
+        "nb_frames": "1853",
+        "nb_read_frames": "1853"
+      }
+    ],
+    "format": {
+      "duration": "61.012333",
+      "size": "57378248"
+    }
+  },
+  "copies": [
+    {
+      "path": "withheld-recordings/local/61822cf1-5eed-4904-a40f-3e1cd1aa98b6-20261031-151643.mp4",
+      "bytes": 57378248,
+      "sha256": "cf266d82cd0341d21df7db75b9456d1387fa5076d33b3ade5b536b5eed7101db"
+    },
+    {
+      "path": "withheld-recordings/server/61822cf1-5eed-4904-a40f-3e1cd1aa98b6.mp4",
+      "bytes": 57378248,
+      "sha256": "cf266d82cd0341d21df7db75b9456d1387fa5076d33b3ade5b536b5eed7101db"
+    }
+  ],
+  "byteIdentical": true,
+  "decodeErrors": "",
+  "qt": {
+    "decodedFrames": 176,
+    "durationMs": 61012,
+    "id": "1793456311713",
+    "live": true,
+    "liveFrames": 8878,
+    "playbackError": "",
+    "positionMs": 5764,
+    "saved": true,
+    "utc": "2026-10-31T14:18:38.667Z"
+  },
+  "web": {
+    "duration": 61.012333,
+    "currentTime": 14.326046,
+    "paused": false,
+    "width": 640,
+    "height": 480,
+    "decodedFrames": 158,
+    "controls": {
+      "pause": true,
+      "seek": true,
+      "resume": true,
+      "fullscreen": true,
+      "exitFullscreen": true
+    }
+  },
+  "cameraStopped": true,
+  "recordingStopped": true,
+  "screenshots": [
+    {
+      "file": "01-qt-live.png",
+      "bytes": 635237,
+      "sha256": "1197d98e91c5df046a3fe3f75503a4cb1d047a5c90f69c6cf90145034727abcc"
+    },
+    {
+      "file": "02-qt-recording.png",
+      "bytes": 633774,
+      "sha256": "53eddedab6d127b52db54b13cd3174a6ce2e86758419822ee5606cf263cb138f"
+    },
+    {
+      "file": "03-qt-recordings.png",
+      "bytes": 53218,
+      "sha256": "d192476b1109c60781d8396af69e1e2f7a9f4d7cb816da90b323b8a2febf625b"
+    },
+    {
+      "file": "04-qt-playback.png",
+      "bytes": 469286,
+      "sha256": "af7dba5f8eda97824800cf7ef5f9dfd665e09e38090c858c25aa54cf8c40b541"
+    },
+    {
+      "file": "05-qt-activity.png",
+      "bytes": 140292,
+      "sha256": "38d8232eb2256c0cdba96002366a5a4d9c57b7c572549d82d6129aa3d8196055"
+    },
+    {
+      "file": "06-web-live.png",
+      "bytes": 349548,
+      "sha256": "ad5b9dc7473c3a7852b4ab5801d2778d766e3428da206724491313ddecf9fd88"
+    },
+    {
+      "file": "07-web-recordings.png",
+      "bytes": 183753,
+      "sha256": "f6108d1f46e8aa6a5bab691866916180e5066cbfbe44aee277ff48294a11e4a1"
+    },
+    {
+      "file": "08-web-playback.png",
+      "bytes": 863130,
+      "sha256": "2dd15079149882fd96ac8be79d7d9978e8c0cd482fa852f871a0e18f0044048a"
+    }
+  ],
+  "limitations": [
+    "No elapsed recording timer exists in the current Qt recording view; its active recording state is visible instead.",
+    "Current recording consistency does not establish the cause of the historical 45 s / 43 s discrepancy.",
+    "Configured frame rate is not an assertion about measured live viewing FPS."
+  ],
+  "capture_time_publication_policy": "Local only; no commit, push, or upload authorized",
+  "privacy_projection": "Personal absolute recording paths replaced with withheld-recordings/{local,server}/basename; quantitative values and image bytes unchanged."
+}

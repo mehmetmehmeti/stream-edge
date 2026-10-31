@@ -28,6 +28,7 @@ for args in [
     ['node', 'verify-optical.cjs', '.'],
     [sys.executable, '-B', 'scripts/verify-lan.py'],
     [sys.executable, '-B', 'scripts/verify-measurements.py'],
+    [sys.executable, '-B', 'data/ui-2026-10-31/verify.py'],
 ]:
     subprocess.run(args, cwd=ROOT, check=True)
 print(f'PASS: {len(seen)} file hashes, 59 latency photos, LAN/server and F450/A/B arithmetic. MP4 media remains private.')

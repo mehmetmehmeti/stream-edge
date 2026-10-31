@@ -1,0 +1,23 @@
+{
+  "video": {
+    "id": "61822cf1-5eed-4904-a40f-3e1cd1aa98b6",
+    "user_id": "4f4117a9-f30d-4cf4-a560-f787b556aad4",
+    "stream_id": "ddcd79b4-956f-4753-b97c-0c553e46c8da",
+    "device_id": "edge-dev-001",
+    "title": "Local demonstration - 31 October recording",
+    "status": "completed",
+    "edge_local_path": "withheld-recordings/local/61822cf1-5eed-4904-a40f-3e1cd1aa98b6-20261031-151643.mp4",
+    "cloud_path": "withheld-recordings/server/61822cf1-5eed-4904-a40f-3e1cd1aa98b6.mp4",
+    "playback_url": "http://localhost:3000/videos/61822cf1-5eed-4904-a40f-3e1cd1aa98b6/file",
+    "started_at": "2026-10-31T14:16:42.985Z",
+    "ended_at": "2026-10-31T14:17:44.329Z",
+    "uploaded_at": "2026-10-31T14:17:47.249Z",
+    "duration_seconds": 61,
+    "size_bytes": "57378248",
+    "frame_count": "1853",
+    "dropped_frames": "0",
+    "version": 5,
+    "created_at": "2026-10-31T14:16:42.985Z",
+    "updated_at": "2026-10-31T14:17:47.249Z"
+  }
+}

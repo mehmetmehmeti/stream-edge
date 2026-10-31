@@ -130,6 +130,36 @@
         "sources"
       ],
       "scope": "test source, preserved CTest log, offline checks and producer references"
+    },
+    {
+      "id": "ui-2026-10-31",
+      "comments": [
+        36,
+        39,
+        40,
+        43
+      ],
+      "thesis_sections": [
+        "4.2",
+        "4.9",
+        "5.3"
+      ],
+      "figures": [
+        5,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        19
+      ],
+      "evidence": [
+        "data/ui-2026-10-31/README.md",
+        "data/ui-2026-10-31/verification.json",
+        "data/ui-2026-10-31/provenance.json"
+      ],
+      "scope": "Integrated-camera single-host UI documentation; same UUID-linked 61-second recording in Qt and browser. Not F450 performance, LAN, optical, or A/B measurements. MP4 withheld."
     }
   ]
 }

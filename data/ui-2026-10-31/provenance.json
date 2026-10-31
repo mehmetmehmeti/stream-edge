@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "publication_authorized": "2026-10-31",
+  "scope": "Only the approved screenshot-session evidence; no DOCX, MP4, authentication or settings files",
+  "changes": "Only JSON presentation, publication metadata, and personal absolute recording paths are projected; screenshot originals and quantitative observations are unchanged.",
+  "files": [
+    {
+      "file": "01-qt-live.png",
+      "original_sha256": "1197d98e91c5df046a3fe3f75503a4cb1d047a5c90f69c6cf90145034727abcc",
+      "public_sha256": "1197d98e91c5df046a3fe3f75503a4cb1d047a5c90f69c6cf90145034727abcc",
+      "unchanged_bytes": true
+    },
+    {
+      "file": "02-qt-recording.png",
+      "original_sha256": "53eddedab6d127b52db54b13cd3174a6ce2e86758419822ee5606cf263cb138f",
+      "public_sha256": "53eddedab6d127b52db54b13cd3174a6ce2e86758419822ee5606cf263cb138f",
+      "unchanged_bytes": true
+    },
+    {
+      "file": "03-qt-recordings.png",
+      "original_sha256": "d192476b1109c60781d8396af69e1e2f7a9f4d7cb816da90b323b8a2febf625b",
+      "public_sha256": "d192476b1109c60781d8396af69e1e2f7a9f4d7cb816da90b323b8a2febf625b",
+      "unchanged_bytes": true
+    },
+    {
+      "file": "04-qt-playback.png",
+      "original_sha256": "af7dba5f8eda97824800cf7ef5f9dfd665e09e38090c858c25aa54cf8c40b541",
+      "public_sha256": "af7dba5f8eda97824800cf7ef5f9dfd665e09e38090c858c25aa54cf8c40b541",
+      "unchanged_bytes": true
+    },
+    {
+      "file": "05-qt-activity.png",
+      "original_sha256": "38d8232eb2256c0cdba96002366a5a4d9c57b7c572549d82d6129aa3d8196055",
+      "public_sha256": "38d8232eb2256c0cdba96002366a5a4d9c57b7c572549d82d6129aa3d8196055",
+      "unchanged_bytes": true
+    },
+    {
+      "file": "06-web-live.png",
+      "original_sha256": "ad5b9dc7473c3a7852b4ab5801d2778d766e3428da206724491313ddecf9fd88",
+      "public_sha256": "ad5b9dc7473c3a7852b4ab5801d2778d766e3428da206724491313ddecf9fd88",
+      "unchanged_bytes": true
+    },
+    {
+      "file": "07-web-recordings.png",
+      "original_sha256": "f6108d1f46e8aa6a5bab691866916180e5066cbfbe44aee277ff48294a11e4a1",
+      "public_sha256": "f6108d1f46e8aa6a5bab691866916180e5066cbfbe44aee277ff48294a11e4a1",
+      "unchanged_bytes": true
+    },
+    {
+      "file": "08-web-playback.png",
+      "original_sha256": "2dd15079149882fd96ac8be79d7d9978e8c0cd482fa852f871a0e18f0044048a",
+      "public_sha256": "2dd15079149882fd96ac8be79d7d9978e8c0cd482fa852f871a0e18f0044048a",
+      "unchanged_bytes": true
+    },
+    {
+      "file": "qt-playback-check.json",
+      "original_sha256": "793c89c0fae2d2dbeddfbe914063605b468633b3d218242d515dd6af4d8847df",
+      "public_sha256": "e26118938807ab5fbedd93e1d1164f37f99200ac7f95e01b0805d20aee5e5687",
+      "unchanged_bytes": false
+    },
+    {
+      "file": "recording.json",
+      "original_sha256": "bbeaae9b07c6796632f9af1a47fe36da787317acfa9eeca8fee585ba4a1dbba3",
+      "public_sha256": "18e0a7385b9424cd6447226b428304b7cb7cd1d4fd4441c57e7ab86716888397",
+      "unchanged_bytes": false
+    },
+    {
+      "file": "stream-final-status.json",
+      "original_sha256": "373daf0a7b9df71eab5cc76a966ef07cae89bbc52ef5078f6483c461e4e2ec15",
+      "public_sha256": "3b2ec07b0a64216b12005fe93180eeb77d38c0b192d5c2ceefb737f58cae8334",
+      "unchanged_bytes": false
+    },
+    {
+      "file": "verification.json",
+      "original_sha256": "eea7005d0bd2ea93f7e26604cb67861c4881e60d262aaf646923e5de2df3b62d",
+      "public_sha256": "4c000218fa6cdc4d79385c587d3b0d47f6b7e9d6ac85bddedef6ced41946ca49",
+      "unchanged_bytes": false
+    },
+    {
+      "file": "video-3000.json",
+      "original_sha256": "57b93170f12a438204732c7bf40c8b27f01be562ff9382f36b6b37674cc21b96",
+      "public_sha256": "92c884d93fa7bf0bd001d39b6ffbc16eb12fd708e096aa3a6e96bb1d41dc7ae5",
+      "unchanged_bytes": false
+    },
+    {
+      "file": "video-3002.json",
+      "original_sha256": "57b93170f12a438204732c7bf40c8b27f01be562ff9382f36b6b37674cc21b96",
+      "public_sha256": "92c884d93fa7bf0bd001d39b6ffbc16eb12fd708e096aa3a6e96bb1d41dc7ae5",
+      "unchanged_bytes": false
+    },
+    {
+      "file": "web-playback-check.json",
+      "original_sha256": "8cb64e99e7e4df9fd5c77dd2236bb103230abce24905b6b93a50b00ed26b338a",
+      "public_sha256": "79fabace58c232617b97847d2cc2bc7b944bdd1f25843b58de8522eb0238d218",
+      "unchanged_bytes": false
+    }
+  ]
+}

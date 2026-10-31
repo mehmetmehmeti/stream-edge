@@ -1,6 +1,8 @@
-# Thesis Evidence: Reviewed Publication, 29 October 2026
+# Thesis Evidence: Reviewed Publication, 31 October 2026
 
 This is the canonical integration-evidence package for Mehmet Mehmeti's thesis. It extends the four functional reports published on 26 October. Measurements span six components, so datasets are stored once in `stream-edge`, with implementation ownership and pinned source commits in [repository-ownership.json](repository-ownership.json). No application `main` branch is changed by this evidence release.
+
+The 31 October extension adds only the [new UI screenshot session and recording checks](data/ui-2026-10-31/README.md). Earlier measurement data is retained; the new integrated-camera demonstration is not a rerun of the F450, LAN, optical or A/B experiments.
 
 ## Result To Evidence
 
@@ -12,6 +14,7 @@ This is the canonical integration-evidence package for Mehmet Mehmeti's thesis. 
 | Two-laptop commands/startup, FPS/drops and playback, Table 10 | [LAN observations](data/lan/README.md), [server checks](data/server/README.md) | 18, 20, 23, 25, 43 |
 | FIFO versus bounded queue, Table 15 | [A/B raw timing and analysis](data/buffering-ab/README.md) | 19, 24-25, 43 |
 | Component and tool tests | [Automated test records and sources](data/automated-tests/README.md) | 43, 49 |
+| Refreshed UI figures and consistent 61-second recording example | [Eight original PNGs and saved verification records](data/ui-2026-10-31/README.md) | 36, 39-40, 43 |
 
 The machine-readable [claim map](claims-to-evidence.json) connects sections and tables to their source families. [artifact-manifest.json](artifact-manifest.json) lists every published file's size/hash; provenance files distinguish original hashes from privacy-projected public bytes. A checksum confirms bytes, not authorship or the truth of a reported execution.
 

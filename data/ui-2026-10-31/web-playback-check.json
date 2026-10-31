@@ -1,0 +1,15 @@
+{
+  "duration": 61.012333,
+  "currentTime": 14.326046,
+  "paused": false,
+  "width": 640,
+  "height": 480,
+  "decodedFrames": 158,
+  "controls": {
+    "pause": true,
+    "seek": true,
+    "resume": true,
+    "fullscreen": true,
+    "exitFullscreen": true
+  }
+}

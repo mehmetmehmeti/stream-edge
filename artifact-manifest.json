@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release_date": "2026-10-29",
+  "release_date": "2026-10-31",
   "repository": "mehmetmehmeti/stream-edge",
   "recording_media_policy": "private_by_author_choice",
   "original_latency_photos": 59,
@@ -8,13 +8,13 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 4959,
-      "sha256": "d9afae407e6342d125a771b2628c02fb82f8853859839f6770f9d9ceaeb61b05"
+      "bytes": 5387,
+      "sha256": "5f9b44ece2eb8e6fd5506c8a9830c1cbd5a43286ad9212f9947835442c7bf0a9"
     },
     {
       "path": "claims-to-evidence.json",
-      "bytes": 2485,
-      "sha256": "37461ae48363f05b23bc18245742be16fec78f09714471f061e1a478f3840f71"
+      "bytes": 3158,
+      "sha256": "870609f91eab19f2d773c1d1c6f43f47fd845f61bd5e72a9cc19b4670a6e0707"
     },
     {
       "path": "cloud-camera-result.json",
@@ -812,6 +812,96 @@
       "sha256": "b9bc7219b406e869c7556329952c88e18d920204b6ff6821d9adb27bf1813a13"
     },
     {
+      "path": "data/ui-2026-10-31/01-qt-live.png",
+      "bytes": 635237,
+      "sha256": "1197d98e91c5df046a3fe3f75503a4cb1d047a5c90f69c6cf90145034727abcc"
+    },
+    {
+      "path": "data/ui-2026-10-31/02-qt-recording.png",
+      "bytes": 633774,
+      "sha256": "53eddedab6d127b52db54b13cd3174a6ce2e86758419822ee5606cf263cb138f"
+    },
+    {
+      "path": "data/ui-2026-10-31/03-qt-recordings.png",
+      "bytes": 53218,
+      "sha256": "d192476b1109c60781d8396af69e1e2f7a9f4d7cb816da90b323b8a2febf625b"
+    },
+    {
+      "path": "data/ui-2026-10-31/04-qt-playback.png",
+      "bytes": 469286,
+      "sha256": "af7dba5f8eda97824800cf7ef5f9dfd665e09e38090c858c25aa54cf8c40b541"
+    },
+    {
+      "path": "data/ui-2026-10-31/05-qt-activity.png",
+      "bytes": 140292,
+      "sha256": "38d8232eb2256c0cdba96002366a5a4d9c57b7c572549d82d6129aa3d8196055"
+    },
+    {
+      "path": "data/ui-2026-10-31/06-web-live.png",
+      "bytes": 349548,
+      "sha256": "ad5b9dc7473c3a7852b4ab5801d2778d766e3428da206724491313ddecf9fd88"
+    },
+    {
+      "path": "data/ui-2026-10-31/07-web-recordings.png",
+      "bytes": 183753,
+      "sha256": "f6108d1f46e8aa6a5bab691866916180e5066cbfbe44aee277ff48294a11e4a1"
+    },
+    {
+      "path": "data/ui-2026-10-31/08-web-playback.png",
+      "bytes": 863130,
+      "sha256": "2dd15079149882fd96ac8be79d7d9978e8c0cd482fa852f871a0e18f0044048a"
+    },
+    {
+      "path": "data/ui-2026-10-31/README.md",
+      "bytes": 3840,
+      "sha256": "eb4537d676fbc729ab09d67d147faced1288bf423af21b59a576bcb02b197337"
+    },
+    {
+      "path": "data/ui-2026-10-31/provenance.json",
+      "bytes": 4330,
+      "sha256": "46386ff830322c6e5987d95cccb19dab5dd7a70a0821326c451281c03f46ed90"
+    },
+    {
+      "path": "data/ui-2026-10-31/qt-playback-check.json",
+      "bytes": 212,
+      "sha256": "e26118938807ab5fbedd93e1d1164f37f99200ac7f95e01b0805d20aee5e5687"
+    },
+    {
+      "path": "data/ui-2026-10-31/recording.json",
+      "bytes": 897,
+      "sha256": "18e0a7385b9424cd6447226b428304b7cb7cd1d4fd4441c57e7ab86716888397"
+    },
+    {
+      "path": "data/ui-2026-10-31/stream-final-status.json",
+      "bytes": 2246,
+      "sha256": "3b2ec07b0a64216b12005fe93180eeb77d38c0b192d5c2ceefb737f58cae8334"
+    },
+    {
+      "path": "data/ui-2026-10-31/verification.json",
+      "bytes": 3903,
+      "sha256": "4c000218fa6cdc4d79385c587d3b0d47f6b7e9d6ac85bddedef6ced41946ca49"
+    },
+    {
+      "path": "data/ui-2026-10-31/verify.py",
+      "bytes": 2052,
+      "sha256": "f392750a7138901dff0fa81ddaefa503f9663a940d991bcf9db413f5a4be0fcf"
+    },
+    {
+      "path": "data/ui-2026-10-31/video-3000.json",
+      "bytes": 952,
+      "sha256": "92c884d93fa7bf0bd001d39b6ffbc16eb12fd708e096aa3a6e96bb1d41dc7ae5"
+    },
+    {
+      "path": "data/ui-2026-10-31/video-3002.json",
+      "bytes": 952,
+      "sha256": "92c884d93fa7bf0bd001d39b6ffbc16eb12fd708e096aa3a6e96bb1d41dc7ae5"
+    },
+    {
+      "path": "data/ui-2026-10-31/web-playback-check.json",
+      "bytes": 261,
+      "sha256": "79fabace58c232617b97847d2cc2bc7b944bdd1f25843b58de8522eb0238d218"
+    },
+    {
       "path": "manifest.json",
       "bytes": 1742,
       "sha256": "f1761263d228e267c412e1419cfceb0c604fb67b5ee19675ce216ed269ff8148"
@@ -1173,8 +1263,8 @@
     },
     {
       "path": "verify_bundle.py",
-      "bytes": 1535,
-      "sha256": "6726dc60578607178b3263eede8b8f77890f2f8076062188d0fbf19891eceda7"
+      "bytes": 1595,
+      "sha256": "fc220e63c120036fd3f2b08b7218ba5e1b9d5e6cf37d685068b8e78d171ffb7c"
     },
     {
       "path": "workflow-result.json",
